@@ -25,6 +25,12 @@ runtime online loop에서 certified adapter만 routing할 수 있는가?
 
 Track B/Foveation은 메인 contribution이 아니다. 기존 FoveateR 계열 연구를 인용하고, 새 레포에서는 **visual evidence cost control module**로만 둔다.
 
+현재 구현은 Qwen2/Qwen3 계열 VLM을 reference backbone으로 둔다. 다만 이 선택은 최종
+구조가 아니라, 단일 RTX 3090에서 PEFT, LoRA attach/load/switch, image-to-text evaluation을
+먼저 검증하기 위한 임시 기준점이다. 원래 목표 backbone은 JEPA/LeWM 계열 world model이며,
+이식되는 것은 Qwen에서 학습한 LoRA weight가 아니라 taxonomy, curriculum, AdapterCard,
+actual-only certification protocol이다.
+
 ---
 
 ## 1. 새 프레임워크의 역할 분리
@@ -39,7 +45,7 @@ input image/query
   -> lightweight taxonomy router
   -> AdapterCard registry lookup
   -> certified LoRA top-1 selection
-  -> shared VLM backbone + selected LoRA inference
+  -> BackboneContract implementation + selected LoRA inference
   -> verifier/scorer
   -> RouteTrace 저장
 ```
@@ -71,7 +77,8 @@ outputs:
 ```
 
 초기에는 top-1 routing만 허용한다.  
-multi-LoRA mixture, token-level switching, JEPA/LeWM routing은 금지한다.
+multi-LoRA mixture와 token-level switching은 금지한다. JEPA/LeWM routing claim은
+BackboneContract와 migration gate가 닫히기 전에는 열지 않는다.
 
 ---
 
@@ -146,6 +153,115 @@ Teacher output은 **candidate supervision**이고, 최종 판단은 actual certi
 ```text
 Teacher proposes.
 Certification decides.
+```
+
+---
+
+### 1.4 Backbone Contract and Future JEPA/LeWM Migration
+
+새 레포는 처음부터 backbone을 교체할 수 있는 contract 중심으로 둔다. Qwen2/Qwen3는
+현재 phase의 reference backbone이고, JEPA/LeWM은 원래 의도한 world-model target이다.
+
+```yaml
+BackboneContract:
+  backbone_id: string
+  backbone_type:
+    - vlm_llm
+    - jepa_world_model
+    - lewm_world_model
+
+  inputs:
+    - image
+    - query
+    - optional_roi
+
+  outputs:
+    - answer_text_or_structured_answer
+    - latent_state
+    - taxonomy_features
+    - confidence
+    - memory_profile
+
+  adapter_slots:
+    - vision_encoder
+    - projector
+    - latent_predictor
+    - taxonomy_router_head
+    - controller
+    - language_decoder
+
+  certification_supported:
+    - base_no_adapter
+    - correct_lora
+    - wrong_lora
+    - random_lora
+```
+
+Qwen 계열에서는 taxonomy가 image/query의 semantic interpretation을 거쳐 나올 수 있다.
+이 경로는 small text, chart cell, UI status, spatial binding에서 grounding 병목을 만들 수
+있다.
+
+```text
+image + query
+  -> VLM/LLM semantic interpretation
+  -> taxonomy label
+  -> LoRA route
+```
+
+최종 LeWM 설정에서는 backbone이 단순히 vision input을 받는 language decoder가 아니라
+world-state encoder/predictor에 가깝다. 따라서 taxonomy routing signal은 텍스트 분류보다
+world-state latent 위에서 나오는 것이 자연스럽다.
+
+```text
+visual observation
+  -> world-state latent z_t
+  -> predicted failure/evidence/task taxonomy
+  -> certified adapter route
+  -> answer/action head
+```
+
+유지되는 것:
+
+```yaml
+portable_across_backbones:
+  - taxonomy schema
+  - curriculum manifest
+  - AdapterCard structure
+  - base/correct/wrong/random actual certification
+  - online RouteTrace
+  - offline LoRA learning loop
+  - certification gates
+  - failure taxonomy
+```
+
+바뀌는 것:
+
+```yaml
+backbone_specific:
+  - LoRA weight
+  - target_modules
+  - adapter_slot
+  - latent representation
+  - router feature
+  - scoring head
+  - answer head
+  - memory and latency profile
+```
+
+초기 JEPA/LeWM adapter slot 후보는 전체 vision encoder나 latent predictor보다 얇은
+projector/translator 또는 taxonomy router head가 더 안전하다.
+
+```yaml
+initial_jepa_adapter_slot:
+  primary: projector_or_translator
+  secondary: taxonomy_router_head
+```
+
+핵심 규칙:
+
+```text
+Qwen-trained LoRA weights do not transfer to JEPA/LeWM.
+The taxonomy, curriculum, AdapterCard, and actual certification protocol transfer.
 ```
 
 ---
@@ -273,6 +389,7 @@ mvp_taxonomies:
 AdapterCard:
   adapter_id: "doc_field_bind_r4_v1"
   base_backbone: "Qwen3-VL-4B"
+  backbone_type: "vlm_llm"
   teacher_model: "google/gemma-4-26B-A4B-it"
 
   taxonomy:
@@ -289,6 +406,7 @@ AdapterCard:
 
   weights:
     adapter_path: "adapters/doc_field_bind_r4_v1"
+    adapter_slot: "language_decoder"
     rank: 4
     alpha: 8
     target_modules: ["q_proj", "v_proj"]
@@ -556,6 +674,7 @@ mvp:
 
   backbone:
     - Qwen3-VL-4B reference
+    - Qwen2/Qwen3 family as replaceable BackboneContract implementation
 
   train_holdout:
     train_per_taxonomy: 64
@@ -600,7 +719,7 @@ mvp_failure_is_valid_if:
 ```yaml
 non_goals:
   - Foveation novelty claim
-  - JEPA / LeWM runtime routing
+  - JEPA / LeWM runtime routing claim before BackboneContract validation
   - graph memory
   - production serving scheduler
   - broad benchmark superiority
@@ -646,7 +765,15 @@ We propose an offline-certified taxonomy LoRA bank framework for consolidating v
 ```
 
 ```text
+We first validate the framework on Qwen-family VLM backbones because they provide stable image-to-text inference and PEFT support on a single RTX 3090. The framework is designed around a BackboneContract, so the same taxonomy, curriculum, AdapterCard, and actual-only certification protocol can later be applied to a JEPA/LeWM backbone.
+```
+
+```text
 The key idea is to compile failure traces into adapter-sensitive curricula, train candidate LoRA specialists, and certify them through actual base/correct/wrong/random evaluations before online routing.
+```
+
+```text
+In the final LeWM setting, the backbone is not merely a language decoder with vision input; it is a world-state encoder/predictor. Therefore, adapter slots may move from the language decoder to the latent projector, taxonomy router, or world-state predictor.
 ```
 
 한국어:
@@ -654,4 +781,12 @@ The key idea is to compile failure traces into adapter-sensitive curricula, trai
 ```text
 본 연구는 shared VLM backbone 위에서 vision specialist를 통합하기 위한 offline-certified taxonomy LoRA bank 프레임워크를 제안한다.
 핵심은 실패 trace를 adapter-sensitive curriculum으로 컴파일하고, 후보 LoRA를 학습한 뒤, base/correct/wrong/random actual evaluation을 통과한 adapter만 online routing에 허용하는 것이다.
+```
+
+```text
+본 연구는 우선 단일 RTX 3090에서 안정적으로 PEFT와 image-to-text 평가가 가능한 Qwen 계열 VLM을 reference backbone으로 사용한다. 다만 프레임워크는 BackboneContract를 중심으로 설계되며, 동일한 taxonomy, curriculum, AdapterCard, actual-only certification protocol을 이후 JEPA/LeWM 기반 backbone에도 적용할 수 있도록 한다.
+```
+
+```text
+최종 LeWM 설정에서 backbone은 단순히 vision input을 받는 language decoder가 아니라 world-state encoder/predictor에 가깝다. 따라서 adapter slot은 language decoder가 아니라 latent projector, taxonomy router, world-state predictor 쪽으로 이동할 수 있다.
 ```

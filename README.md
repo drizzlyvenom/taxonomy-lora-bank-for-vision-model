@@ -3,8 +3,9 @@
 Status: M0 clean repo scaffold  
 Scope: Track A-first research repo
 
-이 레포는 shared VLM backbone 위에서 여러 vision specialist를 통합하기 위한
-**offline-certified taxonomy LoRA bank** 프레임워크를 검증한다.
+이 레포는 현재 Qwen 계열 VLM을 reference backbone으로 사용해 여러 vision specialist를
+통합하기 위한 **offline-certified taxonomy LoRA bank** 프레임워크를 검증한다.
+최종 목표는 같은 protocol을 JEPA/LeWM 계열 world-model backbone으로 옮기는 것이다.
 
 핵심 질문은 단순하다.
 
@@ -40,6 +41,33 @@ Failure is a valid result.
 Foveation, OCR ROI, low-resolution survey path는 새 novelty claim이 아니다. 이 레포에서는
 visual evidence cost control 또는 입력 증거 생성 모듈로만 사용한다.
 
+## Backbone migration 원칙
+
+Qwen2/Qwen3 기반 실험은 최종 구조가 아니라, 단일 RTX 3090에서 PEFT와 image-to-text
+평가를 안정적으로 돌리기 위한 reference implementation이다.
+
+나중에 JEPA/LeWM world-model backbone으로 바꿀 때 이식되는 것은 LoRA weight가 아니라
+아래 protocol이다.
+
+- taxonomy schema
+- curriculum manifest
+- AdapterCard 구조
+- base/correct/wrong/random actual certification
+- online RouteTrace
+- offline LoRA learning loop
+
+반대로 아래 항목은 backbone-specific으로 다시 만든다.
+
+- LoRA weight
+- target modules
+- adapter slot
+- latent representation
+- scoring head 또는 answer head
+- memory/latency profile
+
+즉, Qwen용 adapter와 LeWM용 adapter는 서로 다른 bank로 관리한다. 같은 것은 검증 규약이고,
+weight 자체가 아니다.
+
 ## M0 산출물
 
 - [프레임워크 문서](docs/00_overview/framework_ko.md)
@@ -58,4 +86,3 @@ M0 통과 조건:
 이 public repo에는 문서, 스키마, 설정, 코드, 작은 예시 파일만 커밋한다. GGUF, safetensors,
 checkpoint, 학습 산출물, 원본 데이터셋 같은 대용량 또는 라이선스 확인이 필요한 artifact는
 로컬에만 둔다.
-

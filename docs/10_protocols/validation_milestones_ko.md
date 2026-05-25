@@ -37,6 +37,7 @@ M8. Online router evaluation
 M9. Offline loop closure
 M10. Optional bank serving cost
 M11. Paper-ready MVP table
+M12. Backbone migration
 ```
 
 핵심 gate:
@@ -613,6 +614,12 @@ oracle / routed / random / base
 full reload / adapter load / adapter bank / set_adapter switch
 ```
 
+#### Table 6. Backbone migration
+
+```text
+backbone / adapter_slot / base / correct / wrong / random / margin_vs_wrong / memory / latency
+```
+
 ### Paper-ready 조건
 
 ```yaml
@@ -626,7 +633,79 @@ paper_ready_mvp:
 
 ---
 
-## 12. 다음 커밋 추천
+## M12. Backbone Migration
+
+### 목표
+
+Qwen2/Qwen3 reference backbone에서 검증한 protocol을 JEPA/LeWM world-model backbone에
+재실행한다.
+
+이 단계에서 옮기는 것은 Qwen에서 학습한 LoRA weight가 아니다. 옮기는 것은 taxonomy,
+curriculum, AdapterCard 구조, actual-only certification protocol이다.
+
+### BackboneContract 요구사항
+
+```yaml
+BackboneContract:
+  required:
+    - backbone_id
+    - backbone_type
+    - input_image_query_or_roi
+    - output_answer_or_structured_answer
+    - output_latent_state_or_taxonomy_features
+    - adapter_slots
+    - memory_profile
+    - actual_certification_support
+```
+
+### 비교
+
+같은 curriculum과 holdout split을 사용해 아래를 비교한다.
+
+```yaml
+compare_backbones:
+  - Qwen3 reference
+  - Qwen2 lightweight
+  - JEPA/LeWM world model
+
+metrics:
+  - base_score
+  - correct_lora_score
+  - wrong_lora_score
+  - random_lora_score
+  - margin_vs_wrong
+  - base_memory_mb
+  - adapter_memory_mb
+  - route_latency_ms
+  - adapter_switch_latency_ms
+```
+
+### 통과 조건
+
+```yaml
+pass_if:
+  - JEPA/LeWM backbone implements BackboneContract
+  - base/correct/wrong/random actual eval works
+  - AdapterCard stores base_backbone and adapter_slot
+  - memory/latency/score are comparable under same curriculum
+  - Qwen-trained LoRA transfer is not required or claimed
+```
+
+### 초기 adapter slot 후보
+
+```yaml
+initial_jepa_adapter_slot:
+  primary: projector_or_translator
+  secondary: taxonomy_router_head
+
+defer_initially:
+  - full vision_encoder adaptation
+  - latent_predictor adaptation
+```
+
+---
+
+## 13. 다음 커밋 추천
 
 ```yaml
 commit_1:
@@ -660,11 +739,18 @@ commit_5:
   tasks:
     - base/correct/wrong/random actual comparison
     - AdapterCard update
+
+commit_6:
+  name: backbone_contract
+  tasks:
+    - define BackboneContract schema
+    - add Qwen reference implementation notes
+    - add JEPA/LeWM migration checklist
 ```
 
 ---
 
-## 13. 중단 기준
+## 14. 중단 기준
 
 아래 중 하나면 구조를 바꾸기 전에 멈추고 원인을 분석한다.
 
@@ -681,7 +767,7 @@ stop_and_diagnose_if:
 
 ---
 
-## 14. 결론
+## 15. 결론
 
 새 레포의 검증은 단순하다.
 
@@ -691,6 +777,7 @@ stop_and_diagnose_if:
 3. LoRA를 학습한다.
 4. correct/wrong/random을 actual로 비교한다.
 5. actual_certified adapter만 online routing한다.
+6. 같은 protocol을 BackboneContract 구현체별로 재실행한다.
 ```
 
 이 순서를 지키면 이전 프로젝트처럼 proxy, routing, Foveation, certification이 섞이지 않는다.
