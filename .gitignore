@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Large model and training artifacts
+*.gguf
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.bin
+*.npz
+*.npy
+
+# Local experiment outputs
+artifacts/
+checkpoints/
+runs/
+wandb/
+outputs/
+logs/
+
+# Local datasets can be added intentionally later as small manifests.
+data/raw/
+data/generated/
+data/cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
