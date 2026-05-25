@@ -12,6 +12,9 @@ venv/
 .env.*
 !.env.example
 
+# Local model and LoRA bank
+models/
+
 # Large model and training artifacts
 *.gguf
 *.safetensors
@@ -41,4 +44,3 @@ data/cache/
 Thumbs.db
 .idea/
 .vscode/
-
