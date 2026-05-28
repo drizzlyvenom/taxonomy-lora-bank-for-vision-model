@@ -41,8 +41,9 @@ Smoke test 결과는 validation evidence로 쓰지 않는다. 기본 결과 브�
 권장 이름은 milestone 번호를 앞에 붙인다.
 
 ```text
-000_dataset_brief_ko.md
-001_actual_base_audit_ko.md
-002_single_lora_learns_ko.md
-003_actual_certification_ko.md
+000_m1_schema_contracts_ko.md
+001_m2_dataset_brief_ko.md
+002_actual_base_audit_ko.md
+003_single_lora_learns_ko.md
+004_actual_certification_ko.md
 ```

@@ -1,0 +1,24 @@
+{
+  "minimum_per_taxonomy": {
+    "holdout": 64,
+    "train": 64
+  },
+  "taxonomies": {
+    "chart_table_cell": {
+      "holdout_count": 64,
+      "source_config": "default",
+      "source_dataset": "lmms-lab/ChartQA",
+      "source_split": "test",
+      "train_count": 64,
+      "train_holdout_answer_overlap": []
+    },
+    "document_field_bind": {
+      "holdout_count": 64,
+      "source_config": "DocVQA",
+      "source_dataset": "lmms-lab/DocVQA",
+      "source_split": "validation",
+      "train_count": 64,
+      "train_holdout_answer_overlap": []
+    }
+  }
+}

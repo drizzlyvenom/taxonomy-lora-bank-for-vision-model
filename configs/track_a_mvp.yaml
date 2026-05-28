@@ -1,0 +1,29 @@
+config_name: track_a_mvp
+version: 1
+
+datasets:
+  document_field_bind:
+    source_dataset: lmms-lab/DocVQA
+    source_config: DocVQA
+    source_split: validation
+    selection:
+      allowed_question_types:
+        - form
+        - layout
+        - table/list
+      train: 64
+      holdout: 64
+
+  chart_table_cell:
+    source_dataset: lmms-lab/ChartQA
+    source_config: default
+    source_split: test
+    selection:
+      train: 64
+      holdout: 64
+
+validation:
+  no_smoke_validation: true
+  require_expected_answers: true
+  require_hard_negatives: true
+  require_train_holdout_answer_disjoint: true
