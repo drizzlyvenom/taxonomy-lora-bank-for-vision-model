@@ -38,6 +38,9 @@ No actual eval, no certification.
 Failure is a valid result.
 ```
 
+검증 기본 단위는 taxonomy별 `train 64 / holdout 64` actual run이다. Smoke test는
+기본 검증 경로로 사용하지 않는다.
+
 Foveation, OCR ROI, low-resolution survey path는 새 novelty claim이 아니다. 이 레포에서는
 visual evidence cost control 또는 입력 증거 생성 모듈로만 사용한다.
 
@@ -68,10 +71,15 @@ Qwen2/Qwen3 기반 실험은 최종 구조가 아니라, 단일 RTX 3090에서 P
 즉, Qwen용 adapter와 LeWM용 adapter는 서로 다른 bank로 관리한다. 같은 것은 검증 규약이고,
 weight 자체가 아니다.
 
+M12에서는 이 migration을 더 쪼개서 본다. 현재 Qwen backbone이 함께 맡는 perception과
+LoRA routing을 분리하고, `perception model`은 Qwen/VLM 또는 JEPA/LeWM으로, `LoRA router`
+는 oracle/taxonomy/learned/random router로 바꿔가며 같은 `64/64 actual` protocol을 반복한다.
+
 ## M0 산출물
 
 - [프레임워크 문서](docs/00_overview/framework_ko.md)
 - [검증 마일스톤](docs/10_protocols/validation_milestones_ko.md)
+- [수학적 검증 프로토콜](docs/10_protocols/track_a_v2_mathematical_validation_protocol_ko.md)
 - [로컬 artifact 정책](docs/10_protocols/local_artifact_policy_ko.md)
 - [결과 브리프 정책](docs/20_results/README.md)
 

@@ -42,7 +42,8 @@ Online loop는 학습하지 않는다.
 
 ```text
 input image/query
-  -> lightweight taxonomy router
+  -> perception model P(image, optional ROI)
+  -> LoRA router pi(perception output, query)
   -> AdapterCard registry lookup
   -> certified LoRA top-1 selection
   -> BackboneContract implementation + selected LoRA inference
@@ -67,6 +68,8 @@ inputs:
   - optional ROI evidence from existing FoveateR/OCR pipeline
 
 outputs:
+  - perception_artifact_id
+  - predicted_taxonomy
   - selected_adapter_id
   - route_confidence
   - answer_text
@@ -266,6 +269,68 @@ The taxonomy, curriculum, AdapterCard, and actual certification protocol transfe
 
 ---
 
+### 1.5 M12 Perception-Router Decomposition
+
+M12는 M1~M11을 backbone별로 반복하는 migration gate다. 이때 Qwen reference backbone이
+한 덩어리로 수행하던 역할을 최소 두 부분으로 분리한다.
+
+```yaml
+perception_model:
+  role:
+    - image/ROI를 visual evidence summary 또는 latent_state로 변환
+    - 작은 글자, 표 셀, UI 상태, chart axis 같은 evidence를 보존
+  candidates:
+    - qwen_vlm_perception
+    - jepa_lewm_perception
+
+lora_router_model:
+  role:
+    - perception output과 query를 받아 taxonomy 또는 adapter_id 선택
+    - uncertified adapter는 선택하지 않음
+  candidates:
+    - oracle_router
+    - taxonomy_classifier_router
+    - learned_router
+    - random_router_baseline
+```
+
+실험 단위는 smoke가 아니라 taxonomy별 `train 64 / holdout 64` actual run이다.
+
+```yaml
+m12_actual_grid:
+  datasets:
+    - DocVQA
+    - TextVQA
+    - ChartQA
+    - RICO-ScreenQA
+
+  perception_models:
+    - qwen_vlm
+    - jepa_lewm
+
+  router_models:
+    - oracle
+    - taxonomy_classifier
+    - learned
+    - random
+
+  minimum_per_taxonomy:
+    train: 64
+    holdout: 64
+
+  no_smoke_validation: true
+```
+
+M12의 핵심 질문은 세 개다.
+
+```text
+1. perception output만으로 target evidence가 보존되는가?
+2. 같은 perception output에서 router가 certified adapter를 잘 고르는가?
+3. end-to-end score에서 correct LoRA가 base/wrong/random을 actual로 이기는가?
+```
+
+---
+
 ## 2. 절대 규칙: Certification에는 proxy 금지
 
 새 레포의 가장 중요한 규칙이다.
@@ -274,6 +339,7 @@ The taxonomy, curriculum, AdapterCard, and actual certification protocol transfe
 No proxy in certification.
 No actual eval, no certification.
 Failure is a valid result.
+No smoke test as validation.
 ```
 
 Certification에는 아래 네 비교가 모두 actual evaluation으로 들어가야 한다.
@@ -626,7 +692,7 @@ docs/
     claim_boundary_ko.md
   10_protocols/
     validation_milestones_ko.md
-    actual_certification_protocol_ko.md
+    track_a_v2_mathematical_validation_protocol_ko.md
   20_results/
     README.md
   30_paper_notes/
@@ -636,7 +702,11 @@ docs/
 schemas/
   adapter_card_v3.example.yaml
   route_trace.example.yaml
+  backbone_contract.example.yaml
+  perception_contract.example.yaml
+  router_contract.example.yaml
   curriculum_manifest.example.jsonl
+  teacher_annotation.example.jsonl
   actual_certification_result.example.yaml
 
 configs/
@@ -648,6 +718,7 @@ src/
     taxonomy.py
     adapter_card.py
     simula_compiler.py
+    perception.py
     actual_certification.py
     router.py
     scoring.py
@@ -679,6 +750,7 @@ mvp:
   train_holdout:
     train_per_taxonomy: 64
     holdout_per_taxonomy: 64
+    smoke_test: false
 
   adapters:
     - document_lora

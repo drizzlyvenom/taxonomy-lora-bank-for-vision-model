@@ -33,6 +33,9 @@ taxonomy | base | correct_lora | wrong_lora | random_lora | status | failure_rea
 - heuristic score
 - mixed actual/proxy score
 
+Smoke test 결과는 validation evidence로 쓰지 않는다. 기본 결과 브리프는 taxonomy별
+`train 64 / holdout 64` actual run을 기준으로 작성한다.
+
 ## 파일 이름
 
 권장 이름은 milestone 번호를 앞에 붙인다.
@@ -43,4 +46,3 @@ taxonomy | base | correct_lora | wrong_lora | random_lora | status | failure_rea
 002_single_lora_learns_ko.md
 003_actual_certification_ko.md
 ```
-

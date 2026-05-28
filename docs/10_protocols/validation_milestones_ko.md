@@ -20,6 +20,9 @@ Certification에는 proxy를 넣지 않는다.
 Teacher, difficulty heuristic, rule annotation은 curriculum/diagnostic에만 사용한다.  
 최종 AdapterCard certification은 actual model evaluation으로만 결정한다.
 
+검증 기본값은 taxonomy별 `train 64 / holdout 64` actual run이다. Smoke test는 기본 경로로
+사용하지 않으며, schema/download 확인은 실험 claim으로 취급하지 않는다.
+
 ---
 
 ## 1. 전체 마일스톤
@@ -74,6 +77,7 @@ tasks:
   - write README with Track A-only thesis
   - add framework doc
   - add validation milestone doc
+  - add mathematical validation protocol
   - add local artifact policy
   - add result brief policy
 ```
@@ -84,6 +88,7 @@ tasks:
 README.md
 docs/00_overview/framework_ko.md
 docs/10_protocols/validation_milestones_ko.md
+docs/10_protocols/track_a_v2_mathematical_validation_protocol_ko.md
 docs/20_results/README.md
 ```
 
@@ -109,6 +114,9 @@ pass_if:
 ```text
 schemas/adapter_card_v3.example.yaml
 schemas/route_trace.example.yaml
+schemas/backbone_contract.example.yaml
+schemas/perception_contract.example.yaml
+schemas/router_contract.example.yaml
 schemas/curriculum_manifest.example.jsonl
 schemas/teacher_annotation.example.jsonl
 schemas/actual_certification_result.example.yaml
@@ -121,6 +129,7 @@ pass_if:
   - schema examples exist
   - lightweight checker passes
   - AdapterCard certification has no proxy fields
+  - PerceptionContract and RouterContract can be evaluated independently
 ```
 
 ### 금지
@@ -163,6 +172,7 @@ taxonomies:
 minimum:
   train_per_taxonomy: 64
   holdout_per_taxonomy: 64
+  smoke_test: false
 
 better:
   train_per_taxonomy: 128
@@ -489,7 +499,8 @@ requires:
   - at least two actual_certified adapters
 ```
 
-M6가 실패하면 router eval은 path smoke만 가능하다.
+M6가 실패하거나 actual_certified adapter가 2개 미만이면 router eval은 연기한다. 이 경우
+router utility claim을 열지 않는다.
 
 ### 비교
 
@@ -617,7 +628,7 @@ full reload / adapter load / adapter bank / set_adapter switch
 #### Table 6. Backbone migration
 
 ```text
-backbone / adapter_slot / base / correct / wrong / random / margin_vs_wrong / memory / latency
+perception / router / backbone / adapter_slot / base / correct / wrong / random / margin_vs_wrong / memory / latency
 ```
 
 ### Paper-ready 조건
@@ -637,11 +648,14 @@ paper_ready_mvp:
 
 ### 목표
 
-Qwen2/Qwen3 reference backbone에서 검증한 protocol을 JEPA/LeWM world-model backbone에
-재실행한다.
+Qwen2/Qwen3 reference backbone에서 검증한 M1~M11 protocol을 JEPA/LeWM world-model
+backbone에 재실행한다. 이때 backbone이 한 덩어리로 맡던 perception과 LoRA routing을
+분리해, 어느 부분이 성능과 실패를 만드는지 따로 검증한다.
 
 이 단계에서 옮기는 것은 Qwen에서 학습한 LoRA weight가 아니다. 옮기는 것은 taxonomy,
 curriculum, AdapterCard 구조, actual-only certification protocol이다.
+
+M12도 smoke test 없이 taxonomy별 `train 64 / holdout 64` actual run을 기본 단위로 한다.
 
 ### BackboneContract 요구사항
 
@@ -651,6 +665,8 @@ BackboneContract:
     - backbone_id
     - backbone_type
     - input_image_query_or_roi
+    - perception_output
+    - router_input_features
     - output_answer_or_structured_answer
     - output_latent_state_or_taxonomy_features
     - adapter_slots
@@ -658,17 +674,58 @@ BackboneContract:
     - actual_certification_support
 ```
 
+### Perception-Router 분리 요구사항
+
+```yaml
+PerceptionContract:
+  inputs:
+    - image
+    - optional_roi
+  outputs:
+    - visual_evidence_summary
+    - latent_state
+    - evidence_confidence
+    - perception_memory_mb
+    - perception_latency_ms
+
+RouterContract:
+  inputs:
+    - query
+    - visual_evidence_summary_or_latent_state
+    - certified_adapter_registry
+  outputs:
+    - predicted_taxonomy
+    - selected_adapter_id
+    - route_confidence
+    - abstained
+```
+
 ### 비교
 
 같은 curriculum과 holdout split을 사용해 아래를 비교한다.
 
 ```yaml
-compare_backbones:
-  - Qwen3 reference
-  - Qwen2 lightweight
-  - JEPA/LeWM world model
+compare_components:
+  perception_models:
+    - Qwen3 reference perception
+    - Qwen2 lightweight perception
+    - JEPA/LeWM world-state perception
+
+  router_models:
+    - oracle_router
+    - taxonomy_classifier_router
+    - learned_router
+    - random_router_baseline
+
+  execution_backbones:
+    - Qwen3 reference
+    - Qwen2 lightweight
+    - JEPA/LeWM world model
 
 metrics:
+  - perception_evidence_score
+  - router_top1_hit
+  - router_regret
   - base_score
   - correct_lora_score
   - wrong_lora_score
@@ -685,10 +742,14 @@ metrics:
 ```yaml
 pass_if:
   - JEPA/LeWM backbone implements BackboneContract
+  - perception model implements PerceptionContract
+  - router model implements RouterContract
+  - each taxonomy uses train 64 and holdout 64 actual samples
   - base/correct/wrong/random actual eval works
   - AdapterCard stores base_backbone and adapter_slot
   - memory/latency/score are comparable under same curriculum
   - Qwen-trained LoRA transfer is not required or claimed
+  - no smoke result is used as validation evidence
 ```
 
 ### 초기 adapter slot 후보
@@ -744,8 +805,10 @@ commit_6:
   name: backbone_contract
   tasks:
     - define BackboneContract schema
+    - define PerceptionContract and RouterContract schema
     - add Qwen reference implementation notes
     - add JEPA/LeWM migration checklist
+    - require 64/64 actual validation path
 ```
 
 ---
