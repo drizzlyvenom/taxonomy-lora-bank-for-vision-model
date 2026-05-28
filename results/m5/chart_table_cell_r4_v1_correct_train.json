@@ -1,0 +1,1765 @@
+{
+  "rows": [
+    {
+      "answer_text": "15",
+      "error": null,
+      "expected_answers": [
+        "14"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/0/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 815.46,
+      "peak_cuda_allocated_mb": 8743.67,
+      "prompt": "How many food item is shown in the bar graph?",
+      "sample_id": "chart_table_cell_train_000000",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 0,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.57",
+      "error": null,
+      "expected_answers": [
+        "0.57"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/1/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 488.61,
+      "peak_cuda_allocated_mb": 8742.22,
+      "prompt": "What is the difference in value between Lamb and Corn?",
+      "sample_id": "chart_table_cell_train_000001",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 1,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "3",
+      "error": null,
+      "expected_answers": [
+        "3"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/2/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 307.13,
+      "peak_cuda_allocated_mb": 8741.43,
+      "prompt": "How many bars are shown in the chart?",
+      "sample_id": "chart_table_cell_train_000002",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 2,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "No",
+      "error": null,
+      "expected_answers": [
+        "No"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/3/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 306.45,
+      "peak_cuda_allocated_mb": 8741.83,
+      "prompt": "Is the sum value of Madagascar more then Fiji?",
+      "sample_id": "chart_table_cell_train_000003",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 3,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "23",
+      "error": null,
+      "expected_answers": [
+        "23"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/4/image",
+      "image_size": {
+        "height": 343,
+        "width": 309
+      },
+      "latency_ms": 320.96,
+      "peak_cuda_allocated_mb": 8572.12,
+      "prompt": "What's the value of the lowest bar?",
+      "sample_id": "chart_table_cell_train_000004",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 4,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "6",
+      "error": null,
+      "expected_answers": [
+        "6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/5/image",
+      "image_size": {
+        "height": 343,
+        "width": 309
+      },
+      "latency_ms": 247.11,
+      "peak_cuda_allocated_mb": 8574.5,
+      "prompt": "What is the difference between the highest and the lowest green bar??",
+      "sample_id": "chart_table_cell_train_000005",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 5,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "62",
+      "error": null,
+      "expected_answers": [
+        "62"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/6/image",
+      "image_size": {
+        "height": 404,
+        "width": 310
+      },
+      "latency_ms": 291.46,
+      "peak_cuda_allocated_mb": 8571.56,
+      "prompt": "What percent who think of President Donald Trump as Dangerous?",
+      "sample_id": "chart_table_cell_train_000006",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 6,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Yes",
+      "error": null,
+      "expected_answers": [
+        "Yes"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/7/image",
+      "image_size": {
+        "height": 404,
+        "width": 310
+      },
+      "latency_ms": 260.59,
+      "peak_cuda_allocated_mb": 8575.99,
+      "prompt": "Is the sum of the percents of Charismatic and Well-qualified to be president more than A strong leader ?",
+      "sample_id": "chart_table_cell_train_000007",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 7,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Inspired",
+      "error": null,
+      "expected_answers": [
+        "Inspired"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/8/image",
+      "image_size": {
+        "height": 788,
+        "width": 840
+      },
+      "latency_ms": 473.83,
+      "peak_cuda_allocated_mb": 8831.42,
+      "prompt": "What was the 4th most popular emotion?",
+      "sample_id": "chart_table_cell_train_000008",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 8,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2",
+      "error": null,
+      "expected_answers": [
+        "0.03"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/9/image",
+      "image_size": {
+        "height": 788,
+        "width": 840
+      },
+      "latency_ms": 405.87,
+      "peak_cuda_allocated_mb": 8831.51,
+      "prompt": "How many more people felt inspired frequently than depressed frequently?",
+      "sample_id": "chart_table_cell_train_000009",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 9,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1",
+      "error": null,
+      "expected_answers": [
+        "1"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/10/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 321.99,
+      "peak_cuda_allocated_mb": 8741.83,
+      "prompt": "What is the value of Slovenia in the graph?",
+      "sample_id": "chart_table_cell_train_000010",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 10,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.08",
+      "error": null,
+      "expected_answers": [
+        "0.08"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/11/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 473.86,
+      "peak_cuda_allocated_mb": 8744.1,
+      "prompt": "What is the difference in value between Green bar and Orange bar?",
+      "sample_id": "chart_table_cell_train_000011",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 11,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "17",
+      "error": null,
+      "expected_answers": [
+        "17"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/12/image",
+      "image_size": {
+        "height": 358,
+        "width": 310
+      },
+      "latency_ms": 294.7,
+      "peak_cuda_allocated_mb": 8578.73,
+      "prompt": "What's the lefmost value of bar in China?",
+      "sample_id": "chart_table_cell_train_000012",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 12,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "21.6",
+      "error": null,
+      "expected_answers": [
+        "21.6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/13/image",
+      "image_size": {
+        "height": 358,
+        "width": 310
+      },
+      "latency_ms": 399.86,
+      "peak_cuda_allocated_mb": 8581.76,
+      "prompt": "What's the average of all the values in the green bars (round to one decimal)?",
+      "sample_id": "chart_table_cell_train_000013",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 13,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2",
+      "error": null,
+      "expected_answers": [
+        "2"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/14/image",
+      "image_size": {
+        "height": 310,
+        "width": 460
+      },
+      "latency_ms": 215.34,
+      "peak_cuda_allocated_mb": 8575.8,
+      "prompt": "What's the percentage of U.S adults who refused?",
+      "sample_id": "chart_table_cell_train_000014",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 14,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2014",
+      "error": null,
+      "expected_answers": [
+        "2014"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/16/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 478.56,
+      "peak_cuda_allocated_mb": 8740.6,
+      "prompt": "When does the line reach the peak?",
+      "sample_id": "chart_table_cell_train_000015",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 16,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2011",
+      "error": null,
+      "expected_answers": [
+        "2011"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/17/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 465.75,
+      "peak_cuda_allocated_mb": 8741.83,
+      "prompt": "When does the line have the sharpest increase?",
+      "sample_id": "chart_table_cell_train_000016",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 17,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "green line",
+      "error": null,
+      "expected_answers": [
+        "green line"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/20/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 384.12,
+      "peak_cuda_allocated_mb": 8740.22,
+      "prompt": "Which line represents data about boys?",
+      "sample_id": "chart_table_cell_train_000017",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 20,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2008",
+      "error": null,
+      "expected_answers": [
+        "2008"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/21/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 522.98,
+      "peak_cuda_allocated_mb": 8743.41,
+      "prompt": "When does the gap between data about boys and girls reach become largest?",
+      "sample_id": "chart_table_cell_train_000018",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 21,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "29",
+      "error": null,
+      "expected_answers": [
+        "29"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/22/image",
+      "image_size": {
+        "height": 808,
+        "width": 628
+      },
+      "latency_ms": 399.82,
+      "peak_cuda_allocated_mb": 8736.88,
+      "prompt": "Find missing data of the sequence 24, _ ,32, 33, 42?",
+      "sample_id": "chart_table_cell_train_000019",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 22,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1.33",
+      "error": null,
+      "expected_answers": [
+        "1.216666667"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/23/image",
+      "image_size": {
+        "height": 808,
+        "width": 628
+      },
+      "latency_ms": 481.0,
+      "peak_cuda_allocated_mb": 8736.23,
+      "prompt": "What's the ratio of the lowest value of green bars and blue bars?",
+      "sample_id": "chart_table_cell_train_000020",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 23,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "80",
+      "error": null,
+      "expected_answers": [
+        "80"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/26/image",
+      "image_size": {
+        "height": 326,
+        "width": 184
+      },
+      "latency_ms": 261.02,
+      "peak_cuda_allocated_mb": 8570.23,
+      "prompt": "What's the percentage of biggest segment?",
+      "sample_id": "chart_table_cell_train_000021",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 26,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "77",
+      "error": null,
+      "expected_answers": [
+        "77"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/27/image",
+      "image_size": {
+        "height": 326,
+        "width": 184
+      },
+      "latency_ms": 309.43,
+      "peak_cuda_allocated_mb": 8572.85,
+      "prompt": "What's the difference in value of biggest and smallest segment?",
+      "sample_id": "chart_table_cell_train_000022",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 27,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "60",
+      "error": null,
+      "expected_answers": [
+        "0.6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/28/image",
+      "image_size": {
+        "height": 445,
+        "width": 422
+      },
+      "latency_ms": 303.79,
+      "peak_cuda_allocated_mb": 8572.12,
+      "prompt": "How many percent are fewer refugees in Jordan??",
+      "sample_id": "chart_table_cell_train_000023",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 28,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "61",
+      "error": null,
+      "expected_answers": [
+        "61"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/29/image",
+      "image_size": {
+        "height": 445,
+        "width": 422
+      },
+      "latency_ms": 323.0,
+      "peak_cuda_allocated_mb": 8574.15,
+      "prompt": "What is the difference between the highest percentage and lowest percentage??",
+      "sample_id": "chart_table_cell_train_000024",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 29,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "13",
+      "error": null,
+      "expected_answers": [
+        "13"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/30/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 341.48,
+      "peak_cuda_allocated_mb": 8681.01,
+      "prompt": "How many years are represented on this graph?",
+      "sample_id": "chart_table_cell_train_000025",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 30,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "4",
+      "error": null,
+      "expected_answers": [
+        "5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/31/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 266.26,
+      "peak_cuda_allocated_mb": 8683.36,
+      "prompt": "How many points/years on the Lithuania are above 10?",
+      "sample_id": "chart_table_cell_train_000026",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 31,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "21",
+      "error": null,
+      "expected_answers": [
+        "24"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/32/image",
+      "image_size": {
+        "height": 564,
+        "width": 418
+      },
+      "latency_ms": 305.4,
+      "peak_cuda_allocated_mb": 8585.17,
+      "prompt": "How many are Somewhat confident that Donald Trump can Mange the executive branch effectively?",
+      "sample_id": "chart_table_cell_train_000027",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 32,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Italy",
+      "error": null,
+      "expected_answers": [
+        "Italy"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/34/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 281.23,
+      "peak_cuda_allocated_mb": 8683.36,
+      "prompt": "Which country has highest secondary graduation rate in 2018?",
+      "sample_id": "chart_table_cell_train_000028",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 34,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Mexico",
+      "error": null,
+      "expected_answers": [
+        "Mexico"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/35/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 296.59,
+      "peak_cuda_allocated_mb": 8681.97,
+      "prompt": "Which line remains all time lower than the other two?",
+      "sample_id": "chart_table_cell_train_000029",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 35,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "33",
+      "error": null,
+      "expected_answers": [
+        "33"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/36/image",
+      "image_size": {
+        "height": 669,
+        "width": 420
+      },
+      "latency_ms": 311.46,
+      "peak_cuda_allocated_mb": 8600.93,
+      "prompt": "How many waited in Total for 10mins?",
+      "sample_id": "chart_table_cell_train_000030",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 36,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Over 30 mins",
+      "error": null,
+      "expected_answers": [
+        "Over 30 mins"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/37/image",
+      "image_size": {
+        "height": 669,
+        "width": 420
+      },
+      "latency_ms": 480.13,
+      "peak_cuda_allocated_mb": 8603.24,
+      "prompt": "Maximum for how long people waited when they went to vote is shown in a chart?",
+      "sample_id": "chart_table_cell_train_000031",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 37,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "4",
+      "error": null,
+      "expected_answers": [
+        "4"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/38/image",
+      "image_size": {
+        "height": 372,
+        "width": 200
+      },
+      "latency_ms": 223.72,
+      "peak_cuda_allocated_mb": 8576.07,
+      "prompt": "How many categories are there in the chart??",
+      "sample_id": "chart_table_cell_train_000032",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 38,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "22",
+      "error": null,
+      "expected_answers": [
+        "22"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/39/image",
+      "image_size": {
+        "height": 372,
+        "width": 200
+      },
+      "latency_ms": 288.5,
+      "peak_cuda_allocated_mb": 8576.53,
+      "prompt": "What is the difference between Asians and Whites degree distribution??",
+      "sample_id": "chart_table_cell_train_000033",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 39,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "92",
+      "error": null,
+      "expected_answers": [
+        "92"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/40/image",
+      "image_size": {
+        "height": 598,
+        "width": 620
+      },
+      "latency_ms": 341.52,
+      "peak_cuda_allocated_mb": 8644.2,
+      "prompt": "What is the value of Favor on the blue bar?",
+      "sample_id": "chart_table_cell_train_000034",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 40,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "96",
+      "error": null,
+      "expected_answers": [
+        "96"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/41/image",
+      "image_size": {
+        "height": 598,
+        "width": 620
+      },
+      "latency_ms": 340.88,
+      "peak_cuda_allocated_mb": 8648.12,
+      "prompt": "What is the product of the smallest value on the blue bar and the smallest value on the upper bar?",
+      "sample_id": "chart_table_cell_train_000035",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 41,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "21",
+      "error": null,
+      "expected_answers": [
+        "21"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/42/image",
+      "image_size": {
+        "height": 288,
+        "width": 309
+      },
+      "latency_ms": 300.63,
+      "peak_cuda_allocated_mb": 8575.53,
+      "prompt": "What's the percentage of people choosing approve in Sep 2015?",
+      "sample_id": "chart_table_cell_train_000036",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 42,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "12",
+      "error": null,
+      "expected_answers": [
+        "12"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/43/image",
+      "image_size": {
+        "height": 288,
+        "width": 309
+      },
+      "latency_ms": 288.21,
+      "peak_cuda_allocated_mb": 8578.32,
+      "prompt": "How much does the value of Approve decrease from Jul 2015 to Sep 2015?",
+      "sample_id": "chart_table_cell_train_000037",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 43,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2009",
+      "error": null,
+      "expected_answers": [
+        "2009"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/44/image",
+      "image_size": {
+        "height": 330,
+        "width": 420
+      },
+      "latency_ms": 402.05,
+      "peak_cuda_allocated_mb": 8572.16,
+      "prompt": "In which year the value of Satisfied is 20?",
+      "sample_id": "chart_table_cell_train_000038",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 44,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "28.3",
+      "error": null,
+      "expected_answers": [
+        "28.6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/45/image",
+      "image_size": {
+        "height": 330,
+        "width": 420
+      },
+      "latency_ms": 425.98,
+      "peak_cuda_allocated_mb": 8573.73,
+      "prompt": "What's the average of last three values in green graph (round to one decimal)?",
+      "sample_id": "chart_table_cell_train_000039",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 45,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "68",
+      "error": null,
+      "expected_answers": [
+        "68"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/46/image",
+      "image_size": {
+        "height": 515,
+        "width": 200
+      },
+      "latency_ms": 285.84,
+      "peak_cuda_allocated_mb": 8576.64,
+      "prompt": "What's the percentage of respondents who say economic ties between the U.S. and China are Bad in 2020?",
+      "sample_id": "chart_table_cell_train_000040",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 46,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2019",
+      "error": null,
+      "expected_answers": [
+        "2019"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/47/image",
+      "image_size": {
+        "height": 515,
+        "width": 200
+      },
+      "latency_ms": 428.47,
+      "peak_cuda_allocated_mb": 8571.86,
+      "prompt": "In which year the difference between Bad and Good graph is minimum?",
+      "sample_id": "chart_table_cell_train_000041",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 47,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "83",
+      "error": null,
+      "expected_answers": [
+        "83"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/48/image",
+      "image_size": {
+        "height": 427,
+        "width": 308
+      },
+      "latency_ms": 292.12,
+      "peak_cuda_allocated_mb": 8570.18,
+      "prompt": "What % of the people approve of the way Vladimir Putin is handling relations with Ukraine?",
+      "sample_id": "chart_table_cell_train_000042",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 48,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2.26",
+      "error": null,
+      "expected_answers": [
+        "2.13"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/49/image",
+      "image_size": {
+        "height": 427,
+        "width": 308
+      },
+      "latency_ms": 421.63,
+      "peak_cuda_allocated_mb": 8571.12,
+      "prompt": "What is the ratio of the people who approve and those who dont about Putin's handling of Corruption?",
+      "sample_id": "chart_table_cell_train_000043",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 49,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Simulation",
+      "error": null,
+      "expected_answers": [
+        "Simulation"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/50/image",
+      "image_size": {
+        "height": 521,
+        "width": 310
+      },
+      "latency_ms": 211.64,
+      "peak_cuda_allocated_mb": 8571.17,
+      "prompt": "What's the least popular game in the chart?",
+      "sample_id": "chart_table_cell_train_000044",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 50,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.466666667",
+      "error": null,
+      "expected_answers": [
+        "0.33333333"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/55/image",
+      "image_size": {
+        "height": 386,
+        "width": 210
+      },
+      "latency_ms": 845.08,
+      "peak_cuda_allocated_mb": 8572.85,
+      "prompt": "What's the ratio of smallest segment and second largest segment?",
+      "sample_id": "chart_table_cell_train_000045",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 55,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Democrat",
+      "error": null,
+      "expected_answers": [
+        "Democrat (scores 60 to 100)"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/56/image",
+      "image_size": {
+        "height": 395,
+        "width": 309
+      },
+      "latency_ms": 294.69,
+      "peak_cuda_allocated_mb": 8572.16,
+      "prompt": "What political party has the highest rate of 'confirmed respondents'?",
+      "sample_id": "chart_table_cell_train_000046",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 56,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.01",
+      "error": null,
+      "expected_answers": [
+        "0.01"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/57/image",
+      "image_size": {
+        "height": 395,
+        "width": 309
+      },
+      "latency_ms": 383.05,
+      "peak_cuda_allocated_mb": 8571.56,
+      "prompt": "What percentage of pollers did NOT have phone number?",
+      "sample_id": "chart_table_cell_train_000047",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 57,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Libya",
+      "error": null,
+      "expected_answers": [
+        "Libya"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/58/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 350.4,
+      "peak_cuda_allocated_mb": 8741.43,
+      "prompt": "Which country is represented by brown color bar?",
+      "sample_id": "chart_table_cell_train_000048",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 58,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.23",
+      "error": null,
+      "expected_answers": [
+        "0.23"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/59/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 482.83,
+      "peak_cuda_allocated_mb": 8745.72,
+      "prompt": "What is the difference between maximum and minimum Human Development index across all the countries?",
+      "sample_id": "chart_table_cell_train_000049",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 59,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "28",
+      "error": null,
+      "expected_answers": [
+        "28"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/60/image",
+      "image_size": {
+        "height": 436,
+        "width": 309
+      },
+      "latency_ms": 274.35,
+      "peak_cuda_allocated_mb": 8567.83,
+      "prompt": "What's the least value of blue graph?",
+      "sample_id": "chart_table_cell_train_000050",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 60,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "87.5",
+      "error": null,
+      "expected_answers": [
+        "87.5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/61/image",
+      "image_size": {
+        "height": 436,
+        "width": 309
+      },
+      "latency_ms": 379.42,
+      "peak_cuda_allocated_mb": 8568.48,
+      "prompt": "What's the sum of median value of blue and green graph?",
+      "sample_id": "chart_table_cell_train_000051",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 61,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "UK",
+      "error": null,
+      "expected_answers": [
+        "UK"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/62/image",
+      "image_size": {
+        "height": 375,
+        "width": 310
+      },
+      "latency_ms": 194.71,
+      "peak_cuda_allocated_mb": 8569.68,
+      "prompt": "Which country data shown in the bottom bar?",
+      "sample_id": "chart_table_cell_train_000052",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 62,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "50.25",
+      "error": null,
+      "expected_answers": [
+        "50.25"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/63/image",
+      "image_size": {
+        "height": 375,
+        "width": 310
+      },
+      "latency_ms": 444.91,
+      "peak_cuda_allocated_mb": 8571.01,
+      "prompt": "What is the average of last four countries data?",
+      "sample_id": "chart_table_cell_train_000053",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 63,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "72",
+      "error": null,
+      "expected_answers": [
+        "72"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/64/image",
+      "image_size": {
+        "height": 354,
+        "width": 420
+      },
+      "latency_ms": 270.67,
+      "peak_cuda_allocated_mb": 8571.01,
+      "prompt": "What's the value of the largest yellow bar?",
+      "sample_id": "chart_table_cell_train_000054",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 64,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.000125",
+      "error": null,
+      "expected_answers": [
+        "0.633333333"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/65/image",
+      "image_size": {
+        "height": 354,
+        "width": 420
+      },
+      "latency_ms": 682.99,
+      "peak_cuda_allocated_mb": 8572.16,
+      "prompt": "What's the ratio of the smallest brown and largest yellow bar?",
+      "sample_id": "chart_table_cell_train_000055",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 65,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "4.1",
+      "error": null,
+      "expected_answers": [
+        "4.1"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/66/image",
+      "image_size": {
+        "height": 462,
+        "width": 415
+      },
+      "latency_ms": 331.07,
+      "peak_cuda_allocated_mb": 8583.7,
+      "prompt": "Find missing value- 2.9, 2.9, 3.5, 4.5, 5.6, 6.6, 6.8?",
+      "sample_id": "chart_table_cell_train_000056",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 66,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "12.4",
+      "error": null,
+      "expected_answers": [
+        "14.5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/67/image",
+      "image_size": {
+        "height": 462,
+        "width": 415
+      },
+      "latency_ms": 409.18,
+      "peak_cuda_allocated_mb": 8572.12,
+      "prompt": "What's the median value of red graph?",
+      "sample_id": "chart_table_cell_train_000057",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 67,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "175",
+      "error": null,
+      "expected_answers": [
+        "175"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/68/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 387.66,
+      "peak_cuda_allocated_mb": 8688.5,
+      "prompt": "What is the number of deaths per 100000 in 2002 in Colombia?",
+      "sample_id": "chart_table_cell_train_000058",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 68,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "93.45",
+      "error": null,
+      "expected_answers": [
+        "93.45"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/70/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 559.4,
+      "peak_cuda_allocated_mb": 8740.6,
+      "prompt": "What's the value of largest bar??",
+      "sample_id": "chart_table_cell_train_000059",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 70,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "51.04",
+      "error": null,
+      "expected_answers": [
+        "51.04"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/71/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 560.37,
+      "peak_cuda_allocated_mb": 8742.22,
+      "prompt": "Find out the average of the bottom two countries ??",
+      "sample_id": "chart_table_cell_train_000060",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 71,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "20.5",
+      "error": null,
+      "expected_answers": [
+        "21.5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/73/image",
+      "image_size": {
+        "height": 958,
+        "width": 840
+      },
+      "latency_ms": 603.73,
+      "peak_cuda_allocated_mb": 8932.82,
+      "prompt": "What is the average of the smallest gray bar and largest light blue bar?",
+      "sample_id": "chart_table_cell_train_000061",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 73,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "302.38",
+      "error": null,
+      "expected_answers": [
+        "3.0238"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/74/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 609.5,
+      "peak_cuda_allocated_mb": 8740.6,
+      "prompt": "what is the value of largest bar?",
+      "sample_id": "chart_table_cell_train_000062",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 74,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.16",
+      "error": null,
+      "expected_answers": [
+        "0.1922"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/75/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 502.58,
+      "peak_cuda_allocated_mb": 8741.83,
+      "prompt": "What is the sum of the smallest three bars?",
+      "sample_id": "chart_table_cell_train_000063",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 75,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    }
+  ],
+  "run": {
+    "adapter": "chart_table_cell_r4_v1",
+    "adapter_path": "models/loras/chart_table_cell_r4_v1",
+    "finished_at_utc": "2026-05-28T09:41:47.327554+00:00",
+    "manifest": "data/curricula/chart_table_cell_train.jsonl",
+    "max_new_tokens": 64,
+    "max_pixels": 1003520,
+    "milestone": "M5",
+    "min_pixels": 200704,
+    "model_id": "qwen3_vl_4b_chart_table_cell_r4_v1",
+    "model_path": "models/qwen/Qwen3-VL-4B-Instruct",
+    "resumed_from_existing_output": false,
+    "roi_source": null,
+    "scoring_policy": "normalized_exact_or_contains_numeric_only_when_expected_has_no_letters",
+    "started_at_utc": "2026-05-28T09:41:22.473384+00:00",
+    "updated_at_utc": "2026-05-28T09:41:47.327554+00:00",
+    "visual_policy": "qwen3_vl_fixed_pixel_budget"
+  },
+  "summary": {
+    "count": 64,
+    "error_count": 0,
+    "per_taxonomy": {
+      "chart_table_cell": {
+        "count": 64,
+        "failure_types": {
+          "no_match": 15,
+          "normalized_exact": 49
+        },
+        "score": 0.765625
+      }
+    },
+    "score": 0.765625
+  }
+}

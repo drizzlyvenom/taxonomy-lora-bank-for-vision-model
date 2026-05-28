@@ -1,0 +1,38 @@
+{
+  "adapter_id": "chart_table_cell_r4_v1",
+  "adapter_slot": "language_decoder",
+  "alpha": 8,
+  "base_backbone": "qwen3_vl_4b_reference",
+  "failure_reason": "holdout_no_gain_after_train_gain",
+  "gains": {
+    "holdout_gain_vs_base": -0.015625,
+    "train_gain_vs_base": 0.109375
+  },
+  "gates": {
+    "correct_lora_holdout_score_gte_actual_base_holdout_score": false,
+    "correct_lora_train_score_gt_actual_base_train_score": true,
+    "holdout_no_gain_failure_reason_recorded": true,
+    "train_overfit_allowed_for_first_diagnosis": true
+  },
+  "label_mask_mode": "answer_only",
+  "milestone": "M5",
+  "rank": 4,
+  "result_paths": {
+    "holdout_eval": "results/m5/chart_table_cell_r4_v1_correct_holdout.json",
+    "train_eval": "results/m5/chart_table_cell_r4_v1_correct_train.json",
+    "train_log": "results/m5/chart_table_cell_r4_v1_train_log.json"
+  },
+  "scores": {
+    "base_holdout": 0.734375,
+    "base_train": 0.65625,
+    "correct_lora_holdout": 0.71875,
+    "correct_lora_train": 0.765625
+  },
+  "status": "soft_pass",
+  "steps": 120,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "taxonomy_id": "chart_table_cell"
+}
