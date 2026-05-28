@@ -1,0 +1,52 @@
+config_name: qwen3_vl_8b_comparison
+version: 1
+status: downloaded_local_comparison
+
+model:
+  hub_url: https://hf.co/Qwen/Qwen3-VL-8B-Instruct
+  repo_id: Qwen/Qwen3-VL-8B-Instruct
+  repo_sha: 0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+  license: apache-2.0
+  pipeline_tag: image-text-to-text
+  local_path: models/qwen/Qwen3-VL-8B-Instruct
+  local_total_bytes: 17545915883
+
+expected_files:
+  - path: config.json
+    bytes: 1474
+  - path: preprocessor_config.json
+    bytes: 390
+  - path: tokenizer.json
+    bytes: 7032403
+  - path: model.safetensors.index.json
+    bytes: 67759
+  - path: model-00001-of-00004.safetensors
+    bytes: 4902275944
+  - path: model-00002-of-00004.safetensors
+    bytes: 4915962496
+  - path: model-00003-of-00004.safetensors
+    bytes: 4999831048
+  - path: model-00004-of-00004.safetensors
+    bytes: 2716270024
+
+role:
+  current_phase:
+    - same_generation_large_vlm_baseline
+    - no_lora_scale_comparison
+    - qwen3_vl_4b_lora_comparison_target
+  not_role:
+    - primary_lora_training_target
+    - final_jepa_lewm_backbone
+    - certification_authority
+
+runtime_preflight:
+  python_env: .venv
+  torch: 2.12.0+cu126
+  transformers: 5.9.0
+  accelerate: 1.13.0
+  qwen_vl_utils: installed
+  cuda_device: NVIDIA GeForce RTX 3090
+
+git_policy:
+  model_files_committed: false
+  ignored_by: models/
