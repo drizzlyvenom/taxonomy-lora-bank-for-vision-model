@@ -1,6 +1,6 @@
 # Offline-Certified Taxonomy LoRA Bank
 
-Status: M5 ChartQAPro revision completed
+Status: M5 negative accuracy/VRAM review completed
 Scope: Track A-first research repo
 
 이 레포는 현재 Qwen 계열 VLM을 reference backbone으로 사용해 여러 vision specialist를
@@ -92,8 +92,9 @@ M0 통과 조건:
 ## 현재 실행 상태
 
 현재는 M5 first pass 이후 ChartQAPro 후보로 `chart_table_cell` M4/M5 revision actual run을
-한 번 더 진행했다. `Qwen3-VL-4B-Instruct`를 reference backbone으로 두고, correct LoRA가
-실제 학습 신호를 먹는지 확인했다.
+한 번 더 진행했고, 이어서 정확도와 VRAM claim을 재검토했다. `Qwen3-VL-4B-Instruct`를
+reference backbone으로 둔 correct LoRA는 train split을 학습하지만, holdout gain과
+same-backbone VRAM 절감 claim은 아직 지지하지 못한다.
 같은 holdout split에서 `Qwen3-VL-8B-Instruct`는 이후 작은 Qwen3 + LoRA와 비교할 동세대
 큰 backbone baseline으로 남겨둔다.
 
@@ -101,6 +102,7 @@ M0 통과 조건:
 Qwen3-VL-4B base: M3 completed
 Qwen3-VL-4B + chart_table_cell LoRA: M5 first pass completed
 Qwen3-VL-4B + ChartQAPro chart_table_cell LoRA: M5 revision completed
+M6 actual certification: deferred after negative accuracy/VRAM claim review
 Qwen3-VL-8B base: comparison baseline prepared, not yet used for certification
 ```
 
@@ -120,8 +122,9 @@ holdout document_field_bind: 61/64 = 0.953125
 holdout chart_table_cell: 47/64 = 0.734375
 ```
 
-따라서 `chart_table_cell`은 M5/M6 후보로 유지하고, `document_field_bind`는 현재 split이
-너무 쉬우므로 harder document split 또는 더 엄격한 field-binding prompt/scoring 보강이 필요하다.
+따라서 `chart_table_cell`은 M5 후보로 유지했지만, 이후 holdout gain과 VRAM claim 재검토 결과
+M6 후보로 바로 올리지는 않는다. `document_field_bind`는 현재 split이 너무 쉬우므로 harder
+document split 또는 더 엄격한 field-binding prompt/scoring 보강이 필요하다.
 
 M5 first pass에서는 `chart_table_cell_r4_v1` LoRA를 rank 4, `q_proj/v_proj`, answer-only
 label mask로 120 step 학습했다.
@@ -149,6 +152,17 @@ Holdout delta는 base만 맞고 LoRA가 틀린 sample 3개, base가 틀리고 Lo
 둘 다 틀린 sample 38개, 둘 다 맞은 sample 20개다. 따라서 ChartQAPro는 train 학습 신호가 더
 선명하지만, 아직 M6 certification이나 router utility claim을 열지는 않는다.
 
+VRAM 재검토도 같은 방향이다. 같은 Qwen3-VL-4B backbone을 올려둔 상태에서는 LoRA가
+resident VRAM을 줄이지 않는다. ChartQAPro holdout 대표 sample 기준 resident generate delta는
+base 약 8897 MiB, LoRA 약 8960 MiB였고, 저장된 holdout 결과의 peak allocated도 base max
+9079.81 MiB, LoRA max 9084.30 MiB로 거의 같다. 따라서 현재 evidence로는
+`LoRA routing reduces VRAM` claim을 쓰지 않는다.
+
+보수적으로 남길 수 있는 claim은 `same-backbone LoRA adapters add little resident VRAM over
+an already loaded VLM backbone, but do not reduce the backbone VRAM itself`이다. 원래 resource
+claim을 살리려면 M12의 split architecture, 즉 `perception world model + LoRA routing LLM/JEPA`
+방향을 별도 실험으로 검토해야 한다.
+
 ## 현재 보류 중인 설계 질문
 
 M5 이후 논의된 `taxonomy fitness optimization`은 아직 protocol로 채택하지 않았다. 채택한다면
@@ -168,9 +182,9 @@ offline only:
   registry update
 ```
 
-다음 작업은 잠시 멈춘 상태다. 재개 시 선택지는 ChartQAPro holdout delta bucket 수동 검토,
-numeric scoring caveat 정리, `chart_table_cell` 학습 조건 재시도, 또는 M4b taxonomy fitness
-protocol 문서화 중 하나다.
+다음 작업은 잠시 멈춘 상태다. 재개 시 선택지는 offline loop를 certification / registry compiler
+protocol로 더 깎거나, 원래 resource claim을 살리기 위해 M12 split architecture를 앞당겨 설계하는
+것이다. 현재 상태에서는 M6 actual certification을 열지 않는다.
 
 ## 현재 공개 범위
 

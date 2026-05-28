@@ -60,6 +60,7 @@ Smoke test 결과는 validation evidence로 쓰지 않는다. 기본 결과 브�
 005_m5_single_lora_learns_ko.md
 006_current_status_after_m5_ko.md
 007_chartqapro_m4_m5_rerun_ko.md
+008_negative_accuracy_vram_claim_review_ko.md
 mvp_review_after_m3_ko.md
 ```
 
@@ -67,4 +68,5 @@ mvp_review_after_m3_ko.md
 
 M5 first pass는 `soft_pass`였고, 이후 ChartQAPro 후보로 M4/M5 revision을 다시 실행했다.
 ChartQAPro revision은 current M5 checker 기준 `pass`지만 holdout gain은 0이다.
-따라서 M6 certification이나 router utility claim은 아직 열지 않는다.
+이후 VRAM 재검토에서도 같은 Qwen3-VL-4B backbone 위의 LoRA가 resident VRAM을 줄인다는
+claim은 지지되지 않았다. 따라서 M6 certification이나 router utility claim은 아직 열지 않는다.

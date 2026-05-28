@@ -2,6 +2,11 @@
 
 Status: M5 revision completed, M6 not opened
 
+Update note: 이후 정확도와 VRAM claim을 함께 재검토한 결과, 현재 Qwen3-VL-4B
+same-backbone LoRA 구조는 `LoRA routing reduces VRAM` claim을 지지하지 않는 것으로
+기록했다. 부정 결과 정리는 `docs/20_results/008_negative_accuracy_vram_claim_review_ko.md`를
+본다.
+
 ## 1. 목적
 
 이번 실행의 목적은 큰 구조 변경 없이 `chart_table_cell` 데이터셋 후보를 기존 ChartQA에서
