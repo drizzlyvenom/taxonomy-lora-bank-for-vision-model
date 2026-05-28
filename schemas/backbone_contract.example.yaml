@@ -1,0 +1,34 @@
+schema_name: BackboneContract
+schema_version: 1
+backbone_id: qwen3_vl_4b_reference
+backbone_type: vlm_llm
+
+inputs:
+  - image
+  - query
+  - optional_roi
+  - selected_adapter_id
+
+outputs:
+  - answer_text_or_structured_answer
+  - latent_state
+  - taxonomy_features
+  - confidence
+  - memory_profile
+
+adapter_slots:
+  - language_decoder
+  - projector
+
+certification_supported:
+  - base_no_adapter
+  - correct_lora
+  - wrong_lora
+  - random_lora
+
+actual_eval:
+  requires_same_holdout_samples: true
+  requires_same_visual_policy: true
+  requires_same_roi_source: true
+  minimum_train_per_taxonomy: 64
+  minimum_holdout_per_taxonomy: 64

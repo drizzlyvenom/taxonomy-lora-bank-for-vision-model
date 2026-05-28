@@ -1,0 +1,25 @@
+schema_name: PerceptionContract
+schema_version: 1
+perception_model_id: qwen3_vl_perception_v0
+perception_type: vlm_llm
+
+inputs:
+  - image
+  - optional_roi
+
+outputs:
+  - visual_evidence_summary
+  - latent_state
+  - evidence_confidence
+  - perception_memory_mb
+  - perception_latency_ms
+
+evaluation:
+  evidence_score_name: perception_evidence_score
+  minimum_train_per_taxonomy: 64
+  minimum_holdout_per_taxonomy: 64
+  no_smoke_validation: true
+
+notes:
+  - Perception output must be reusable by multiple router models.
+  - Perception evaluation does not certify an adapter.

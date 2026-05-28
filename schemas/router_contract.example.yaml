@@ -1,0 +1,30 @@
+schema_name: RouterContract
+schema_version: 1
+router_model_id: taxonomy_router_v0
+router_type: taxonomy_classifier
+
+inputs:
+  - query
+  - visual_evidence_summary_or_latent_state
+  - certified_adapter_registry
+
+outputs:
+  - predicted_taxonomy
+  - selected_adapter_id
+  - route_confidence
+  - abstained
+
+allowed_adapter_source: certified_adapter_registry
+
+evaluation:
+  requires_actual_certified_adapters: 2
+  metrics:
+    - router_top1_hit
+    - router_regret
+    - routed_score
+    - wrong_adapter_damage
+  no_smoke_validation: true
+
+notes:
+  - Router may abstain when no certified adapter is available.
+  - Router utility is not claimed before Gate 2 certification.

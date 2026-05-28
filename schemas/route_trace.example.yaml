@@ -1,0 +1,49 @@
+schema_name: RouteTrace
+schema_version: 1
+trace_id: trace_doc_field_bind_000001
+sample_id: doc_field_bind_holdout_000001
+image_id: docvqa_000001
+query: Return the code next to WORK ORDER.
+
+perception:
+  perception_model_id: qwen3_vl_perception_v0
+  perception_type: vlm_llm
+  perception_artifact_id: perception_doc_field_bind_000001
+  visual_evidence_summary: WORK ORDER appears near code W45Q.
+  latent_state_ref: null
+  evidence_confidence: 0.81
+  perception_latency_ms: null
+  perception_memory_mb: null
+
+router:
+  router_model_id: taxonomy_router_v0
+  router_type: taxonomy_classifier
+  predicted_taxonomy:
+    domain: document
+    evidence_type: field_value
+    operation: bind_label_to_value
+    failure_mode: distractor_confusion
+  selected_adapter_id: doc_field_bind_r4_v1
+  route_confidence: 0.76
+  abstained: false
+
+execution:
+  base_backbone: qwen3_vl_4b_reference
+  adapter_id: doc_field_bind_r4_v1
+  visual_policy: full_image
+  roi_source: none
+
+output:
+  answer_text: W45Q
+  score: 1.0
+  verifier_pass: true
+
+failure:
+  failed: false
+  failure_type: null
+  notes: null
+
+memory:
+  base_after_load_mb: null
+  adapter_memory_mb: null
+  peak_mb: null

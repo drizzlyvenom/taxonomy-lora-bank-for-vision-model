@@ -1,0 +1,41 @@
+schema_name: ActualCertificationResult
+schema_version: 1
+adapter_id: doc_field_bind_r4_v1
+base_backbone: qwen3_vl_4b_reference
+adapter_slot: language_decoder
+
+taxonomy:
+  domain: document
+  evidence_type: field_value
+  operation: bind_label_to_value
+  failure_mode: distractor_confusion
+
+holdout_samples: 64
+visual_policy: full_image
+roi_source: none
+
+scores:
+  base_score: 0.52
+  correct_score: 0.64
+  wrong_score: 0.55
+  random_score: 0.51
+
+margins:
+  gain_vs_base: 0.12
+  margin_vs_wrong: 0.09
+  margin_vs_random: 0.13
+  lcb_gain_vs_base: 0.04
+  lcb_margin_vs_wrong: 0.05
+  lcb_margin_vs_random: 0.06
+
+gates:
+  actual_fields_complete: true
+  same_holdout_samples: true
+  same_visual_policy: true
+  same_roi_source: true
+  gain_gate: true
+  correct_beats_wrong_gate: true
+  correct_beats_random_gate: true
+
+status: actual_certified
+failure_reason: null

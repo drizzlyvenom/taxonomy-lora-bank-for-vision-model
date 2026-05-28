@@ -1,0 +1,55 @@
+schema_name: AdapterCardV3
+schema_version: 3
+adapter_id: doc_field_bind_r4_v1
+base_backbone: qwen3_vl_4b_reference
+backbone_type: vlm_llm
+teacher_model: google/gemma-4-26B-A4B-it
+
+taxonomy:
+  domain: document
+  evidence_type: field_value
+  operation: bind_label_to_value
+  failure_mode: distractor_confusion
+
+training:
+  curriculum_id: simula_doc_field_bind_v1
+  train_manifest: data/curricula/doc_field_bind_train.jsonl
+  holdout_manifest: data/curricula/doc_field_bind_holdout.jsonl
+  label_mask_mode: answer_only
+
+weights:
+  adapter_path: models/loras/doc_field_bind_r4_v1
+  adapter_slot: language_decoder
+  rank: 4
+  alpha: 8
+  target_modules:
+    - q_proj
+    - v_proj
+
+serving:
+  adapter_memory_mb: null
+  load_latency_ms: null
+  switch_latency_ms: null
+  online_routing_allowed: false
+
+actual_certification:
+  status: incomplete
+  base_score: null
+  correct_score: null
+  wrong_score: null
+  random_score: null
+  gain_vs_base: null
+  margin_vs_wrong: null
+  margin_vs_random: null
+  lcb_gain_vs_base: null
+  lcb_margin_vs_wrong: null
+  lcb_margin_vs_random: null
+  actual_fields_complete: false
+  same_holdout_samples: false
+  same_visual_policy: false
+  same_roi_source: false
+  failure_reason: null
+
+diagnostics:
+  teacher_annotation_source: gemma
+  notes: []
