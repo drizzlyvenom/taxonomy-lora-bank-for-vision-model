@@ -11,14 +11,15 @@ M2의 목적은 MVP taxonomy별로 `train 64 / holdout 64` actual manifest를 �
 사용한 Hugging Face source는 두 개다.
 
 ```text
-document_field_bind: lmms-lab/DocVQA, config=DocVQA, source_split=validation
-chart_table_cell: lmms-lab/ChartQA, config=default, source_split=test
+document_field_bind: lmms-lab/DocVQA, config=DocVQA, source_split=validation, sha=539088ef8a8ada01ac8e2e6d4e372586748a265e
+chart_table_cell: lmms-lab/ChartQA, config=default, source_split=test, sha=9e63b7df1592a1c2158e735cc1725454aef0d6d9
 ```
 
 DocVQA는 `form`, `layout`, `table/list` question type만 골라 document field/value binding에 맞췄다.
 ChartQA는 chart answer를 table-cell-like value lookup taxonomy의 MVP proxy가 아니라 actual source row로 사용한다.
 
 이미지 파일은 커밋하지 않았고, manifest에는 `hf://datasets/...` row reference만 기록했다.
+자세한 출처, Hub URL, source split row 수, selection filter는 `data/mvp/dataset_sources.json`에 고정했다.
 
 ## 3. Actual manifest 표
 
@@ -34,6 +35,7 @@ chart_table_cell | 64 | 64 | lmms-lab/ChartQA test | 0
 data/mvp/train.jsonl
 data/mvp/holdout.jsonl
 data/mvp/manifest_summary.json
+data/mvp/dataset_sources.json
 ```
 
 ## 4. Pass/fail 판정

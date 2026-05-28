@@ -1,4 +1,5 @@
 {
+  "dataset_sources_path": "data/mvp/dataset_sources.json",
   "minimum_per_taxonomy": {
     "holdout": 64,
     "train": 64

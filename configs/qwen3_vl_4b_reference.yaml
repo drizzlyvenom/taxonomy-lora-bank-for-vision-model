@@ -1,0 +1,40 @@
+config_name: qwen3_vl_4b_reference
+version: 1
+status: downloaded_local_reference
+
+model:
+  hub_url: https://hf.co/Qwen/Qwen3-VL-4B-Instruct
+  repo_id: Qwen/Qwen3-VL-4B-Instruct
+  repo_sha: ebb281ec70b05090aa6165b016eac8ec08e71b17
+  last_modified_utc: 2025-10-15T16:15:55+00:00
+  license: apache-2.0
+  pipeline_tag: image-text-to-text
+  local_path: models/qwen/Qwen3-VL-4B-Instruct
+  local_total_bytes: 8887292732
+
+expected_files:
+  - path: config.json
+    bytes: 1505
+  - path: preprocessor_config.json
+    bytes: 390
+  - path: tokenizer.json
+    bytes: 7032403
+  - path: model.safetensors.index.json
+    bytes: 64742
+  - path: model-00001-of-00002.safetensors
+    bytes: 4967229296
+  - path: model-00002-of-00002.safetensors
+    bytes: 3908490048
+
+role:
+  current_phase:
+    - reference_vlm_backbone
+    - qwen_vlm_perception
+    - base_actual_audit_candidate
+  not_role:
+    - final_jepa_lewm_backbone
+    - certification_authority
+
+git_policy:
+  model_files_committed: false
+  ignored_by: models/

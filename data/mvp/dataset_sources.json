@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-05-28",
+  "created_timezone": "Asia/Seoul",
+  "selection_policy": {
+    "minimum_per_taxonomy": {
+      "train": 64,
+      "holdout": 64
+    },
+    "no_smoke_validation": true,
+    "selection_method": "deterministic first matching rows with non-empty unique primary answers; first 64 selected rows become project train, next 64 become project holdout",
+    "image_storage": "images are not committed; manifest rows store hf://datasets row references only"
+  },
+  "sources": {
+    "document_field_bind": {
+      "hub_url": "https://hf.co/datasets/lmms-lab/DocVQA",
+      "repo_id": "lmms-lab/DocVQA",
+      "repo_sha": "539088ef8a8ada01ac8e2e6d4e372586748a265e",
+      "last_modified_utc": "2024-04-18T05:14:35+00:00",
+      "license": "apache-2.0",
+      "arxiv": "2007.00398",
+      "config": "DocVQA",
+      "source_split": "validation",
+      "source_split_rows": 5349,
+      "source_columns": 9,
+      "selection_filter": {
+        "question_types_any_of": [
+          "form",
+          "layout",
+          "table/list"
+        ],
+        "requires_non_empty_answers": true,
+        "requires_unique_primary_answer_across_selected_rows": true
+      },
+      "project_split_counts": {
+        "train": 64,
+        "holdout": 64
+      },
+      "project_manifest_paths": {
+        "train": "data/mvp/train.jsonl",
+        "holdout": "data/mvp/holdout.jsonl"
+      }
+    },
+    "chart_table_cell": {
+      "hub_url": "https://hf.co/datasets/lmms-lab/ChartQA",
+      "repo_id": "lmms-lab/ChartQA",
+      "repo_sha": "9e63b7df1592a1c2158e735cc1725454aef0d6d9",
+      "last_modified_utc": "2024-03-08T05:04:43+00:00",
+      "license": null,
+      "arxiv": "2203.10244",
+      "config": "default",
+      "source_split": "test",
+      "source_split_rows": 2500,
+      "source_columns": 4,
+      "selection_filter": {
+        "requires_non_empty_answer": true,
+        "requires_unique_primary_answer_across_selected_rows": true
+      },
+      "project_split_counts": {
+        "train": 64,
+        "holdout": 64
+      },
+      "project_manifest_paths": {
+        "train": "data/mvp/train.jsonl",
+        "holdout": "data/mvp/holdout.jsonl"
+      }
+    }
+  },
+  "verification": {
+    "command": "python scripts/check_mvp_manifest.py",
+    "result": "M2 manifest checks passed.",
+    "train_holdout_answer_overlap": {
+      "document_field_bind": [],
+      "chart_table_cell": []
+    }
+  }
+}
