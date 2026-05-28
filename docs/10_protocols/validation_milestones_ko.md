@@ -221,13 +221,19 @@ base model이 task를 너무 잘하거나 너무 못하지 않는지 actual eval
 ### 실행
 
 ```yaml
-model: Qwen3-VL-4B reference
-adapter: none
-visual_policy: fixed or oracle ROI
+primary_model: Qwen3-VL-4B reference
+scale_baseline_model: Qwen3-VL-8B reference
+adapter: none for base audit
+visual_policy: qwen3_vl_fixed_pixel_budget
 split:
   - train
   - holdout
 ```
+
+초기 실행 순서는 `holdout 128 -> train 128 -> optional 8B holdout 128`이다. 첫 holdout
+actual run은 certification이 아니라 base difficulty evidence로만 사용한다. fixed pixel
+budget의 초기값은 `min_pixels=256*28*28`, `max_pixels=1280*28*28`이며, ROI는 사용하지
+않는다.
 
 ### 측정
 
@@ -236,6 +242,7 @@ metrics:
   - actual_base_train_score
   - actual_base_holdout_score
   - per_taxonomy_base_score
+  - optional_8b_holdout_score
   - answer_text_samples
   - failure_type_summary
 ```

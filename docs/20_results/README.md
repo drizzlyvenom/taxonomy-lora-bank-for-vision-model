@@ -48,3 +48,12 @@ Smoke test 결과는 validation evidence로 쓰지 않는다. 기본 결과 브�
 004_single_lora_learns_ko.md
 005_actual_certification_ko.md
 ```
+
+## 현재 결과 브리프
+
+```text
+000_m1_schema_contracts_ko.md
+001_m2_dataset_brief_ko.md
+002_m3_qwen3_model_prefetch_ko.md
+003_m3_actual_base_audit_ko.md
+```

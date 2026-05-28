@@ -13,6 +13,7 @@ Status: M0 policy
 - 재현용 스크립트
 - 작은 synthetic manifest
 - 요약 결과표와 result brief
+- 원본 이미지나 signed URL을 포함하지 않는 작은 actual result JSON
 
 ## 커밋하지 않는 것
 
@@ -50,5 +51,10 @@ actual certification 결과를 공개할 때는 모델 weight가 아니라 다�
 - base/correct/wrong/random actual score
 - gate 통과 여부
 - 실패 사유
+
+Dataset Viewer가 반환하는 signed image URL은 만료되는 실행용 reference이므로 결과 JSON에
+저장하지 않는다. 결과에는 `hf://datasets/...` source reference, sample id, prompt,
+expected answer, model output, score, latency, memory summary처럼 재현과 해석에 필요한
+작은 필드만 둔다.
 
 결과가 실패여도 숨기지 않는다. 실패 사유가 명확하면 그것도 유효한 연구 결과다.

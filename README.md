@@ -1,6 +1,6 @@
 # Offline-Certified Taxonomy LoRA Bank
 
-Status: M0 clean repo scaffold  
+Status: M3 actual base audit
 Scope: Track A-first research repo
 
 이 레포는 현재 Qwen 계열 VLM을 reference backbone으로 사용해 여러 vision specialist를
@@ -88,6 +88,32 @@ M0 통과 조건:
 - README가 Track A를 메인으로 둔다.
 - Foveation은 support/input-cost control 역할로만 둔다.
 - Certification은 actual-only로 명시한다.
+
+## 현재 M3 실행 구도
+
+M3에서는 먼저 `Qwen3-VL-4B-Instruct`를 adapter 없이 실행해 base difficulty를 actual로
+측정한다. 같은 holdout split에서 `Qwen3-VL-8B-Instruct`는 작은 Qwen3 + LoRA와 비교할
+동세대 큰 backbone baseline으로 사용한다.
+
+```text
+Qwen3-VL-4B base
+Qwen3-VL-4B + taxonomy LoRA
+Qwen3-VL-8B base
+```
+
+첫 actual audit 단위는 `data/mvp/holdout.jsonl` 128개 샘플이다. 이 결과는 certification이
+아니라 M5/M6 전에 task 난이도가 적절한지 확인하는 base difficulty evidence다.
+
+현재 Qwen3-VL-4B holdout actual base audit 결과는 다음과 같다.
+
+```text
+overall: 108/128 = 0.84375
+document_field_bind: 61/64 = 0.953125
+chart_table_cell: 47/64 = 0.734375
+```
+
+따라서 `chart_table_cell`은 M5/M6 후보로 유지하고, `document_field_bind`는 현재 split이
+너무 쉬우므로 harder document split 또는 더 엄격한 field-binding prompt/scoring 보강이 필요하다.
 
 ## 현재 공개 범위
 

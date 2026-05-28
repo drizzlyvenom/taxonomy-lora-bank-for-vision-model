@@ -1,0 +1,3560 @@
+{
+  "rows": [
+    {
+      "answer_text": "SWANSON CENTER FOR NUTRITION",
+      "error": null,
+      "expected_answers": [
+        "swanson center for nutrition",
+        "Swanson center for nutrition"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/105/image",
+      "image_size": {
+        "height": 1773,
+        "width": 2270
+      },
+      "latency_ms": 1339.72,
+      "peak_cuda_allocated_mb": 9058.07,
+      "prompt": "What is the name of the institute mentioned in the title?",
+      "sample_id": "document_field_bind_holdout_000000",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 105,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "1979",
+      "error": null,
+      "expected_answers": [
+        "1979"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/107/image",
+      "image_size": {
+        "height": 1773,
+        "width": 2270
+      },
+      "latency_ms": 671.12,
+      "peak_cuda_allocated_mb": 9052.9,
+      "prompt": "What is the year of the budget?",
+      "sample_id": "document_field_bind_holdout_000001",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 107,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "July, 1979",
+      "error": null,
+      "expected_answers": [
+        "july",
+        "July",
+        "july, 1979"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/109/image",
+      "image_size": {
+        "height": 1773,
+        "width": 2270
+      },
+      "latency_ms": 759.81,
+      "peak_cuda_allocated_mb": 9056.69,
+      "prompt": "In which month was the budget 'revised' ?",
+      "sample_id": "document_field_bind_holdout_000002",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 109,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "723",
+      "error": null,
+      "expected_answers": [
+        "723"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/111/image",
+      "image_size": {
+        "height": 1773,
+        "width": 2270
+      },
+      "latency_ms": 566.31,
+      "peak_cuda_allocated_mb": 9056.36,
+      "prompt": "What is the monthly actual towards office rent?",
+      "sample_id": "document_field_bind_holdout_000003",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 111,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "1) Projects",
+      "error": null,
+      "expected_answers": [
+        "projects",
+        "Projects"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/113/image",
+      "image_size": {
+        "height": 1773,
+        "width": 2270
+      },
+      "latency_ms": 565.2,
+      "peak_cuda_allocated_mb": 9056.36,
+      "prompt": "What is the first point under the expenditures ?",
+      "sample_id": "document_field_bind_holdout_000004",
+      "score": 1.0,
+      "score_method": "normalized_contains",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 113,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Carol A. Tozzi, Ph.D.",
+      "error": null,
+      "expected_answers": [
+        "Carol A. Tozzi, Ph.D.",
+        "Carol A. Tozzi"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/125/image",
+      "image_size": {
+        "height": 2215,
+        "width": 1723
+      },
+      "latency_ms": 878.55,
+      "peak_cuda_allocated_mb": 9051.67,
+      "prompt": "Who has accepted the assignment?",
+      "sample_id": "document_field_bind_holdout_000005",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 125,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "July 26, 2000",
+      "error": null,
+      "expected_answers": [
+        "July 26, 2000"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/126/image",
+      "image_size": {
+        "height": 2215,
+        "width": 1723
+      },
+      "latency_ms": 865.5,
+      "peak_cuda_allocated_mb": 9061.01,
+      "prompt": "When did Carol A. Tozzi, Ph.D. accepted the assignment ?",
+      "sample_id": "document_field_bind_holdout_000006",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 126,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "34",
+      "error": null,
+      "expected_answers": [
+        "34"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/131/image",
+      "image_size": {
+        "height": 5359,
+        "width": 6896
+      },
+      "latency_ms": 691.73,
+      "peak_cuda_allocated_mb": 9051.67,
+      "prompt": "What is the Page Number?",
+      "sample_id": "document_field_bind_holdout_000007",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 131,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "IRISH SEA",
+      "error": null,
+      "expected_answers": [
+        "the irish sea",
+        "Irish Sea",
+        "in the irish sea",
+        "The Irish Sea"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/132/image",
+      "image_size": {
+        "height": 2384,
+        "width": 1682
+      },
+      "latency_ms": 633.36,
+      "peak_cuda_allocated_mb": 9072.12,
+      "prompt": "In which sea did the sea bird wreck occur ?",
+      "sample_id": "document_field_bind_holdout_000008",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 132,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "AUTUMN 1969",
+      "error": null,
+      "expected_answers": [
+        "autumn 1969",
+        "Autumn 1969",
+        "1969"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/133/image",
+      "image_size": {
+        "height": 2384,
+        "width": 1682
+      },
+      "latency_ms": 827.41,
+      "peak_cuda_allocated_mb": 9065.8,
+      "prompt": "When did the sea bird wreck occur ?",
+      "sample_id": "document_field_bind_holdout_000009",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 133,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Yes",
+      "error": null,
+      "expected_answers": [
+        "yes",
+        "Yes"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/134/image",
+      "image_size": {
+        "height": 5359,
+        "width": 6896
+      },
+      "latency_ms": 667.31,
+      "peak_cuda_allocated_mb": 9060.87,
+      "prompt": "Is Esterified estrogen effective in treating Hot flushes vs Placebo?",
+      "sample_id": "document_field_bind_holdout_000010",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 134,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "THE NATURAL ENVIRONMENT RESEARCH COUNCIL",
+      "error": null,
+      "expected_answers": [
+        "the natural environment research council",
+        "The Natural Environment Research Council"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/135/image",
+      "image_size": {
+        "height": 2384,
+        "width": 1682
+      },
+      "latency_ms": 939.7,
+      "peak_cuda_allocated_mb": 9075.62,
+      "prompt": "What is the name of the council that has made the publication ?",
+      "sample_id": "document_field_bind_holdout_000011",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 135,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "19,000",
+      "error": null,
+      "expected_answers": [
+        "19,000"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/136/image",
+      "image_size": {
+        "height": 1782,
+        "width": 2284
+      },
+      "latency_ms": 698.77,
+      "peak_cuda_allocated_mb": 9057.31,
+      "prompt": "What is the No. of the population in Henry county?",
+      "sample_id": "document_field_bind_holdout_000012",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 136,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "1971",
+      "error": null,
+      "expected_answers": [
+        "1971"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/137/image",
+      "image_size": {
+        "height": 2384,
+        "width": 1682
+      },
+      "latency_ms": 620.71,
+      "peak_cuda_allocated_mb": 9065.2,
+      "prompt": "What is the year of publication ?",
+      "sample_id": "document_field_bind_holdout_000013",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 137,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "34,500",
+      "error": null,
+      "expected_answers": [
+        "34,500"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/139/image",
+      "image_size": {
+        "height": 1782,
+        "width": 2284
+      },
+      "latency_ms": 687.82,
+      "peak_cuda_allocated_mb": 9057.31,
+      "prompt": "What is the No. of the population in Johnson county?",
+      "sample_id": "document_field_bind_holdout_000014",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 139,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "bird",
+      "error": null,
+      "expected_answers": [
+        "bird",
+        "Bird"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/141/image",
+      "image_size": {
+        "height": 2384,
+        "width": 1682
+      },
+      "latency_ms": 489.22,
+      "peak_cuda_allocated_mb": 9075.98,
+      "prompt": "Does the image show the picture of a bird or that of a fish ?",
+      "sample_id": "document_field_bind_holdout_000015",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 141,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "PROJECT ASSIGNMENT FORM",
+      "error": null,
+      "expected_answers": [
+        "PROJECT ASSIGNMENT FORM"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/142/image",
+      "image_size": {
+        "height": 2200,
+        "width": 1707
+      },
+      "latency_ms": 613.84,
+      "peak_cuda_allocated_mb": 9052.9,
+      "prompt": "What type of form is the document ?",
+      "sample_id": "document_field_bind_holdout_000016",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 142,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Sargasso Sea Temperature",
+      "error": null,
+      "expected_answers": [
+        "SARGASSO SEA TEMPERATURE",
+        "Sargasso sea temperature"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/143/image",
+      "image_size": {
+        "height": 3177,
+        "width": 2554
+      },
+      "latency_ms": 685.51,
+      "peak_cuda_allocated_mb": 9057.95,
+      "prompt": "What is the title of the chart?",
+      "sample_id": "document_field_bind_holdout_000017",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 143,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "ExxonMobil",
+      "error": null,
+      "expected_answers": [
+        "Exxonmobil"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/144/image",
+      "image_size": {
+        "height": 3177,
+        "width": 2554
+      },
+      "latency_ms": 1019.67,
+      "peak_cuda_allocated_mb": 9058.02,
+      "prompt": "Which company name is mentioned at the bottom?",
+      "sample_id": "document_field_bind_holdout_000018",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 144,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "John A. Smith, Ph.D.",
+      "error": null,
+      "expected_answers": [
+        "John A. SMith, Ph.D.",
+        "John A. Smith, Ph.D"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/145/image",
+      "image_size": {
+        "height": 2200,
+        "width": 1707
+      },
+      "latency_ms": 1117.1,
+      "peak_cuda_allocated_mb": 9056.69,
+      "prompt": "What is the name of the person on the from ?",
+      "sample_id": "document_field_bind_holdout_000019",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 145,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "215-741-4052",
+      "error": null,
+      "expected_answers": [
+        "215-741-4052"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/147/image",
+      "image_size": {
+        "height": 2200,
+        "width": 1707
+      },
+      "latency_ms": 1301.87,
+      "peak_cuda_allocated_mb": 9052.28,
+      "prompt": "What is John's Tel No ?",
+      "sample_id": "document_field_bind_holdout_000020",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 147,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "C No4 1971",
+      "error": null,
+      "expected_answers": [
+        "series c no4",
+        "Series C No4"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/149/image",
+      "image_size": {
+        "height": 2384,
+        "width": 1682
+      },
+      "latency_ms": 1141.6,
+      "peak_cuda_allocated_mb": 9075.62,
+      "prompt": "What is the ' series' and 'no' of publication ?",
+      "sample_id": "document_field_bind_holdout_000021",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 149,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "25.9",
+      "error": null,
+      "expected_answers": [
+        "25.9"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/150/image",
+      "image_size": {
+        "height": 1782,
+        "width": 2284
+      },
+      "latency_ms": 894.25,
+      "peak_cuda_allocated_mb": 9057.31,
+      "prompt": "What is the percentage of families in poverty in Morgan county?",
+      "sample_id": "document_field_bind_holdout_000022",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 150,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "690",
+      "error": null,
+      "expected_answers": [
+        "690"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/153/image",
+      "image_size": {
+        "height": 1782,
+        "width": 2284
+      },
+      "latency_ms": 1238.86,
+      "peak_cuda_allocated_mb": 9060.74,
+      "prompt": "What is the No. of Public Assistance Recipients in Johnson County?",
+      "sample_id": "document_field_bind_holdout_000023",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 153,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "INTER-OFFICE CORRESPONDENCE",
+      "error": null,
+      "expected_answers": [
+        "INTER-OFFICE CORRESPONDENCE",
+        "Inter-office correspondence"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/154/image",
+      "image_size": {
+        "height": 2198,
+        "width": 1706
+      },
+      "latency_ms": 1150.17,
+      "peak_cuda_allocated_mb": 9056.69,
+      "prompt": "What kind of a communication/letter  is this?",
+      "sample_id": "document_field_bind_holdout_000024",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 154,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Hartsville, TN",
+      "error": null,
+      "expected_answers": [
+        "Hartsville , TN",
+        "Hartsville, TN",
+        "Hartsville , TN 37074"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/155/image",
+      "image_size": {
+        "height": 2204,
+        "width": 1705
+      },
+      "latency_ms": 1343.77,
+      "peak_cuda_allocated_mb": 9056.69,
+      "prompt": "What is the City and state for Point of Delivery?",
+      "sample_id": "document_field_bind_holdout_000025",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 155,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "21.0",
+      "error": null,
+      "expected_answers": [
+        "21.0"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/156/image",
+      "image_size": {
+        "height": 1782,
+        "width": 2284
+      },
+      "latency_ms": 880.44,
+      "peak_cuda_allocated_mb": 9057.31,
+      "prompt": "What is the percentage of families in Poverty in Henry county?",
+      "sample_id": "document_field_bind_holdout_000026",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 156,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Maria Shulleeta",
+      "error": null,
+      "expected_answers": [
+        "Maria Shulleeta",
+        "maria shulleeta"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/157/image",
+      "image_size": {
+        "height": 2198,
+        "width": 1706
+      },
+      "latency_ms": 1013.23,
+      "peak_cuda_allocated_mb": 9060.87,
+      "prompt": "who was writing this letter to  Dr.richard carchman?",
+      "sample_id": "document_field_bind_holdout_000027",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 157,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "2",
+      "error": null,
+      "expected_answers": [
+        "- 2 -",
+        "2"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/158/image",
+      "image_size": {
+        "height": 2213,
+        "width": 1716
+      },
+      "latency_ms": 850.39,
+      "peak_cuda_allocated_mb": 9051.67,
+      "prompt": "What is the page number?",
+      "sample_id": "document_field_bind_holdout_000028",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 158,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "INTER AND INTRA FEDERAL GOVERNMENT COORDINATION",
+      "error": null,
+      "expected_answers": [
+        "inter and intra federal government coordination",
+        "Inter and intra federal government coordination"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/159/image",
+      "image_size": {
+        "height": 2213,
+        "width": 1716
+      },
+      "latency_ms": 1316.51,
+      "peak_cuda_allocated_mb": 9056.36,
+      "prompt": "What is the heading numbered 'IV' ?",
+      "sample_id": "document_field_bind_holdout_000029",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 159,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Charles D. Nesbit",
+      "error": null,
+      "expected_answers": [
+        "charles d. nesbit",
+        "Charles D. Nesbit"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/160/image",
+      "image_size": {
+        "height": 1638,
+        "width": 838
+      },
+      "latency_ms": 1002.68,
+      "peak_cuda_allocated_mb": 9057.43,
+      "prompt": "Who is the IARW Chairman?",
+      "sample_id": "document_field_bind_holdout_000030",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 160,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "The Organizing Committee",
+      "error": null,
+      "expected_answers": [
+        "the organizing committee",
+        "Organizing committee",
+        "The organizing committee"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/161/image",
+      "image_size": {
+        "height": 1757,
+        "width": 800
+      },
+      "latency_ms": 973.76,
+      "peak_cuda_allocated_mb": 9069.37,
+      "prompt": "Who is inviting ?",
+      "sample_id": "document_field_bind_holdout_000031",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 161,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "International Union of Nutritional Sciences",
+      "error": null,
+      "expected_answers": [
+        "international union of nutritional sciences",
+        "International union of nutritional sciences"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/162/image",
+      "image_size": {
+        "height": 1757,
+        "width": 800
+      },
+      "latency_ms": 990.33,
+      "peak_cuda_allocated_mb": 9073.85,
+      "prompt": "What is the full form of IUNS ?",
+      "sample_id": "document_field_bind_holdout_000032",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 162,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "8:15 to 8:56 a.m.",
+      "error": null,
+      "expected_answers": [
+        "8:15 to 8:56 a.m."
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/163/image",
+      "image_size": {
+        "height": 1638,
+        "width": 838
+      },
+      "latency_ms": 1307.1,
+      "peak_cuda_allocated_mb": 9053.04,
+      "prompt": "When was exhibits Open time?",
+      "sample_id": "document_field_bind_holdout_000033",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 163,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "September 3 to 9, 1972",
+      "error": null,
+      "expected_answers": [
+        "september 3 to 9, 1972",
+        "September 3 to 9, 1972.",
+        "from September 3 to 9, 1972",
+        "September 3 to 9, 1972"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/164/image",
+      "image_size": {
+        "height": 1757,
+        "width": 800
+      },
+      "latency_ms": 1345.82,
+      "peak_cuda_allocated_mb": 9073.64,
+      "prompt": "What is the date of the congress ?",
+      "sample_id": "document_field_bind_holdout_000034",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 164,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "international congress of nutrition",
+      "error": null,
+      "expected_answers": [
+        "international congress of nutrition",
+        "International Congress of Nutrition",
+        "ix international congress of nutrition"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/166/image",
+      "image_size": {
+        "height": 1757,
+        "width": 800
+      },
+      "latency_ms": 898.3,
+      "peak_cuda_allocated_mb": 9073.64,
+      "prompt": "What is the name of the Congress ?",
+      "sample_id": "document_field_bind_holdout_000035",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 166,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Mexican Government",
+      "error": null,
+      "expected_answers": [
+        "mexican government",
+        "Mexican government",
+        "the mexican government",
+        "Mexican"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/167/image",
+      "image_size": {
+        "height": 1757,
+        "width": 800
+      },
+      "latency_ms": 954.19,
+      "peak_cuda_allocated_mb": 9073.85,
+      "prompt": "Which government is responsible for sponsoring the Congress ?",
+      "sample_id": "document_field_bind_holdout_000036",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 167,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Questions and Answers",
+      "error": null,
+      "expected_answers": [
+        "questions and answers",
+        "Questions and Answers"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/168/image",
+      "image_size": {
+        "height": 1638,
+        "width": 838
+      },
+      "latency_ms": 848.04,
+      "peak_cuda_allocated_mb": 9062.09,
+      "prompt": "what was the event on time period 9:53 to 10.08 a.m. ?",
+      "sample_id": "document_field_bind_holdout_000037",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 168,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "English, French and Spanish",
+      "error": null,
+      "expected_answers": [
+        "english, french and spanish",
+        "English, French and Spanish"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/169/image",
+      "image_size": {
+        "height": 1757,
+        "width": 800
+      },
+      "latency_ms": 949.93,
+      "peak_cuda_allocated_mb": 9074.26,
+      "prompt": "What are the official languages of communication of the Congress ?",
+      "sample_id": "document_field_bind_holdout_000038",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 169,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Mexico City",
+      "error": null,
+      "expected_answers": [
+        "mexico city",
+        "Mexico city",
+        "in mexico city"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/171/image",
+      "image_size": {
+        "height": 1757,
+        "width": 800
+      },
+      "latency_ms": 836.21,
+      "peak_cuda_allocated_mb": 9073.85,
+      "prompt": "In which city will the Congress be held?",
+      "sample_id": "document_field_bind_holdout_000039",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 171,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "February 7, 1994",
+      "error": null,
+      "expected_answers": [
+        "february 7, 1994",
+        "February 7, 1994"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/173/image",
+      "image_size": {
+        "height": 2102,
+        "width": 1602
+      },
+      "latency_ms": 1108.55,
+      "peak_cuda_allocated_mb": 9051.67,
+      "prompt": "What is the issue date?",
+      "sample_id": "document_field_bind_holdout_000040",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 173,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "BROWN & WILLIAMSON TOBACCO CORPORATION",
+      "error": null,
+      "expected_answers": [
+        "brown & williamson tobacco corporation"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/174/image",
+      "image_size": {
+        "height": 2102,
+        "width": 1602
+      },
+      "latency_ms": 1203.6,
+      "peak_cuda_allocated_mb": 9056.07,
+      "prompt": "Which company's name is in the letterhead?",
+      "sample_id": "document_field_bind_holdout_000041",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 174,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "MONDAY, MAY 15",
+      "error": null,
+      "expected_answers": [
+        "monday, may 15",
+        "MONDAY, MAY 15"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/176/image",
+      "image_size": {
+        "height": 1638,
+        "width": 838
+      },
+      "latency_ms": 1065.94,
+      "peak_cuda_allocated_mb": 9056.83,
+      "prompt": "Which day's sessions are highlighted in the document?",
+      "sample_id": "document_field_bind_holdout_000042",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 176,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "94.7680",
+      "error": null,
+      "expected_answers": [
+        "94.7680"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/177/image",
+      "image_size": {
+        "height": 2201,
+        "width": 1698
+      },
+      "latency_ms": 1265.06,
+      "peak_cuda_allocated_mb": 9052.28,
+      "prompt": "How much Celando is needed?",
+      "sample_id": "document_field_bind_holdout_000043",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 177,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "60-1120",
+      "error": null,
+      "expected_answers": [
+        "60-1120"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/178/image",
+      "image_size": {
+        "height": 2201,
+        "width": 1698
+      },
+      "latency_ms": 1075.2,
+      "peak_cuda_allocated_mb": 9056.36,
+      "prompt": "What is the material number of quaser?",
+      "sample_id": "document_field_bind_holdout_000044",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 178,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "4-30-92",
+      "error": null,
+      "expected_answers": [
+        "4-30-92"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/180/image",
+      "image_size": {
+        "height": 2106,
+        "width": 1695
+      },
+      "latency_ms": 1033.8,
+      "peak_cuda_allocated_mb": 9057.95,
+      "prompt": "What date is written on this document?",
+      "sample_id": "document_field_bind_holdout_000045",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 180,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "LABORATORY RESEARCH DIVISION",
+      "error": null,
+      "expected_answers": [
+        "laboratory research division",
+        "LABORATORY RESEARCH DIVISION"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/181/image",
+      "image_size": {
+        "height": 1782,
+        "width": 2287
+      },
+      "latency_ms": 1886.2,
+      "peak_cuda_allocated_mb": 9054.29,
+      "prompt": "which is the root node in the chart?",
+      "sample_id": "document_field_bind_holdout_000046",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 181,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Research Department",
+      "error": null,
+      "expected_answers": [
+        "research department",
+        "Research Department"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/185/image",
+      "image_size": {
+        "height": 1782,
+        "width": 2287
+      },
+      "latency_ms": 839.36,
+      "peak_cuda_allocated_mb": 9056.69,
+      "prompt": "Under which department 'Protein Section' is organized?",
+      "sample_id": "document_field_bind_holdout_000047",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 185,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Research Service Department",
+      "error": null,
+      "expected_answers": [
+        "research service department",
+        "Research Service Department"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/186/image",
+      "image_size": {
+        "height": 1782,
+        "width": 2287
+      },
+      "latency_ms": 869.52,
+      "peak_cuda_allocated_mb": 9056.07,
+      "prompt": "Under which department 'Stockroom' is organized ?",
+      "sample_id": "document_field_bind_holdout_000048",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 186,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "USMM 1/95-6/95, 12-Month Data",
+      "error": null,
+      "expected_answers": [
+        "USMM 1/95-6/95, 12-Month Data"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/187/image",
+      "image_size": {
+        "height": 1604,
+        "width": 2103
+      },
+      "latency_ms": 1513.06,
+      "peak_cuda_allocated_mb": 9056.69,
+      "prompt": "From which source the data is taken in this document?",
+      "sample_id": "document_field_bind_holdout_000049",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 187,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "KOOLS",
+      "error": null,
+      "expected_answers": [
+        "KOOLS"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/188/image",
+      "image_size": {
+        "height": 2106,
+        "width": 1607
+      },
+      "latency_ms": 821.41,
+      "peak_cuda_allocated_mb": 9059.73,
+      "prompt": "Which brand's gold tipped version is proposed under \"Brand Extensions\"?",
+      "sample_id": "document_field_bind_holdout_000050",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 188,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "78.2%",
+      "error": null,
+      "expected_answers": [
+        "78.2%",
+        "78.2"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/189/image",
+      "image_size": {
+        "height": 1604,
+        "width": 2103
+      },
+      "latency_ms": 1263.88,
+      "peak_cuda_allocated_mb": 9056.65,
+      "prompt": "What is the percentage of single brand users in the franchise?",
+      "sample_id": "document_field_bind_holdout_000051",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 189,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "CAPRI",
+      "error": null,
+      "expected_answers": [
+        "CAPRI"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/190/image",
+      "image_size": {
+        "height": 2106,
+        "width": 1607
+      },
+      "latency_ms": 863.79,
+      "peak_cuda_allocated_mb": 9049.08,
+      "prompt": "Short version of which brand is proposed?",
+      "sample_id": "document_field_bind_holdout_000052",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 190,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "August 31, 1963",
+      "error": null,
+      "expected_answers": [
+        "August 31, 1963"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/191/image",
+      "image_size": {
+        "height": 816,
+        "width": 1744
+      },
+      "latency_ms": 1335.44,
+      "peak_cuda_allocated_mb": 9048.41,
+      "prompt": "Which is the Fiscal Year End?",
+      "sample_id": "document_field_bind_holdout_000053",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 191,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "7,265,516",
+      "error": null,
+      "expected_answers": [
+        "$ 7,265,516",
+        "7,265,516"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/193/image",
+      "image_size": {
+        "height": 816,
+        "width": 1744
+      },
+      "latency_ms": 1388.8,
+      "peak_cuda_allocated_mb": 9059.09,
+      "prompt": "How much is the amount from 'Trusts' in $?",
+      "sample_id": "document_field_bind_holdout_000054",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 193,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "METH DEV",
+      "error": null,
+      "expected_answers": [
+        "METH DEV"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/194/image",
+      "image_size": {
+        "height": 1606,
+        "width": 2104
+      },
+      "latency_ms": 919.97,
+      "peak_cuda_allocated_mb": 9059.54,
+      "prompt": "Who is the R&D customer for the project  \"Water on Tobacco\" ?",
+      "sample_id": "document_field_bind_holdout_000055",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 194,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "TVB",
+      "error": null,
+      "expected_answers": [
+        "TVB"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/195/image",
+      "image_size": {
+        "height": 1606,
+        "width": 2104
+      },
+      "latency_ms": 925.16,
+      "peak_cuda_allocated_mb": 9059.24,
+      "prompt": "Who is the project leader for the last project listed in the table?",
+      "sample_id": "document_field_bind_holdout_000056",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 195,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "1.0",
+      "error": null,
+      "expected_answers": [
+        "1.0",
+        "1"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/196/image",
+      "image_size": {
+        "height": 1606,
+        "width": 2104
+      },
+      "latency_ms": 860.09,
+      "peak_cuda_allocated_mb": 9049.74,
+      "prompt": "What is the priority of the first project?",
+      "sample_id": "document_field_bind_holdout_000057",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 196,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "8,899,947",
+      "error": null,
+      "expected_answers": [
+        "8,899,947"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/197/image",
+      "image_size": {
+        "height": 816,
+        "width": 1744
+      },
+      "latency_ms": 1215.17,
+      "peak_cuda_allocated_mb": 9048.41,
+      "prompt": "How much is the total income ?",
+      "sample_id": "document_field_bind_holdout_000058",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 197,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Administration",
+      "error": null,
+      "expected_answers": [
+        "administration",
+        "Administration"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/199/image",
+      "image_size": {
+        "height": 816,
+        "width": 1744
+      },
+      "latency_ms": 1192.77,
+      "peak_cuda_allocated_mb": 9061.11,
+      "prompt": "Which Expenditure head is having the amount '610,775' ?",
+      "sample_id": "document_field_bind_holdout_000059",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 199,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "$ 3,038,444",
+      "error": null,
+      "expected_answers": [
+        "$ 3,038,444",
+        "3,038,444"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/200/image",
+      "image_size": {
+        "height": 816,
+        "width": 1744
+      },
+      "latency_ms": 1298.47,
+      "peak_cuda_allocated_mb": 9059.09,
+      "prompt": "How much is the 'Excess of expenditures over income' ?",
+      "sample_id": "document_field_bind_holdout_000060",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 200,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "KOOL KS",
+      "error": null,
+      "expected_answers": [
+        "KOOL KS",
+        "Kool KS"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/201/image",
+      "image_size": {
+        "height": 1711,
+        "width": 2272
+      },
+      "latency_ms": 1258.07,
+      "peak_cuda_allocated_mb": 9072.82,
+      "prompt": "What is the title of this page?",
+      "sample_id": "document_field_bind_holdout_000061",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 201,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "1R4F",
+      "error": null,
+      "expected_answers": [
+        "1R4F REFERENCE RESULTS",
+        "1R4F reference"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/203/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2200
+      },
+      "latency_ms": 974.91,
+      "peak_cuda_allocated_mb": 9049.74,
+      "prompt": "which reference results are shown in this chart?",
+      "sample_id": "document_field_bind_holdout_000062",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 203,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "AVERAGE 1R4F RESPONSES PER S9 LOT",
+      "error": null,
+      "expected_answers": [
+        "AVERAGE 1R4F RESPONSES PER S9 LOT STRAIN TA100"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/204/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2200
+      },
+      "latency_ms": 1483.53,
+      "peak_cuda_allocated_mb": 9048.41,
+      "prompt": "what does the chart explain about?",
+      "sample_id": "document_field_bind_holdout_000063",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 204,
+        "split": "validation"
+      },
+      "split": "holdout",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "52",
+      "error": null,
+      "expected_answers": [
+        "52"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/76/image",
+      "image_size": {
+        "height": 350,
+        "width": 309
+      },
+      "latency_ms": 552.13,
+      "peak_cuda_allocated_mb": 8567.09,
+      "prompt": "What is the total value of the More bar?",
+      "sample_id": "chart_table_cell_holdout_000000",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 76,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "U.S.",
+      "error": null,
+      "expected_answers": [
+        "U.S."
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/78/image",
+      "image_size": {
+        "height": 496,
+        "width": 311
+      },
+      "latency_ms": 566.75,
+      "peak_cuda_allocated_mb": 8568.72,
+      "prompt": "Which country does the Dark green represent?",
+      "sample_id": "chart_table_cell_holdout_000001",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 78,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "67",
+      "error": null,
+      "expected_answers": [
+        "67"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/80/image",
+      "image_size": {
+        "height": 470,
+        "width": 310
+      },
+      "latency_ms": 561.1,
+      "peak_cuda_allocated_mb": 8574.99,
+      "prompt": "What % of people say that everything possible should be done to make it easy to vote?",
+      "sample_id": "chart_table_cell_holdout_000002",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 80,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1.97",
+      "error": null,
+      "expected_answers": [
+        "1.051388889"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/81/image",
+      "image_size": {
+        "height": 470,
+        "width": 310
+      },
+      "latency_ms": 653.51,
+      "peak_cuda_allocated_mb": 8579.33,
+      "prompt": "what is the ratio of Conservatives who say that citizens should prove what they want to want versus people who say that everything should be done to make it possible to vote?",
+      "sample_id": "chart_table_cell_holdout_000003",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 81,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "55",
+      "error": null,
+      "expected_answers": [
+        "55"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/82/image",
+      "image_size": {
+        "height": 344,
+        "width": 420
+      },
+      "latency_ms": 519.66,
+      "peak_cuda_allocated_mb": 8568.54,
+      "prompt": "What's the percentage of people choosing very for their state officials?",
+      "sample_id": "chart_table_cell_holdout_000004",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 82,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Poll workers in your community",
+      "error": null,
+      "expected_answers": [
+        "Poll workers in your community"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/83/image",
+      "image_size": {
+        "height": 344,
+        "width": 420
+      },
+      "latency_ms": 689.77,
+      "peak_cuda_allocated_mb": 8565.9,
+      "prompt": "Which category has the highest satisfaction rating?",
+      "sample_id": "chart_table_cell_holdout_000005",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 83,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Rep/Lean Rep",
+      "error": null,
+      "expected_answers": [
+        "Rep/Lean Rep"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/84/image",
+      "image_size": {
+        "height": 398,
+        "width": 310
+      },
+      "latency_ms": 601.95,
+      "peak_cuda_allocated_mb": 8571.11,
+      "prompt": "Find the category from the chart, whose value is 82 and 15?",
+      "sample_id": "chart_table_cell_holdout_000006",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 84,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.4844",
+      "error": null,
+      "expected_answers": [
+        "0.484375"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/85/image",
+      "image_size": {
+        "height": 398,
+        "width": 310
+      },
+      "latency_ms": 747.57,
+      "peak_cuda_allocated_mb": 8567.92,
+      "prompt": "What is the ratio between good and bad in Total ?",
+      "sample_id": "chart_table_cell_holdout_000007",
+      "score": 1.0,
+      "score_method": "numeric_tolerance",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 85,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "126",
+      "error": null,
+      "expected_answers": [
+        "141"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/87/image",
+      "image_size": {
+        "height": 331,
+        "width": 297
+      },
+      "latency_ms": 595.86,
+      "peak_cuda_allocated_mb": 8569.37,
+      "prompt": "What is the sum of the three same values in the lower graph?",
+      "sample_id": "chart_table_cell_holdout_000008",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 87,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "41",
+      "error": null,
+      "expected_answers": [
+        "41"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/88/image",
+      "image_size": {
+        "height": 728,
+        "width": 840
+      },
+      "latency_ms": 639.06,
+      "peak_cuda_allocated_mb": 8795.61,
+      "prompt": "What's the percentage of all adults who say the coronavirus outbreak is a major threat to personal financial situation?",
+      "sample_id": "chart_table_cell_holdout_000009",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 88,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1.5384615384615385",
+      "error": null,
+      "expected_answers": [
+        "1.684722222"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/89/image",
+      "image_size": {
+        "height": 728,
+        "width": 840
+      },
+      "latency_ms": 1382.34,
+      "peak_cuda_allocated_mb": 8802.48,
+      "prompt": "What's the ratio(A:B) of yellow bar and blue bar for Ages 18-29?",
+      "sample_id": "chart_table_cell_holdout_000010",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 89,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Nicaragua",
+      "error": null,
+      "expected_answers": [
+        "Nicaragua"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/90/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 628.19,
+      "peak_cuda_allocated_mb": 8737.77,
+      "prompt": "Which name is represented by middle bar?",
+      "sample_id": "chart_table_cell_holdout_000011",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 90,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "99",
+      "error": null,
+      "expected_answers": [
+        "99"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/93/image",
+      "image_size": {
+        "height": 1058,
+        "width": 620
+      },
+      "latency_ms": 733.28,
+      "peak_cuda_allocated_mb": 8816.19,
+      "prompt": "What are the sum vale of Major, Minor, and Not a factor in an Athletic ability group?",
+      "sample_id": "chart_table_cell_holdout_000012",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 93,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Solomon Islands",
+      "error": null,
+      "expected_answers": [
+        "Solomon Islands"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/94/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 690.29,
+      "peak_cuda_allocated_mb": 8738.68,
+      "prompt": "Which country received the highest� Programmable aid over the years?",
+      "sample_id": "chart_table_cell_holdout_000013",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 94,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Jamaica",
+      "error": null,
+      "expected_answers": [
+        "Jamaica"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/95/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 688.8,
+      "peak_cuda_allocated_mb": 8739.38,
+      "prompt": "Which country received the higher Country Programmable aid, Jamaica or Tonga?",
+      "sample_id": "chart_table_cell_holdout_000014",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 95,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "50",
+      "error": null,
+      "expected_answers": [
+        "50"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/96/image",
+      "image_size": {
+        "height": 402,
+        "width": 417
+      },
+      "latency_ms": 816.61,
+      "peak_cuda_allocated_mb": 8566.71,
+      "prompt": "What is the highest value of green graph?",
+      "sample_id": "chart_table_cell_holdout_000015",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 96,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "35",
+      "error": null,
+      "expected_answers": [
+        "35"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/97/image",
+      "image_size": {
+        "height": 402,
+        "width": 417
+      },
+      "latency_ms": 494.74,
+      "peak_cuda_allocated_mb": 8571.99,
+      "prompt": "What is the median value of Japan graph from 2013 to 2015?",
+      "sample_id": "chart_table_cell_holdout_000016",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 97,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "977633",
+      "error": null,
+      "expected_answers": [
+        "977633"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/98/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 790.83,
+      "peak_cuda_allocated_mb": 8735.49,
+      "prompt": "What is the value of Slovenia?",
+      "sample_id": "chart_table_cell_holdout_000017",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 98,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1.6 million t",
+      "error": null,
+      "expected_answers": [
+        "1.6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/99/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 788.24,
+      "peak_cuda_allocated_mb": 8737.47,
+      "prompt": "What is the difference in the value of South Korea and Spain?",
+      "sample_id": "chart_table_cell_holdout_000018",
+      "score": 1.0,
+      "score_method": "normalized_contains",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 99,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "65",
+      "error": null,
+      "expected_answers": [
+        "65"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/103/image",
+      "image_size": {
+        "height": 372,
+        "width": 426
+      },
+      "latency_ms": 576.41,
+      "peak_cuda_allocated_mb": 8570.25,
+      "prompt": "How many more Hispanics younger than 18 tend to be Mexican than Spanish?",
+      "sample_id": "chart_table_cell_holdout_000019",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 103,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "25",
+      "error": null,
+      "expected_answers": [
+        "25"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/104/image",
+      "image_size": {
+        "height": 363,
+        "width": 294
+      },
+      "latency_ms": 568.01,
+      "peak_cuda_allocated_mb": 8566.88,
+      "prompt": "What is the % who regularly watch CNN in 02?",
+      "sample_id": "chart_table_cell_holdout_000020",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 104,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1.4736842105263157",
+      "error": null,
+      "expected_answers": [
+        "1.179861111"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/107/image",
+      "image_size": {
+        "height": 376,
+        "width": 310
+      },
+      "latency_ms": 1289.61,
+      "peak_cuda_allocated_mb": 8568.45,
+      "prompt": "What is the ratio between the green bars 28 and 19 ??",
+      "sample_id": "chart_table_cell_holdout_000021",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 107,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "35",
+      "error": null,
+      "expected_answers": [
+        "37"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/109/image",
+      "image_size": {
+        "height": 307,
+        "width": 422
+      },
+      "latency_ms": 514.83,
+      "peak_cuda_allocated_mb": 8562.71,
+      "prompt": "What's the median value of light blue bar?",
+      "sample_id": "chart_table_cell_holdout_000022",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 109,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Gray",
+      "error": null,
+      "expected_answers": [
+        "Gray"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/110/image",
+      "image_size": {
+        "height": 370,
+        "width": 202
+      },
+      "latency_ms": 493.2,
+      "peak_cuda_allocated_mb": 8565.2,
+      "prompt": "Which colored segment is the tiniest?",
+      "sample_id": "chart_table_cell_holdout_000023",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 110,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "49",
+      "error": null,
+      "expected_answers": [
+        "8"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/111/image",
+      "image_size": {
+        "height": 370,
+        "width": 202
+      },
+      "latency_ms": 552.51,
+      "peak_cuda_allocated_mb": 8565.89,
+      "prompt": "Deduct the minimum opinion from the median one?",
+      "sample_id": "chart_table_cell_holdout_000024",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 111,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1.4 billion",
+      "error": null,
+      "expected_answers": [
+        "1.4"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/112/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 671.62,
+      "peak_cuda_allocated_mb": 8744.95,
+      "prompt": "What is population of Asia including the UN projection until 2100, 1950?",
+      "sample_id": "chart_table_cell_holdout_000025",
+      "score": 1.0,
+      "score_method": "normalized_contains",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 112,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2.42",
+      "error": null,
+      "expected_answers": [
+        "2.42"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/114/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 657.96,
+      "peak_cuda_allocated_mb": 8736.11,
+      "prompt": "What is the value of India Bar?",
+      "sample_id": "chart_table_cell_holdout_000026",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 114,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.77",
+      "error": null,
+      "expected_answers": [
+        "0.77"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/115/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 682.69,
+      "peak_cuda_allocated_mb": 8739.98,
+      "prompt": "What is the difference of value in the yield of South America and India?",
+      "sample_id": "chart_table_cell_holdout_000027",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 115,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "23",
+      "error": null,
+      "expected_answers": [
+        "0.3"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/120/image",
+      "image_size": {
+        "height": 306,
+        "width": 415
+      },
+      "latency_ms": 516.27,
+      "peak_cuda_allocated_mb": 8571.84,
+      "prompt": "What is the value of the largest grey bar?",
+      "sample_id": "chart_table_cell_holdout_000028",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 120,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "7",
+      "error": null,
+      "expected_answers": [
+        "0.07"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/121/image",
+      "image_size": {
+        "height": 306,
+        "width": 415
+      },
+      "latency_ms": 507.96,
+      "peak_cuda_allocated_mb": 8572.22,
+      "prompt": "How many more people were very worried than very enthusiastic?",
+      "sample_id": "chart_table_cell_holdout_000029",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 121,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "PP",
+      "error": null,
+      "expected_answers": [
+        "PP"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/122/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 766.28,
+      "peak_cuda_allocated_mb": 8736.11,
+      "prompt": "What type of plastic was most produced?",
+      "sample_id": "chart_table_cell_holdout_000030",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 122,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "71",
+      "error": null,
+      "expected_answers": [
+        "71"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/124/image",
+      "image_size": {
+        "height": 518,
+        "width": 200
+      },
+      "latency_ms": 520.0,
+      "peak_cuda_allocated_mb": 8565.45,
+      "prompt": "What's the value of unaffiliated segment?",
+      "sample_id": "chart_table_cell_holdout_000031",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 124,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "30",
+      "error": null,
+      "expected_answers": [
+        "30"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/126/image",
+      "image_size": {
+        "height": 488,
+        "width": 199
+      },
+      "latency_ms": 468.42,
+      "peak_cuda_allocated_mb": 8560.03,
+      "prompt": "What is the value of \"Increase\"?",
+      "sample_id": "chart_table_cell_holdout_000032",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 126,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Saudi Arabia",
+      "error": null,
+      "expected_answers": [
+        "Saudi Arabia"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/128/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 664.38,
+      "peak_cuda_allocated_mb": 8737.11,
+      "prompt": "What country is represented by the red line on the graph?",
+      "sample_id": "chart_table_cell_holdout_000033",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 128,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.32",
+      "error": null,
+      "expected_answers": [
+        "0.32"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/133/image",
+      "image_size": {
+        "height": 434,
+        "width": 310
+      },
+      "latency_ms": 659.92,
+      "peak_cuda_allocated_mb": 8565.84,
+      "prompt": "What's the ratio of least value of light brown graph and leftmost value of dark brown graph?",
+      "sample_id": "chart_table_cell_holdout_000034",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 133,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "57",
+      "error": null,
+      "expected_answers": [
+        "57"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/134/image",
+      "image_size": {
+        "height": 660,
+        "width": 828
+      },
+      "latency_ms": 605.76,
+      "peak_cuda_allocated_mb": 8757.04,
+      "prompt": "What's the value of dark brown bar in Total category?",
+      "sample_id": "chart_table_cell_holdout_000035",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 134,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.5256410256410256",
+      "error": null,
+      "expected_answers": [
+        "1.058333333"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/135/image",
+      "image_size": {
+        "height": 660,
+        "width": 828
+      },
+      "latency_ms": 1538.72,
+      "peak_cuda_allocated_mb": 8757.14,
+      "prompt": "What's the ratio of bars in Dem/Lean Dem category?",
+      "sample_id": "chart_table_cell_holdout_000036",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 135,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1.75",
+      "error": null,
+      "expected_answers": [
+        "2.125694444"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/139/image",
+      "image_size": {
+        "height": 363,
+        "width": 415
+      },
+      "latency_ms": 617.42,
+      "peak_cuda_allocated_mb": 8569.91,
+      "prompt": "What's the ratio of largest and smallest difference between blue and green graph?",
+      "sample_id": "chart_table_cell_holdout_000037",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 139,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2013",
+      "error": null,
+      "expected_answers": [
+        "2013"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/140/image",
+      "image_size": {
+        "height": 337,
+        "width": 308
+      },
+      "latency_ms": 641.58,
+      "peak_cuda_allocated_mb": 8566.59,
+      "prompt": "When does the ratings of EU reach the peak?",
+      "sample_id": "chart_table_cell_holdout_000038",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 140,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0",
+      "error": null,
+      "expected_answers": [
+        "2577420"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/143/image",
+      "image_size": {
+        "height": 381,
+        "width": 369
+      },
+      "latency_ms": 462.42,
+      "peak_cuda_allocated_mb": 8568.31,
+      "prompt": "What the product of all the values below 50 in orange graph?",
+      "sample_id": "chart_table_cell_holdout_000039",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 143,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Red",
+      "error": null,
+      "expected_answers": [
+        "Red"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/144/image",
+      "image_size": {
+        "height": 401,
+        "width": 421
+      },
+      "latency_ms": 470.07,
+      "peak_cuda_allocated_mb": 8567.97,
+      "prompt": "What's the color of graph whose largest value is 52?",
+      "sample_id": "chart_table_cell_holdout_000040",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 144,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "68.5",
+      "error": null,
+      "expected_answers": [
+        "62.43"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/147/image",
+      "image_size": {
+        "height": 337,
+        "width": 310
+      },
+      "latency_ms": 607.6,
+      "peak_cuda_allocated_mb": 8567.62,
+      "prompt": "What is the average of 'more mudslinging'?",
+      "sample_id": "chart_table_cell_holdout_000041",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 147,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Favorable",
+      "error": null,
+      "expected_answers": [
+        "Favorable"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/148/image",
+      "image_size": {
+        "height": 305,
+        "width": 309
+      },
+      "latency_ms": 613.98,
+      "peak_cuda_allocated_mb": 8566.25,
+      "prompt": "Which line has lower values across all years?",
+      "sample_id": "chart_table_cell_holdout_000042",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 148,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "7.5",
+      "error": null,
+      "expected_answers": [
+        "0.9375"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/149/image",
+      "image_size": {
+        "height": 305,
+        "width": 309
+      },
+      "latency_ms": 774.26,
+      "peak_cuda_allocated_mb": 8573.12,
+      "prompt": "Work out the ratio of absolute change of unfavorable sentiment to that of favorable one from 2006 to 2016?",
+      "sample_id": "chart_table_cell_holdout_000043",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 149,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "54",
+      "error": null,
+      "expected_answers": [
+        "54"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/150/image",
+      "image_size": {
+        "height": 458,
+        "width": 309
+      },
+      "latency_ms": 256.85,
+      "peak_cuda_allocated_mb": 8570.34,
+      "prompt": "What's the leftmost value of Approve graph?",
+      "sample_id": "chart_table_cell_holdout_000044",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 150,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1969",
+      "error": null,
+      "expected_answers": [
+        "1969"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/153/image",
+      "image_size": {
+        "height": 382,
+        "width": 420
+      },
+      "latency_ms": 352.23,
+      "peak_cuda_allocated_mb": 8569.13,
+      "prompt": "When does the gap between support and against legalization reach the peak?",
+      "sample_id": "chart_table_cell_holdout_000045",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 153,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Orange",
+      "error": null,
+      "expected_answers": [
+        "orange"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/154/image",
+      "image_size": {
+        "height": 380,
+        "width": 310
+      },
+      "latency_ms": 218.9,
+      "peak_cuda_allocated_mb": 8565.01,
+      "prompt": "What is the colour of India in the graph?",
+      "sample_id": "chart_table_cell_holdout_000046",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 154,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2010",
+      "error": null,
+      "expected_answers": [
+        "2010"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/157/image",
+      "image_size": {
+        "height": 404,
+        "width": 310
+      },
+      "latency_ms": 344.22,
+      "peak_cuda_allocated_mb": 8571.23,
+      "prompt": "Which year shows the tiniest difference in values between China and US being seen as leading economic power across all the years?",
+      "sample_id": "chart_table_cell_holdout_000047",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 157,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2011",
+      "error": null,
+      "expected_answers": [
+        "March 2011"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/160/image",
+      "image_size": {
+        "height": 315,
+        "width": 292
+      },
+      "latency_ms": 330.92,
+      "peak_cuda_allocated_mb": 8568.81,
+      "prompt": "In which year the value of favor is 57?",
+      "sample_id": "chart_table_cell_holdout_000048",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 160,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Favor",
+      "error": null,
+      "expected_answers": [
+        "Favor"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/161/image",
+      "image_size": {
+        "height": 315,
+        "width": 292
+      },
+      "latency_ms": 273.43,
+      "peak_cuda_allocated_mb": 8571.32,
+      "prompt": "Which group favor or oppose has the highest value in the year Sept 2008?",
+      "sample_id": "chart_table_cell_holdout_000049",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 161,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1938",
+      "error": null,
+      "expected_answers": [
+        "2210"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/163/image",
+      "image_size": {
+        "height": 355,
+        "width": 411
+      },
+      "latency_ms": 366.85,
+      "peak_cuda_allocated_mb": 8577.36,
+      "prompt": "What is the product of the largest value on light blue line and leftmost value on the dark blue line?",
+      "sample_id": "chart_table_cell_holdout_000050",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 163,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "47",
+      "error": null,
+      "expected_answers": [
+        "47"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/165/image",
+      "image_size": {
+        "height": 343,
+        "width": 310
+      },
+      "latency_ms": 274.24,
+      "peak_cuda_allocated_mb": 8569.4,
+      "prompt": "What's the gap percent between the bad and the better scenarios being studied?",
+      "sample_id": "chart_table_cell_holdout_000051",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 165,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Blue",
+      "error": null,
+      "expected_answers": [
+        "Blue"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/168/image",
+      "image_size": {
+        "height": 440,
+        "width": 205
+      },
+      "latency_ms": 185.61,
+      "peak_cuda_allocated_mb": 8566.52,
+      "prompt": "What's the color of largest segment?",
+      "sample_id": "chart_table_cell_holdout_000052",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 168,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Don't know",
+      "error": null,
+      "expected_answers": [
+        "Don't Know"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/170/image",
+      "image_size": {
+        "height": 411,
+        "width": 200
+      },
+      "latency_ms": 307.36,
+      "peak_cuda_allocated_mb": 8566.29,
+      "prompt": "What does smallest segment represents?",
+      "sample_id": "chart_table_cell_holdout_000053",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 170,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "10",
+      "error": null,
+      "expected_answers": [
+        "10"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/172/image",
+      "image_size": {
+        "height": 323,
+        "width": 310
+      },
+      "latency_ms": 232.65,
+      "peak_cuda_allocated_mb": 8566.4,
+      "prompt": "What percentage of people are favorable?",
+      "sample_id": "chart_table_cell_holdout_000054",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 172,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "69",
+      "error": null,
+      "expected_answers": [
+        "69"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/173/image",
+      "image_size": {
+        "height": 323,
+        "width": 310
+      },
+      "latency_ms": 254.84,
+      "peak_cuda_allocated_mb": 8569.13,
+      "prompt": "What is the difference between the very unfavorable and the Favorable?",
+      "sample_id": "chart_table_cell_holdout_000055",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 173,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Bad",
+      "error": null,
+      "expected_answers": [
+        "Bad"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/178/image",
+      "image_size": {
+        "height": 447,
+        "width": 200
+      },
+      "latency_ms": 170.32,
+      "peak_cuda_allocated_mb": 8566.29,
+      "prompt": "What does Orange portion indicates?",
+      "sample_id": "chart_table_cell_holdout_000056",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 178,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "53",
+      "error": null,
+      "expected_answers": [
+        "53"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/179/image",
+      "image_size": {
+        "height": 447,
+        "width": 200
+      },
+      "latency_ms": 216.05,
+      "peak_cuda_allocated_mb": 8566.4,
+      "prompt": "How much Good more than Bad?",
+      "sample_id": "chart_table_cell_holdout_000057",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 179,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Better off",
+      "error": null,
+      "expected_answers": [
+        "Better off"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/180/image",
+      "image_size": {
+        "height": 493,
+        "width": 239
+      },
+      "latency_ms": 240.19,
+      "peak_cuda_allocated_mb": 8566.4,
+      "prompt": "What's the most popular answer?",
+      "sample_id": "chart_table_cell_holdout_000058",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 180,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "40%",
+      "error": null,
+      "expected_answers": [
+        "Important, but lower priority"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/182/image",
+      "image_size": {
+        "height": 401,
+        "width": 310
+      },
+      "latency_ms": 313.43,
+      "peak_cuda_allocated_mb": 8564.29,
+      "prompt": "What's the most popular option?",
+      "sample_id": "chart_table_cell_holdout_000059",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 182,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "40",
+      "error": null,
+      "expected_answers": [
+        "75"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/183/image",
+      "image_size": {
+        "height": 401,
+        "width": 310
+      },
+      "latency_ms": 220.51,
+      "peak_cuda_allocated_mb": 8564.76,
+      "prompt": "What's the percentage of people choosing important?",
+      "sample_id": "chart_table_cell_holdout_000060",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 183,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Dissatisfied",
+      "error": null,
+      "expected_answers": [
+        "Dissatisfied"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/184/image",
+      "image_size": {
+        "height": 328,
+        "width": 186
+      },
+      "latency_ms": 289.91,
+      "peak_cuda_allocated_mb": 8565.44,
+      "prompt": "What occupied most in the pie chart?",
+      "sample_id": "chart_table_cell_holdout_000061",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 184,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "3.9",
+      "error": null,
+      "expected_answers": [
+        "3.9"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/185/image",
+      "image_size": {
+        "height": 328,
+        "width": 186
+      },
+      "latency_ms": 279.89,
+      "peak_cuda_allocated_mb": 8565.56,
+      "prompt": "How many times Dissatisfied more than satisfied?",
+      "sample_id": "chart_table_cell_holdout_000062",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 185,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "76",
+      "error": null,
+      "expected_answers": [
+        "76"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/186/image",
+      "image_size": {
+        "height": 331,
+        "width": 185
+      },
+      "latency_ms": 291.7,
+      "peak_cuda_allocated_mb": 8568.06,
+      "prompt": "What's the percentage of respondents who think food near Fukushima is not safe?",
+      "sample_id": "chart_table_cell_holdout_000063",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 186,
+        "split": "test"
+      },
+      "split": "holdout",
+      "taxonomy_id": "chart_table_cell"
+    }
+  ],
+  "run": {
+    "actual_run_completed_across_resumes": true,
+    "adapter": null,
+    "attempt_notes": [
+      "Initial qwen3_vl_default_dynamic_resolution attempt hit CUDA OOM on high-resolution DocVQA pages and is not used as validation evidence.",
+      "Final result uses qwen3_vl_fixed_pixel_budget with min_pixels=200704 and max_pixels=1003520.",
+      "Dataset Viewer HTTP 429 rows were retried via resume; final error_count is 0."
+    ],
+    "finished_at_utc": "2026-05-28T08:47:19.620407+00:00",
+    "manifest": "data/mvp/holdout.jsonl",
+    "max_new_tokens": 64,
+    "max_pixels": 1003520,
+    "milestone": "M3",
+    "min_pixels": 200704,
+    "model_id": "qwen3_vl_4b_base",
+    "model_path": "models/qwen/Qwen3-VL-4B-Instruct",
+    "rescored_at_utc": "2026-05-28T08:48:51.655359+00:00",
+    "resumed_from_existing_output": true,
+    "roi_source": null,
+    "scoring_policy": "normalized_exact_or_contains_numeric_only_when_expected_has_no_letters",
+    "started_at_utc": "2026-05-28T08:47:13.314943+00:00",
+    "updated_at_utc": "2026-05-28T08:48:51.655359+00:00",
+    "visual_policy": "qwen3_vl_fixed_pixel_budget"
+  },
+  "summary": {
+    "count": 128,
+    "error_count": 0,
+    "per_taxonomy": {
+      "chart_table_cell": {
+        "count": 64,
+        "failure_types": {
+          "no_match": 17,
+          "normalized_contains": 2,
+          "normalized_exact": 44,
+          "numeric_tolerance": 1
+        },
+        "score": 0.734375
+      },
+      "document_field_bind": {
+        "count": 64,
+        "failure_types": {
+          "no_match": 3,
+          "normalized_contains": 1,
+          "normalized_exact": 60
+        },
+        "score": 0.953125
+      }
+    },
+    "score": 0.84375
+  }
+}
