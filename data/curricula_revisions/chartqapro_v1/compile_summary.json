@@ -1,0 +1,13 @@
+{
+  "adapter_id": "chartqapro_table_cell_r4_v1",
+  "compiled_rows": 128,
+  "outputs": {
+    "adapter_plan": "configs/track_a/revisions/chartqapro_v1/adapter_candidate_plan.yaml",
+    "certification_plan": "configs/track_a/revisions/chartqapro_v1/certification_eval_plan.yaml",
+    "curriculum_manifest": "data/curricula_revisions/chartqapro_v1/curriculum_manifest.jsonl",
+    "teacher_annotations": "data/curricula_revisions/chartqapro_v1/teacher_annotations.jsonl"
+  },
+  "revision": "chartqapro_v1",
+  "taxonomy_id": "chart_table_cell",
+  "teacher_annotations": 128
+}

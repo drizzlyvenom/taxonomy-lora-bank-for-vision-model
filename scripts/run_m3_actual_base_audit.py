@@ -11,6 +11,7 @@ import urllib.error
 import urllib.request
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
+from io import BytesIO
 from pathlib import Path
 from typing import Any
 
@@ -36,11 +37,15 @@ def write_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
-def fetch_dataset_row(source: dict[str, Any], cache_dir: Path) -> dict[str, Any]:
-    cache_key = (
+def dataset_row_cache_key(source: dict[str, Any]) -> str:
+    return (
         f"{source['dataset'].replace('/', '__')}__{source['config']}__"
         f"{source['split']}__{source['row_idx']}.json"
     )
+
+
+def fetch_dataset_row(source: dict[str, Any], cache_dir: Path) -> dict[str, Any]:
+    cache_key = dataset_row_cache_key(source)
     cache_path = cache_dir / cache_key
     if cache_path.exists():
         return json.loads(cache_path.read_text(encoding="utf-8"))
@@ -79,6 +84,95 @@ def fetch_dataset_row(source: dict[str, Any], cache_dir: Path) -> dict[str, Any]
             time.sleep(wait_seconds)
 
     raise RuntimeError(f"failed to fetch dataset row after retries: {source}") from last_error
+
+
+def image_extension(image_bytes: bytes) -> str:
+    if image_bytes.startswith(b"\xff\xd8\xff"):
+        return "jpg"
+    if image_bytes.startswith(b"\x89PNG\r\n\x1a\n"):
+        return "png"
+    if image_bytes.startswith(b"GIF87a") or image_bytes.startswith(b"GIF89a"):
+        return "gif"
+    if image_bytes.startswith(b"RIFF") and image_bytes[8:12] == b"WEBP":
+        return "webp"
+    return "bin"
+
+
+def image_dimensions(image_bytes: bytes) -> dict[str, Any]:
+    try:
+        from PIL import Image
+
+        with Image.open(BytesIO(image_bytes)) as image:
+            return {"width": image.width, "height": image.height, "format": image.format}
+    except Exception:  # noqa: BLE001
+        return {"width": None, "height": None, "format": None}
+
+
+def binary_image_bytes(image_info: Any) -> bytes | None:
+    if isinstance(image_info, list):
+        try:
+            return bytes(int(value) & 0xFF for value in image_info)
+        except (TypeError, ValueError):
+            return None
+    if isinstance(image_info, str):
+        import base64
+
+        value = image_info
+        if "," in value and value.strip().lower().startswith("data:"):
+            value = value.split(",", 1)[1]
+        try:
+            return base64.b64decode(value, validate=True)
+        except Exception:  # noqa: BLE001
+            return None
+    if isinstance(image_info, dict):
+        value = image_info.get("bytes")
+        if isinstance(value, list):
+            try:
+                return bytes(int(item) & 0xFF for item in value)
+            except (TypeError, ValueError):
+                return None
+        if isinstance(value, str):
+            import base64
+
+            try:
+                return base64.b64decode(value)
+            except Exception:  # noqa: BLE001
+                return None
+    return None
+
+
+def resolve_image_reference(
+    dataset_row: dict[str, Any], manifest_row: dict[str, Any], cache_dir: Path
+) -> tuple[str, dict[str, Any]]:
+    image_field = manifest_row["source"].get("image_field", "image")
+    image_info = dataset_row["row"][image_field]
+
+    if isinstance(image_info, dict) and image_info.get("src"):
+        return (
+            image_info["src"],
+            {
+                "width": image_info.get("width"),
+                "height": image_info.get("height"),
+                "format": image_info.get("format"),
+                "storage": "dataset_viewer_url",
+            },
+        )
+
+    image_bytes = binary_image_bytes(image_info)
+    if not image_bytes:
+        raise RuntimeError(f"unsupported Dataset Viewer image field for {manifest_row['sample_id']}")
+
+    extension = image_extension(image_bytes)
+    cache_stem = dataset_row_cache_key(manifest_row["source"]).removesuffix(".json")
+    image_cache_dir = cache_dir / "images"
+    image_cache_dir.mkdir(parents=True, exist_ok=True)
+    image_path = image_cache_dir / f"{cache_stem}__{image_field}.{extension}"
+    if not image_path.exists() or image_path.stat().st_size != len(image_bytes):
+        image_path.write_bytes(image_bytes)
+
+    size = image_dimensions(image_bytes)
+    size["storage"] = "dataset_viewer_binary_cache"
+    return str(image_path.resolve()), size
 
 
 def normalize_text(value: str) -> str:
@@ -295,13 +389,8 @@ def main() -> None:
 
         try:
             dataset_row = fetch_dataset_row(manifest_row["source"], cache_dir)
-            image_field = manifest_row["source"].get("image_field", "image")
-            image_info = dataset_row["row"][image_field]
-            image_url = image_info["src"]
-            record["image_size"] = {
-                "width": image_info.get("width"),
-                "height": image_info.get("height"),
-            }
+            image_url, image_size = resolve_image_reference(dataset_row, manifest_row, cache_dir)
+            record["image_size"] = image_size
 
             if torch.cuda.is_available():
                 torch.cuda.reset_peak_memory_stats()

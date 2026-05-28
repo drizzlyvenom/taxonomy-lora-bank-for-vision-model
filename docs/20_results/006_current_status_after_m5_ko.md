@@ -2,6 +2,10 @@
 
 Status: paused_after_m5_soft_pass
 
+Update note: 이 문서는 기존 ChartQA 기반 M5 first pass 직후 상태를 고정한 기록이다.
+이후 ChartQAPro 후보로 M4/M5 revision을 재실행한 결과는
+`docs/20_results/007_chartqapro_m4_m5_rerun_ko.md`를 본다.
+
 ## 1. 목적
 
 이 문서는 M5 first pass 이후 잠시 멈추기 전에, 현재 검증 상태와 다음 선택지를 짧게 고정한다.

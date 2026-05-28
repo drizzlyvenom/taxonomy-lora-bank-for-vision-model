@@ -59,11 +59,12 @@ Smoke test 결과는 validation evidence로 쓰지 않는다. 기본 결과 브�
 004_m4_offline_curriculum_compiler_ko.md
 005_m5_single_lora_learns_ko.md
 006_current_status_after_m5_ko.md
+007_chartqapro_m4_m5_rerun_ko.md
 mvp_review_after_m3_ko.md
 ```
 
 ## 현재 중단 지점
 
-M5 first pass는 `soft_pass`다. `chart_table_cell_r4_v1`은 train에서 base보다 좋아졌지만,
-holdout에서는 base보다 0.015625 낮았다. 따라서 M6 certification이나 router utility claim은
-아직 열지 않는다.
+M5 first pass는 `soft_pass`였고, 이후 ChartQAPro 후보로 M4/M5 revision을 다시 실행했다.
+ChartQAPro revision은 current M5 checker 기준 `pass`지만 holdout gain은 0이다.
+따라서 M6 certification이나 router utility claim은 아직 열지 않는다.

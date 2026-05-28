@@ -1,0 +1,19 @@
+{
+  "minimum_per_taxonomy": {
+    "holdout": 64,
+    "train": 64
+  },
+  "purpose": "replace the earlier ChartQA chart_table_cell source with ChartQAPro for an actual M4/M5 rerun",
+  "revision": "chartqapro_v1",
+  "taxonomies": {
+    "chart_table_cell": {
+      "holdout_count": 64,
+      "image_storage": "Dataset Viewer binary image field cached locally at runtime",
+      "source_config": "default",
+      "source_dataset": "ahmed-masry/ChartQAPro",
+      "source_split": "test",
+      "train_count": 64,
+      "train_holdout_answer_overlap": []
+    }
+  }
+}

@@ -12,7 +12,7 @@ import torch
 from peft import LoraConfig, get_peft_model
 from transformers import AutoProcessor, Qwen3VLForConditionalGeneration
 
-from run_m3_actual_base_audit import build_messages, fetch_dataset_row
+from run_m3_actual_base_audit import build_messages, fetch_dataset_row, resolve_image_reference
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -77,14 +77,14 @@ def encode_answer_only(
     return {key: value.to(device) for key, value in full_inputs.items()}
 
 
-def prefetch_image_urls(rows: list[dict[str, Any]], cache_dir: Path) -> dict[str, str]:
-    urls: dict[str, str] = {}
+def prefetch_image_references(rows: list[dict[str, Any]], cache_dir: Path) -> dict[str, str]:
+    image_references: dict[str, str] = {}
     for index, row in enumerate(rows, start=1):
         dataset_row = fetch_dataset_row(row["source"], cache_dir)
-        image_field = row["source"].get("image_field", "image")
-        urls[row["sample_id"]] = dataset_row["row"][image_field]["src"]
+        image_reference, _image_size = resolve_image_reference(dataset_row, row, cache_dir)
+        image_references[row["sample_id"]] = image_reference
         print(f"[prefetch {index}/{len(rows)}] {row['sample_id']}", flush=True)
-    return urls
+    return image_references
 
 
 def trainable_parameter_summary(model: torch.nn.Module) -> dict[str, Any]:
@@ -166,7 +166,7 @@ def main() -> None:
     write_json(metadata_output, {"run": run_metadata, "steps": []})
 
     print(f"prefetching {len(train_rows)} training rows", flush=True)
-    image_urls = prefetch_image_urls(train_rows, cache_dir)
+    image_references = prefetch_image_references(train_rows, cache_dir)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"loading processor: {args.model_path}", flush=True)
@@ -211,7 +211,7 @@ def main() -> None:
     for step in range(1, args.steps + 1):
         row = train_rows[(step - 1) % len(train_rows)]
         answer = str(row["expected_answers"][0])
-        inputs = encode_answer_only(processor, image_urls[row["sample_id"]], row["prompt"], answer, device)
+        inputs = encode_answer_only(processor, image_references[row["sample_id"]], row["prompt"], answer, device)
 
         optimizer.zero_grad(set_to_none=True)
         outputs = model(**inputs)

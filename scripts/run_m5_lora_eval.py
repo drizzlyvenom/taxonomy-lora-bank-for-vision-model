@@ -14,6 +14,7 @@ from transformers import AutoProcessor, Qwen3VLForConditionalGeneration
 from run_m3_actual_base_audit import (
     build_messages,
     fetch_dataset_row,
+    resolve_image_reference,
     score_prediction,
     summarize,
 )
@@ -157,13 +158,8 @@ def main() -> None:
 
         try:
             dataset_row = fetch_dataset_row(manifest_row["source"], cache_dir)
-            image_field = manifest_row["source"].get("image_field", "image")
-            image_info = dataset_row["row"][image_field]
-            image_url = image_info["src"]
-            record["image_size"] = {
-                "width": image_info.get("width"),
-                "height": image_info.get("height"),
-            }
+            image_url, image_size = resolve_image_reference(dataset_row, manifest_row, cache_dir)
+            record["image_size"] = image_size
 
             if torch.cuda.is_available():
                 torch.cuda.reset_peak_memory_stats()

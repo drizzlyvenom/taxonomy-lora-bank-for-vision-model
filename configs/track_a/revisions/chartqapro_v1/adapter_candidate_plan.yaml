@@ -1,0 +1,62 @@
+plan_name: "m4_adapter_candidate_plan_revision"
+milestone: "M4"
+generated_at_utc: "2026-05-28T11:14:43.322130+00:00"
+source_curriculum_manifest: "data/curricula_revisions/chartqapro_v1/curriculum_manifest.jsonl"
+source_teacher_annotations: "data/curricula_revisions/chartqapro_v1/teacher_annotations.jsonl"
+base_backbone: "qwen3_vl_4b_reference"
+teacher_handling:
+  mode: "rule"
+  teacher_label_is_candidate_required: true
+  rule_annotations_are_candidate_supervision_only: true
+candidates:
+  -
+    adapter_id: "chartqapro_table_cell_r4_v1"
+    taxonomy_id: "chart_table_cell"
+    priority: 1
+    m4_status: "training_ready"
+    claim_status: "eligible_for_m5_rerun"
+    base_backbone: "qwen3_vl_4b_reference"
+    backbone_type: "vlm_llm"
+    adapter_slot: "language_decoder"
+    teacher_mode: "rule"
+    teacher_label_is_candidate_required: true
+    taxonomy:
+      domain: "chart"
+      evidence_type: "table_cell"
+      failure_mode: "label_value_mismatch"
+      operation: "locate"
+    curriculum:
+      train_manifest: "data/curricula_revisions/chartqapro_v1/chart_table_cell_train.jsonl"
+      holdout_manifest: "data/curricula_revisions/chartqapro_v1/chart_table_cell_holdout.jsonl"
+      train_rows: 64
+      holdout_rows: 64
+      train_holdout_split_preserved: true
+    base_actual:
+      train:
+        count: 64
+        score: 0.4375
+        failure_types:
+          no_match: 36
+          normalized_contains: 2
+          normalized_exact: 15
+          numeric_tolerance: 11
+      holdout:
+        count: 64
+        score: 0.359375
+        failure_types:
+          no_match: 41
+          normalized_contains: 2
+          normalized_exact: 17
+          numeric_tolerance: 4
+      difficulty_status: "measured_by_revision_m3"
+    training_defaults:
+      rank: 4
+      alpha: 8
+      target_modules:
+        - "q_proj"
+        - "v_proj"
+      label_mask_mode: "answer_only"
+      weights_path: "models/loras/chartqapro_table_cell_r4_v1"
+    notes:
+      - "ChartQAPro replaces the earlier ChartQA source for this revision run."
+      - "This plan preserves actual 64/64 evaluation and does not open certification by itself."

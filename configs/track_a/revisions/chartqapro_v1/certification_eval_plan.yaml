@@ -1,0 +1,63 @@
+plan_name: "m4_certification_eval_plan_revision"
+milestone: "M4"
+generated_at_utc: "2026-05-28T11:14:43.323130+00:00"
+actual_eval_required: true
+no_smoke_validation: true
+base_backbone: "qwen3_vl_4b_reference"
+base_model_id: "qwen3_vl_4b_base"
+m3_base_results:
+  train:
+    path: "results/m3_revisions/chartqapro_v1/qwen3_vl_4b_base_train.json"
+    score: 0.4375
+    error_count: 0
+  holdout:
+    path: "results/m3_revisions/chartqapro_v1/qwen3_vl_4b_base_holdout.json"
+    score: 0.359375
+    error_count: 0
+eval_controls:
+  visual_policy: "qwen3_vl_fixed_pixel_budget"
+  min_pixels: 200704
+  max_pixels: 1003520
+  roi_source: null
+  scoring_policy: "normalized_exact_or_contains_numeric_only_when_expected_has_no_letters"
+  same_prompt_required: true
+  same_expected_answers_required: true
+required_comparisons:
+  - "base_no_adapter"
+  - "correct_lora"
+  - "wrong_adapter"
+  - "random_untrained_lora"
+candidates:
+  -
+    adapter_id: "chartqapro_table_cell_r4_v1"
+    taxonomy_id: "chart_table_cell"
+    m4_status: "training_ready"
+    train_manifest: "data/curricula_revisions/chartqapro_v1/chart_table_cell_train.jsonl"
+    holdout_manifest: "data/curricula_revisions/chartqapro_v1/chart_table_cell_holdout.jsonl"
+    holdout_samples: 64
+    base_reference_result: "results/m3_revisions/chartqapro_v1/qwen3_vl_4b_base_holdout.json"
+    required_actual_runs:
+      -
+        name: "base_no_adapter"
+        adapter: null
+        result_path: "results/m3_revisions/chartqapro_v1/qwen3_vl_4b_base_holdout.json"
+      -
+        name: "correct_lora"
+        adapter: "chartqapro_table_cell_r4_v1"
+        result_path: "results/m5_revisions/chartqapro_v1/chartqapro_table_cell_r4_v1_correct_holdout.json"
+      -
+        name: "wrong_adapter"
+        adapter: "other_taxonomy_adapter"
+        result_path: "results/m6_revisions/chartqapro_table_cell_r4_v1_wrong_holdout.json"
+      -
+        name: "random_untrained_lora"
+        adapter: "same_rank_random_adapter"
+        result_path: "results/m6_revisions/chartqapro_table_cell_r4_v1_random_holdout.json"
+    gates_required_for_certification:
+      actual_fields_complete: true
+      same_holdout_samples: true
+      same_visual_policy: true
+      same_roi_source: true
+      gain_vs_base_positive: true
+      correct_beats_wrong: true
+      correct_beats_random: true

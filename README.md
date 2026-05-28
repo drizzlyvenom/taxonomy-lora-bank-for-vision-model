@@ -1,6 +1,6 @@
 # Offline-Certified Taxonomy LoRA Bank
 
-Status: M5 first-pass soft pass
+Status: M5 ChartQAPro revision completed
 Scope: Track A-first research repo
 
 이 레포는 현재 Qwen 계열 VLM을 reference backbone으로 사용해 여러 vision specialist를
@@ -91,14 +91,16 @@ M0 통과 조건:
 
 ## 현재 실행 상태
 
-현재는 M5 first pass까지 actual run을 진행했다. `Qwen3-VL-4B-Instruct`를 reference
-backbone으로 두고, `chart_table_cell_r4_v1` LoRA가 실제 학습 신호를 먹는지 확인했다.
+현재는 M5 first pass 이후 ChartQAPro 후보로 `chart_table_cell` M4/M5 revision actual run을
+한 번 더 진행했다. `Qwen3-VL-4B-Instruct`를 reference backbone으로 두고, correct LoRA가
+실제 학습 신호를 먹는지 확인했다.
 같은 holdout split에서 `Qwen3-VL-8B-Instruct`는 이후 작은 Qwen3 + LoRA와 비교할 동세대
 큰 backbone baseline으로 남겨둔다.
 
 ```text
 Qwen3-VL-4B base: M3 completed
 Qwen3-VL-4B + chart_table_cell LoRA: M5 first pass completed
+Qwen3-VL-4B + ChartQAPro chart_table_cell LoRA: M5 revision completed
 Qwen3-VL-8B base: comparison baseline prepared, not yet used for certification
 ```
 
@@ -135,6 +137,18 @@ failure_reason: holdout_no_gain_after_train_gain
 holdout transfer가 충분하지 않다. 따라서 이 결과만으로 M6 actual certification이나 router utility
 claim을 열지 않는다.
 
+ChartQAPro revision에서는 같은 `64/64 actual` 단위로 데이터셋 후보를 교체해 다시 확인했다.
+
+```text
+ChartQAPro chart_table_cell train:   base 0.437500 -> LoRA 0.812500, gain +0.375000
+ChartQAPro chart_table_cell holdout: base 0.359375 -> LoRA 0.359375, gain +0.000000
+M5 revision status: pass by current M5 checker, but no positive holdout gain
+```
+
+Holdout delta는 base만 맞고 LoRA가 틀린 sample 3개, base가 틀리고 LoRA만 맞은 sample 3개,
+둘 다 틀린 sample 38개, 둘 다 맞은 sample 20개다. 따라서 ChartQAPro는 train 학습 신호가 더
+선명하지만, 아직 M6 certification이나 router utility claim을 열지는 않는다.
+
 ## 현재 보류 중인 설계 질문
 
 M5 이후 논의된 `taxonomy fitness optimization`은 아직 protocol로 채택하지 않았다. 채택한다면
@@ -154,8 +168,9 @@ offline only:
   registry update
 ```
 
-다음 작업은 잠시 멈춘 상태다. 재개 시 선택지는 `chart_table_cell` 학습 조건 재시도, OCR-VQA /
-ChartQAPro 후보 추가, 또는 M4b taxonomy fitness protocol 문서화 중 하나다.
+다음 작업은 잠시 멈춘 상태다. 재개 시 선택지는 ChartQAPro holdout delta bucket 수동 검토,
+numeric scoring caveat 정리, `chart_table_cell` 학습 조건 재시도, 또는 M4b taxonomy fitness
+protocol 문서화 중 하나다.
 
 ## 현재 공개 범위
 
