@@ -31,6 +31,11 @@ Track B/Foveation은 메인 contribution이 아니다. 기존 FoveateR 계열 �
 이식되는 것은 Qwen에서 학습한 LoRA weight가 아니라 taxonomy, curriculum, AdapterCard,
 actual-only certification protocol이다.
 
+현재 M5 first pass 관찰은 보수적으로 해석한다. `chart_table_cell` LoRA는 train gain을 보였지만
+holdout gain은 음수였으므로, 넓은 taxonomy나 split mismatch 가능성을 기록하고 M6 certification은
+보류한다. Taxonomy fitness optimization은 검토 중인 offline-only outer loop 아이디어이며,
+runtime routing loop에는 넣지 않는다.
+
 ---
 
 ## 1. 새 프레임워크의 역할 분리

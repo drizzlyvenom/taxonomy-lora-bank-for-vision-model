@@ -1,6 +1,6 @@
 # Offline-Certified Taxonomy LoRA Bank
 
-Status: M3 actual base audit
+Status: M5 first-pass soft pass
 Scope: Track A-first research repo
 
 이 레포는 현재 Qwen 계열 VLM을 reference backbone으로 사용해 여러 vision specialist를
@@ -89,20 +89,22 @@ M0 통과 조건:
 - Foveation은 support/input-cost control 역할로만 둔다.
 - Certification은 actual-only로 명시한다.
 
-## 현재 M3 실행 구도
+## 현재 실행 상태
 
-M3에서는 먼저 `Qwen3-VL-4B-Instruct`를 adapter 없이 실행해 base difficulty를 actual로
-측정한다. 같은 holdout split에서 `Qwen3-VL-8B-Instruct`는 작은 Qwen3 + LoRA와 비교할
-동세대 큰 backbone baseline으로 사용한다.
+현재는 M5 first pass까지 actual run을 진행했다. `Qwen3-VL-4B-Instruct`를 reference
+backbone으로 두고, `chart_table_cell_r4_v1` LoRA가 실제 학습 신호를 먹는지 확인했다.
+같은 holdout split에서 `Qwen3-VL-8B-Instruct`는 이후 작은 Qwen3 + LoRA와 비교할 동세대
+큰 backbone baseline으로 남겨둔다.
 
 ```text
-Qwen3-VL-4B base
-Qwen3-VL-4B + taxonomy LoRA
-Qwen3-VL-8B base
+Qwen3-VL-4B base: M3 completed
+Qwen3-VL-4B + chart_table_cell LoRA: M5 first pass completed
+Qwen3-VL-8B base: comparison baseline prepared, not yet used for certification
 ```
 
-첫 actual audit 단위는 `data/mvp/holdout.jsonl` 128개 샘플이다. 이 결과는 certification이
-아니라 M5/M6 전에 task 난이도가 적절한지 확인하는 base difficulty evidence다.
+M3 actual audit 단위는 `data/mvp/train.jsonl`과 `data/mvp/holdout.jsonl`의 256개 샘플이다.
+이 결과는 certification이 아니라 M5/M6 전에 task 난이도가 적절한지 확인하는 base difficulty
+evidence다.
 
 현재 Qwen3-VL-4B holdout actual base audit 결과는 다음과 같다.
 
@@ -118,6 +120,42 @@ holdout chart_table_cell: 47/64 = 0.734375
 
 따라서 `chart_table_cell`은 M5/M6 후보로 유지하고, `document_field_bind`는 현재 split이
 너무 쉬우므로 harder document split 또는 더 엄격한 field-binding prompt/scoring 보강이 필요하다.
+
+M5 first pass에서는 `chart_table_cell_r4_v1` LoRA를 rank 4, `q_proj/v_proj`, answer-only
+label mask로 120 step 학습했다.
+
+```text
+chart_table_cell train:   base 0.656250 -> LoRA 0.765625, gain +0.109375
+chart_table_cell holdout: base 0.734375 -> LoRA 0.718750, gain -0.015625
+M5 status: soft_pass
+failure_reason: holdout_no_gain_after_train_gain
+```
+
+해석은 보수적으로 둔다. `chart_table_cell`은 학습 가능하지만 현재 taxonomy 또는 split이 넓어서
+holdout transfer가 충분하지 않다. 따라서 이 결과만으로 M6 actual certification이나 router utility
+claim을 열지 않는다.
+
+## 현재 보류 중인 설계 질문
+
+M5 이후 논의된 `taxonomy fitness optimization`은 아직 protocol로 채택하지 않았다. 채택한다면
+runtime loop가 아니라 offline-only registry compiler 단계로 제한해야 한다.
+
+```text
+online runtime:
+  certified AdapterCard registry lookup
+  top-1 adapter selection
+  fallback to base_no_adapter
+  failure trace enqueue
+
+offline only:
+  taxonomy split/merge/defer/drop search
+  candidate LoRA training
+  actual certification
+  registry update
+```
+
+다음 작업은 잠시 멈춘 상태다. 재개 시 선택지는 `chart_table_cell` 학습 조건 재시도, OCR-VQA /
+ChartQAPro 후보 추가, 또는 M4b taxonomy fitness protocol 문서화 중 하나다.
 
 ## 현재 공개 범위
 

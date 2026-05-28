@@ -58,5 +58,12 @@ Smoke test 결과는 validation evidence로 쓰지 않는다. 기본 결과 브�
 003_m3_actual_base_audit_ko.md
 004_m4_offline_curriculum_compiler_ko.md
 005_m5_single_lora_learns_ko.md
+006_current_status_after_m5_ko.md
 mvp_review_after_m3_ko.md
 ```
+
+## 현재 중단 지점
+
+M5 first pass는 `soft_pass`다. `chart_table_cell_r4_v1`은 train에서 base보다 좋아졌지만,
+holdout에서는 base보다 0.015625 낮았다. 따라서 M6 certification이나 router utility claim은
+아직 열지 않는다.

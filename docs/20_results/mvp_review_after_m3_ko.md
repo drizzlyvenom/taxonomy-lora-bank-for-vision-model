@@ -2,6 +2,9 @@
 
 Status: after_m3_review
 
+Note: 이 문서는 M3 직후 판단을 보존한다. M5 first pass 이후 최신 중단 지점은
+`docs/20_results/006_current_status_after_m5_ko.md`를 우선 확인한다.
+
 ## 1. 검토 기준
 
 MVP는 milestone 문서의 기본 단위인 taxonomy별 `train 64 / holdout 64` actual run을 기준으로
