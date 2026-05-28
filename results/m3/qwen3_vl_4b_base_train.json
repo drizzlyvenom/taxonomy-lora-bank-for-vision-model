@@ -1,0 +1,3541 @@
+{
+  "rows": [
+    {
+      "answer_text": "ITC Limited",
+      "error": null,
+      "expected_answers": [
+        "itc limited",
+        "ITC Limited"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/2/image",
+      "image_size": {
+        "height": 2386,
+        "width": 1701
+      },
+      "latency_ms": 1748.35,
+      "peak_cuda_allocated_mb": 9070.79,
+      "prompt": "What is the name of the company?",
+      "sample_id": "document_field_bind_train_000000",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 2,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Paul",
+      "error": null,
+      "expected_answers": [
+        "Paul"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/4/image",
+      "image_size": {
+        "height": 1077,
+        "width": 808
+      },
+      "latency_ms": 1401.8,
+      "peak_cuda_allocated_mb": 8975.68,
+      "prompt": "To whom is the document sent?",
+      "sample_id": "document_field_bind_train_000001",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 4,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "1128 SIXTEENTH ST., N. W., WASHINGTON, D. C. 20036",
+      "error": null,
+      "expected_answers": [
+        "1128 SIXTEENTH ST., N. W., WASHINGTON, D. C. 20036",
+        "1128 sixteenth st., N. W., washington, D. C. 20036"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/5/image",
+      "image_size": {
+        "height": 1480,
+        "width": 1370
+      },
+      "latency_ms": 2819.29,
+      "peak_cuda_allocated_mb": 9068.53,
+      "prompt": "What the location address of NSDA?",
+      "sample_id": "document_field_bind_train_000002",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 5,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "THE ROBERT A. WELCH FOUNDATION",
+      "error": null,
+      "expected_answers": [
+        "The Robert A. Welch Foundation"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/7/image",
+      "image_size": {
+        "height": 2270,
+        "width": 1750
+      },
+      "latency_ms": 1604.95,
+      "peak_cuda_allocated_mb": 9052.34,
+      "prompt": "What is the name of foundation?",
+      "sample_id": "document_field_bind_train_000003",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 7,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "11:14 to 11:39 a.m.",
+      "error": null,
+      "expected_answers": [
+        "11:14 to 11:39 a.m.",
+        "11.14 to 11.39 a.m."
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/8/image",
+      "image_size": {
+        "height": 1644,
+        "width": 850
+      },
+      "latency_ms": 1726.94,
+      "peak_cuda_allocated_mb": 9056.17,
+      "prompt": "What time is the ‘coffee break’?",
+      "sample_id": "document_field_bind_train_000004",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 8,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "$975.00",
+      "error": null,
+      "expected_answers": [
+        "$975.00",
+        "975.00"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/9/image",
+      "image_size": {
+        "height": 2270,
+        "width": 1750
+      },
+      "latency_ms": 1359.89,
+      "peak_cuda_allocated_mb": 9057.91,
+      "prompt": "According to budget request summary what is total amount of other expenses??",
+      "sample_id": "document_field_bind_train_000005",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 9,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Lee A. Waller",
+      "error": null,
+      "expected_answers": [
+        "TRRF Vice President",
+        "lee a. waller"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/10/image",
+      "image_size": {
+        "height": 1644,
+        "width": 850
+      },
+      "latency_ms": 1178.54,
+      "peak_cuda_allocated_mb": 9059.71,
+      "prompt": "Who is ‘presiding’ TRRF GENERAL SESSION (PART 1)?",
+      "sample_id": "document_field_bind_train_000006",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 10,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "2",
+      "error": null,
+      "expected_answers": [
+        "2"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/13/image",
+      "image_size": {
+        "height": 2339,
+        "width": 1653
+      },
+      "latency_ms": 1507.22,
+      "peak_cuda_allocated_mb": 9070.4,
+      "prompt": "How many nomination committee meetings has Y. C. Deveshwar attended?",
+      "sample_id": "document_field_bind_train_000007",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 13,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "12:25 to 12:58 p.m.",
+      "error": null,
+      "expected_answers": [
+        "12:25 to 12:58 p.m."
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/14/image",
+      "image_size": {
+        "height": 1644,
+        "width": 850
+      },
+      "latency_ms": 1784.25,
+      "peak_cuda_allocated_mb": 9056.76,
+      "prompt": "What time is ‘question and answers ‘session?",
+      "sample_id": "document_field_bind_train_000008",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 14,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "6",
+      "error": null,
+      "expected_answers": [
+        "6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/16/image",
+      "image_size": {
+        "height": 2339,
+        "width": 1653
+      },
+      "latency_ms": 1143.17,
+      "peak_cuda_allocated_mb": 9068.11,
+      "prompt": "What is the 'no. of persons present' for the sustainability committee meeting held on 5th April, 2012?",
+      "sample_id": "document_field_bind_train_000009",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 16,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "TRRF Scientific Advisory Council Meeting",
+      "error": null,
+      "expected_answers": [
+        "trrf scientific advisory council meeting",
+        "TRRF Scientific Advisory Council Meeting"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/18/image",
+      "image_size": {
+        "height": 1644,
+        "width": 850
+      },
+      "latency_ms": 1398.4,
+      "peak_cuda_allocated_mb": 9062.08,
+      "prompt": "What session is at 2.00 to 5.00p.m.?",
+      "sample_id": "document_field_bind_train_000010",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 18,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "3",
+      "error": null,
+      "expected_answers": [
+        "3"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/19/image",
+      "image_size": {
+        "height": 2339,
+        "width": 1653
+      },
+      "latency_ms": 1143.46,
+      "peak_cuda_allocated_mb": 9070.4,
+      "prompt": "How many sustainability committee meetings has Y. C. Deveshwar attended?",
+      "sample_id": "document_field_bind_train_000011",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 19,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "CIGFIL LIMITED, CHENNAI",
+      "error": null,
+      "expected_answers": [
+        "cigfil limited",
+        "CIGFIL LIMITED"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/20/image",
+      "image_size": {
+        "height": 2340,
+        "width": 1679
+      },
+      "latency_ms": 1451.98,
+      "peak_cuda_allocated_mb": 9048.86,
+      "prompt": "What is the name of the company?",
+      "sample_id": "document_field_bind_train_000012",
+      "score": 1.0,
+      "score_method": "normalized_contains",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 20,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "CHENNAI",
+      "error": null,
+      "expected_answers": [
+        "chennai",
+        "Chennai"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/21/image",
+      "image_size": {
+        "height": 2340,
+        "width": 1679
+      },
+      "latency_ms": 1203.95,
+      "peak_cuda_allocated_mb": 9047.64,
+      "prompt": "Where is the company located?",
+      "sample_id": "document_field_bind_train_000013",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 21,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "79.23%",
+      "error": null,
+      "expected_answers": [
+        "(79.23%)",
+        "79.23%",
+        "79.23"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/22/image",
+      "image_size": {
+        "height": 2340,
+        "width": 1679
+      },
+      "latency_ms": 1025.11,
+      "peak_cuda_allocated_mb": 9051.92,
+      "prompt": "What is the % of raw material imported in the current year?",
+      "sample_id": "document_field_bind_train_000014",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 22,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "11:39 to 11:44 a.m.",
+      "error": null,
+      "expected_answers": [
+        "11:39 to 11:44 a.m.",
+        "11.39 to 11.44 a.m."
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/23/image",
+      "image_size": {
+        "height": 1644,
+        "width": 850
+      },
+      "latency_ms": 1357.33,
+      "peak_cuda_allocated_mb": 9056.76,
+      "prompt": "What time is “introductory remarks” session?",
+      "sample_id": "document_field_bind_train_000015",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 23,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "82.85%",
+      "error": null,
+      "expected_answers": [
+        "82.85",
+        "82.85%",
+        "(82.85%)"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/25/image",
+      "image_size": {
+        "height": 2340,
+        "width": 1679
+      },
+      "latency_ms": 1039.37,
+      "peak_cuda_allocated_mb": 9051.92,
+      "prompt": "What is the % of raw material imported in the previous year?",
+      "sample_id": "document_field_bind_train_000016",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 25,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "20.77%",
+      "error": null,
+      "expected_answers": [
+        "20.77%",
+        "20.77",
+        "(20.77%)"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/26/image",
+      "image_size": {
+        "height": 2340,
+        "width": 1679
+      },
+      "latency_ms": 997.88,
+      "peak_cuda_allocated_mb": 9052.53,
+      "prompt": "What is the % value of indigenous raw material in the current year?",
+      "sample_id": "document_field_bind_train_000017",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 26,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "17.15%",
+      "error": null,
+      "expected_answers": [
+        "17.15",
+        "17.15%",
+        "(17.15%)"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/27/image",
+      "image_size": {
+        "height": 2340,
+        "width": 1679
+      },
+      "latency_ms": 963.15,
+      "peak_cuda_allocated_mb": 9052.53,
+      "prompt": "What is the % value of indigenous raw material in the previous year?",
+      "sample_id": "document_field_bind_train_000018",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 27,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "A. C. Monk",
+      "error": null,
+      "expected_answers": [
+        "A. C. Monk"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/28/image",
+      "image_size": {
+        "height": 2200,
+        "width": 1695
+      },
+      "latency_ms": 912.24,
+      "peak_cuda_allocated_mb": 9052.96,
+      "prompt": "What is the name of the Dealer ?",
+      "sample_id": "document_field_bind_train_000019",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 28,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "31",
+      "error": null,
+      "expected_answers": [
+        "31"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/29/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2156
+      },
+      "latency_ms": 787.88,
+      "peak_cuda_allocated_mb": 9056.14,
+      "prompt": "What is the page no mentioned in this document?",
+      "sample_id": "document_field_bind_train_000020",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 29,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "22",
+      "error": null,
+      "expected_answers": [
+        "22"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/33/image",
+      "image_size": {
+        "height": 2200,
+        "width": 1695
+      },
+      "latency_ms": 818.7,
+      "peak_cuda_allocated_mb": 9058.5,
+      "prompt": "How many lint/string pieces of matter is found in the core samples ?",
+      "sample_id": "document_field_bind_train_000021",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 33,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "K. B. Vaidyanath",
+      "error": null,
+      "expected_answers": [
+        "y. c. deveshwar",
+        "Y.  C. Deveshwar"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/34/image",
+      "image_size": {
+        "height": 2339,
+        "width": 1653
+      },
+      "latency_ms": 1089.23,
+      "peak_cuda_allocated_mb": 9071.9,
+      "prompt": "Who was the director having the highest number of options ?",
+      "sample_id": "document_field_bind_train_000022",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 34,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "10,000",
+      "error": null,
+      "expected_answers": [
+        "10,000"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/35/image",
+      "image_size": {
+        "height": 2339,
+        "width": 1653
+      },
+      "latency_ms": 1075.81,
+      "peak_cuda_allocated_mb": 9070.25,
+      "prompt": "What is the no. of options held by S. H. Khan?",
+      "sample_id": "document_field_bind_train_000023",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 35,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "24,26,435",
+      "error": null,
+      "expected_answers": [
+        "24,26,435"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/36/image",
+      "image_size": {
+        "height": 2339,
+        "width": 1653
+      },
+      "latency_ms": 1155.28,
+      "peak_cuda_allocated_mb": 9072.32,
+      "prompt": "What is the no. of Ordinary shares held by Y. C. Deveshwar?",
+      "sample_id": "document_field_bind_train_000024",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 36,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "70",
+      "error": null,
+      "expected_answers": [
+        "70%",
+        "70"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/37/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2159
+      },
+      "latency_ms": 883.32,
+      "peak_cuda_allocated_mb": 9059.68,
+      "prompt": "What percentage of smokers feel the need to find more excitement and sensation in life?",
+      "sample_id": "document_field_bind_train_000025",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 37,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "14,000",
+      "error": null,
+      "expected_answers": [
+        "14,000"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/38/image",
+      "image_size": {
+        "height": 2339,
+        "width": 1653
+      },
+      "latency_ms": 1076.57,
+      "peak_cuda_allocated_mb": 9070.25,
+      "prompt": "What is the no. of Ordinary shares held by N. Anand?",
+      "sample_id": "document_field_bind_train_000026",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 38,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "57",
+      "error": null,
+      "expected_answers": [
+        "57",
+        "57%"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/39/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2159
+      },
+      "latency_ms": 879.32,
+      "peak_cuda_allocated_mb": 9060.87,
+      "prompt": "What percentage of non-smokers feel the need to restore romance and mystery to modern life?",
+      "sample_id": "document_field_bind_train_000027",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 39,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "The Environment",
+      "error": null,
+      "expected_answers": [
+        "The Environment"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/41/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2162
+      },
+      "latency_ms": 1054.3,
+      "peak_cuda_allocated_mb": 9052.96,
+      "prompt": "What is the title of the document ?",
+      "sample_id": "document_field_bind_train_000028",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 41,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "2013",
+      "error": null,
+      "expected_answers": [
+        "2013"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/42/image",
+      "image_size": {
+        "height": 2386,
+        "width": 1701
+      },
+      "latency_ms": 1059.53,
+      "peak_cuda_allocated_mb": 9069.82,
+      "prompt": "What is the year mentioned at the top of the page?",
+      "sample_id": "document_field_bind_train_000029",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 42,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "200",
+      "error": null,
+      "expected_answers": [
+        "$200",
+        "200"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/50/image",
+      "image_size": {
+        "height": 1553,
+        "width": 1695
+      },
+      "latency_ms": 1127.32,
+      "peak_cuda_allocated_mb": 9040.8,
+      "prompt": "What is cost of liquid nitrogen",
+      "sample_id": "document_field_bind_train_000030",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 50,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "485",
+      "error": null,
+      "expected_answers": [
+        "$485",
+        "485"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/51/image",
+      "image_size": {
+        "height": 1553,
+        "width": 1695
+      },
+      "latency_ms": 956.39,
+      "peak_cuda_allocated_mb": 9041.46,
+      "prompt": "What is cost of chemicals and supplies?",
+      "sample_id": "document_field_bind_train_000031",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 51,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "82",
+      "error": null,
+      "expected_answers": [
+        "82%",
+        "82"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/52/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2159
+      },
+      "latency_ms": 850.91,
+      "peak_cuda_allocated_mb": 9062.05,
+      "prompt": "What percentage of non-smokers feel there should be less emphasis on money in our seciety?",
+      "sample_id": "document_field_bind_train_000032",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 52,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Emotional Enhancement",
+      "error": null,
+      "expected_answers": [
+        "Emotional Enhancement"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/53/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2159
+      },
+      "latency_ms": 930.1,
+      "peak_cuda_allocated_mb": 9054.58,
+      "prompt": "What is the main title of this document?",
+      "sample_id": "document_field_bind_train_000033",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 53,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "29",
+      "error": null,
+      "expected_answers": [
+        "29"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/54/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2159
+      },
+      "latency_ms": 919.31,
+      "peak_cuda_allocated_mb": 9056.14,
+      "prompt": "What is the page no mentioned in this document?",
+      "sample_id": "document_field_bind_train_000034",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 54,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "MEHARRY MEDICAL COLLEGE",
+      "error": null,
+      "expected_answers": [
+        "meharry medical college",
+        "MEHARRY MEDICAL COLLEGE"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/55/image",
+      "image_size": {
+        "height": 2236,
+        "width": 1748
+      },
+      "latency_ms": 1503.39,
+      "peak_cuda_allocated_mb": 9056.14,
+      "prompt": "Which college's name is specified in the logo?",
+      "sample_id": "document_field_bind_train_000035",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 55,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "February 24, 1966",
+      "error": null,
+      "expected_answers": [
+        "February 24",
+        "February 24 .1966",
+        "February 24 1966"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/57/image",
+      "image_size": {
+        "height": 1553,
+        "width": 1695
+      },
+      "latency_ms": 1471.37,
+      "peak_cuda_allocated_mb": 9037.79,
+      "prompt": "What is date?",
+      "sample_id": "document_field_bind_train_000036",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 57,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "64",
+      "error": null,
+      "expected_answers": [
+        "64%",
+        "64"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/58/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2159
+      },
+      "latency_ms": 847.09,
+      "peak_cuda_allocated_mb": 9060.87,
+      "prompt": "What percentage of non-smokers feel the need to find more excitement and sensation in life?",
+      "sample_id": "document_field_bind_train_000037",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 58,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "16",
+      "error": null,
+      "expected_answers": [
+        "16"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/60/image",
+      "image_size": {
+        "height": 1695,
+        "width": 2164
+      },
+      "latency_ms": 903.68,
+      "peak_cuda_allocated_mb": 9056.14,
+      "prompt": "What is the page no mentioned in this document?",
+      "sample_id": "document_field_bind_train_000038",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 60,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "GENERAL FOODS FUND, INC.",
+      "error": null,
+      "expected_answers": [
+        "GENERAL FOOD FUND, INC"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/61/image",
+      "image_size": {
+        "height": 2236,
+        "width": 1748
+      },
+      "latency_ms": 1633.14,
+      "peak_cuda_allocated_mb": 9051.11,
+      "prompt": "Who supported the workshop?",
+      "sample_id": "document_field_bind_train_000039",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 61,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "58.5",
+      "error": null,
+      "expected_answers": [
+        "58.5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/65/image",
+      "image_size": {
+        "height": 2191,
+        "width": 1685
+      },
+      "latency_ms": 1107.56,
+      "peak_cuda_allocated_mb": 9063.24,
+      "prompt": "What was Final Wt of the child who had an initial Wt of 61.5 lbs ?",
+      "sample_id": "document_field_bind_train_000040",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 65,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "40",
+      "error": null,
+      "expected_answers": [
+        "40"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/66/image",
+      "image_size": {
+        "height": 2191,
+        "width": 1685
+      },
+      "latency_ms": 981.59,
+      "peak_cuda_allocated_mb": 9057.91,
+      "prompt": "How many days were the subject J.W. on baseline diet ?",
+      "sample_id": "document_field_bind_train_000041",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 66,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "30",
+      "error": null,
+      "expected_answers": [
+        "30"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/67/image",
+      "image_size": {
+        "height": 2191,
+        "width": 1685
+      },
+      "latency_ms": 896.76,
+      "peak_cuda_allocated_mb": 9057.91,
+      "prompt": "How many days were the subject J.W. on dilution ?",
+      "sample_id": "document_field_bind_train_000042",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 67,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "5",
+      "error": null,
+      "expected_answers": [
+        "5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/68/image",
+      "image_size": {
+        "height": 2191,
+        "width": 1685
+      },
+      "latency_ms": 861.89,
+      "peak_cuda_allocated_mb": 9056.14,
+      "prompt": "What is the age of subject B.L. ?",
+      "sample_id": "document_field_bind_train_000043",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 68,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "33.0",
+      "error": null,
+      "expected_answers": [
+        "33.0"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/69/image",
+      "image_size": {
+        "height": 2191,
+        "width": 1685
+      },
+      "latency_ms": 1020.65,
+      "peak_cuda_allocated_mb": 9057.32,
+      "prompt": "What was the initial wt. of subject C.R. ?",
+      "sample_id": "document_field_bind_train_000044",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 69,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "37.0",
+      "error": null,
+      "expected_answers": [
+        "37.0"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/70/image",
+      "image_size": {
+        "height": 2191,
+        "width": 1685
+      },
+      "latency_ms": 1119.09,
+      "peak_cuda_allocated_mb": 9057.32,
+      "prompt": "What was the final wt. of subject S.D. ?",
+      "sample_id": "document_field_bind_train_000045",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 70,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "103",
+      "error": null,
+      "expected_answers": [
+        "103"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/76/image",
+      "image_size": {
+        "height": 2289,
+        "width": 1791
+      },
+      "latency_ms": 949.89,
+      "peak_cuda_allocated_mb": 9059.09,
+      "prompt": "What was the cholesterol by the 4th wk for #1 rats?",
+      "sample_id": "document_field_bind_train_000046",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 76,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Platte County Volunteers Against Hunger",
+      "error": null,
+      "expected_answers": [
+        "PLATTE COUNTY VOLUNTEERS AGAINST HUNGER",
+        "Platte county volunteers against hunger"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/77/image",
+      "image_size": {
+        "height": 2286,
+        "width": 1788
+      },
+      "latency_ms": 1243.28,
+      "peak_cuda_allocated_mb": 9052.96,
+      "prompt": "Who has prepared the directory of services?",
+      "sample_id": "document_field_bind_train_000047",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 77,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "ITC",
+      "error": null,
+      "expected_answers": [
+        "itc",
+        "ITC"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/78/image",
+      "image_size": {
+        "height": 2386,
+        "width": 1701
+      },
+      "latency_ms": 961.98,
+      "peak_cuda_allocated_mb": 9069.82,
+      "prompt": "What is the name on the building in the last picture?",
+      "sample_id": "document_field_bind_train_000048",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 78,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "34,400",
+      "error": null,
+      "expected_answers": [
+        "34,400"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/79/image",
+      "image_size": {
+        "height": 1786,
+        "width": 2284
+      },
+      "latency_ms": 1119.71,
+      "peak_cuda_allocated_mb": 9056.73,
+      "prompt": "What is the population in the county 'Scott' ?",
+      "sample_id": "document_field_bind_train_000049",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 79,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "29.9",
+      "error": null,
+      "expected_answers": [
+        "29.9"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/80/image",
+      "image_size": {
+        "height": 1786,
+        "width": 2284
+      },
+      "latency_ms": 1014.56,
+      "peak_cuda_allocated_mb": 9059.68,
+      "prompt": "What % of families are in poverty in the county 'Stoddard' ?",
+      "sample_id": "document_field_bind_train_000050",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 80,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "REPORT AND ACCOUNTS 2013",
+      "error": null,
+      "expected_answers": [
+        "report and accounts",
+        "Report and Accounts",
+        "report and accounts 2013"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/81/image",
+      "image_size": {
+        "height": 2386,
+        "width": 1701
+      },
+      "latency_ms": 1824.32,
+      "peak_cuda_allocated_mb": 9069.96,
+      "prompt": "What type of financial information of ITC Ltd. is this?",
+      "sample_id": "document_field_bind_train_000051",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 81,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "1,423",
+      "error": null,
+      "expected_answers": [
+        "1,423"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/83/image",
+      "image_size": {
+        "height": 1786,
+        "width": 2284
+      },
+      "latency_ms": 1048.99,
+      "peak_cuda_allocated_mb": 9056.14,
+      "prompt": "How many public assistance recipients in the county Lawrence?",
+      "sample_id": "document_field_bind_train_000052",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 83,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "33,600",
+      "error": null,
+      "expected_answers": [
+        "33,600"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/84/image",
+      "image_size": {
+        "height": 1786,
+        "width": 2284
+      },
+      "latency_ms": 1195.18,
+      "peak_cuda_allocated_mb": 9056.73,
+      "prompt": "What is the population in the 'Newton' county ?",
+      "sample_id": "document_field_bind_train_000053",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 84,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Steering Committee Meeting",
+      "error": null,
+      "expected_answers": [
+        "Steering Committee Meeting",
+        "Steering committee Meeting"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/90/image",
+      "image_size": {
+        "height": 2284,
+        "width": 1784
+      },
+      "latency_ms": 1081.62,
+      "peak_cuda_allocated_mb": 9052.96,
+      "prompt": "What is the subject of the memorandum ?",
+      "sample_id": "document_field_bind_train_000054",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 90,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Volunteers Against Hunger Steering Committee",
+      "error": null,
+      "expected_answers": [
+        "Volunteers Against Hunger Steering Committee",
+        "Volunteers against Hunger Steering committee"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/91/image",
+      "image_size": {
+        "height": 2284,
+        "width": 1784
+      },
+      "latency_ms": 1095.79,
+      "peak_cuda_allocated_mb": 9052.34,
+      "prompt": "TO whom is the memorandum addressed ?",
+      "sample_id": "document_field_bind_train_000055",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 91,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Bert Shulimson, Executive Secretary",
+      "error": null,
+      "expected_answers": [
+        "Bert Shulimson",
+        "Bert Shulimson , Executive Secretary"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/92/image",
+      "image_size": {
+        "height": 2284,
+        "width": 1784
+      },
+      "latency_ms": 1238.91,
+      "peak_cuda_allocated_mb": 9051.73,
+      "prompt": "Who has sent the memorandum ?",
+      "sample_id": "document_field_bind_train_000056",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 92,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "AVAILABLE",
+      "error": null,
+      "expected_answers": [
+        "available",
+        "Available"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/96/image",
+      "image_size": {
+        "height": 2266,
+        "width": 1768
+      },
+      "latency_ms": 991.77,
+      "peak_cuda_allocated_mb": 9054.58,
+      "prompt": "What is the title in the last rectangle ?",
+      "sample_id": "document_field_bind_train_000057",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 96,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "WANTED",
+      "error": null,
+      "expected_answers": [
+        "wanted",
+        "Wanted"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/97/image",
+      "image_size": {
+        "height": 2266,
+        "width": 1768
+      },
+      "latency_ms": 843.5,
+      "peak_cuda_allocated_mb": 9054.58,
+      "prompt": "What is the title in the first rectangle ?",
+      "sample_id": "document_field_bind_train_000058",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 97,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Independent Ice and Cold Storage Co.",
+      "error": null,
+      "expected_answers": [
+        "independent ice and cold storage co.",
+        "Independent Ice and Cold Storage Co."
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/98/image",
+      "image_size": {
+        "height": 2266,
+        "width": 1768
+      },
+      "latency_ms": 1204.42,
+      "peak_cuda_allocated_mb": 9058.5,
+      "prompt": "Which company has vacancies to the post of general manager and operating engineer?",
+      "sample_id": "document_field_bind_train_000059",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 98,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "Menopausal Health Publication Management",
+      "error": null,
+      "expected_answers": [
+        "Menopausal Health Publication Management"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/99/image",
+      "image_size": {
+        "height": 2289,
+        "width": 1711
+      },
+      "latency_ms": 1101.48,
+      "peak_cuda_allocated_mb": 9074.49,
+      "prompt": "What is the title of the document ?",
+      "sample_id": "document_field_bind_train_000060",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 99,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "10:00 - 11:30 AM",
+      "error": null,
+      "expected_answers": [
+        "10:00 - 11:30 AM",
+        "10:00 -  11:30 AM"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/101/image",
+      "image_size": {
+        "height": 2289,
+        "width": 1711
+      },
+      "latency_ms": 1564.73,
+      "peak_cuda_allocated_mb": 9077.88,
+      "prompt": "What is the tiime mentioned in the document?",
+      "sample_id": "document_field_bind_train_000061",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 101,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "609/924-6648",
+      "error": null,
+      "expected_answers": [
+        "609/924-6648"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/103/image",
+      "image_size": {
+        "height": 2289,
+        "width": 1711
+      },
+      "latency_ms": 1591.47,
+      "peak_cuda_allocated_mb": 9077.88,
+      "prompt": "What is the fax number present in the document ?",
+      "sample_id": "document_field_bind_train_000062",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 103,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "January 18, 2005",
+      "error": null,
+      "expected_answers": [
+        "January 18, 2005"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/DocVQA/DocVQA/validation/104/image",
+      "image_size": {
+        "height": 2215,
+        "width": 1723
+      },
+      "latency_ms": 1557.42,
+      "peak_cuda_allocated_mb": 9056.14,
+      "prompt": "What is the Date Assigned as per the document?",
+      "sample_id": "document_field_bind_train_000063",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "DocVQA",
+        "dataset": "lmms-lab/DocVQA",
+        "image_field": "image",
+        "row_idx": 104,
+        "split": "validation"
+      },
+      "split": "train",
+      "taxonomy_id": "document_field_bind"
+    },
+    {
+      "answer_text": "10",
+      "error": null,
+      "expected_answers": [
+        "14"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/0/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 643.41,
+      "peak_cuda_allocated_mb": 8736.65,
+      "prompt": "How many food item is shown in the bar graph?",
+      "sample_id": "chart_table_cell_train_000000",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 0,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.57",
+      "error": null,
+      "expected_answers": [
+        "0.57"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/1/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 766.77,
+      "peak_cuda_allocated_mb": 8736.65,
+      "prompt": "What is the difference in value between Lamb and Corn?",
+      "sample_id": "chart_table_cell_train_000001",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 1,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "3",
+      "error": null,
+      "expected_answers": [
+        "3"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/2/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 617.46,
+      "peak_cuda_allocated_mb": 8735.89,
+      "prompt": "How many bars are shown in the chart?",
+      "sample_id": "chart_table_cell_train_000002",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 2,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "No",
+      "error": null,
+      "expected_answers": [
+        "No"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/3/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 684.4,
+      "peak_cuda_allocated_mb": 8736.27,
+      "prompt": "Is the sum value of Madagascar more then Fiji?",
+      "sample_id": "chart_table_cell_train_000003",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 3,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "23",
+      "error": null,
+      "expected_answers": [
+        "23"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/4/image",
+      "image_size": {
+        "height": 343,
+        "width": 309
+      },
+      "latency_ms": 553.36,
+      "peak_cuda_allocated_mb": 8567.72,
+      "prompt": "What's the value of the lowest bar?",
+      "sample_id": "chart_table_cell_train_000004",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 4,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "6",
+      "error": null,
+      "expected_answers": [
+        "6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/5/image",
+      "image_size": {
+        "height": 343,
+        "width": 309
+      },
+      "latency_ms": 669.25,
+      "peak_cuda_allocated_mb": 8569.09,
+      "prompt": "What is the difference between the highest and the lowest green bar??",
+      "sample_id": "chart_table_cell_train_000005",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 5,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "62",
+      "error": null,
+      "expected_answers": [
+        "62"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/6/image",
+      "image_size": {
+        "height": 404,
+        "width": 310
+      },
+      "latency_ms": 521.59,
+      "peak_cuda_allocated_mb": 8567.67,
+      "prompt": "What percent who think of President Donald Trump as Dangerous?",
+      "sample_id": "chart_table_cell_train_000006",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 6,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "95",
+      "error": null,
+      "expected_answers": [
+        "Yes"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/7/image",
+      "image_size": {
+        "height": 404,
+        "width": 310
+      },
+      "latency_ms": 552.93,
+      "peak_cuda_allocated_mb": 8571.82,
+      "prompt": "Is the sum of the percents of Charismatic and Well-qualified to be president more than A strong leader ?",
+      "sample_id": "chart_table_cell_train_000007",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 7,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Inspired",
+      "error": null,
+      "expected_answers": [
+        "Inspired"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/8/image",
+      "image_size": {
+        "height": 788,
+        "width": 840
+      },
+      "latency_ms": 821.2,
+      "peak_cuda_allocated_mb": 8825.53,
+      "prompt": "What was the 4th most popular emotion?",
+      "sample_id": "chart_table_cell_train_000008",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 8,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "3",
+      "error": null,
+      "expected_answers": [
+        "0.03"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/9/image",
+      "image_size": {
+        "height": 788,
+        "width": 840
+      },
+      "latency_ms": 762.13,
+      "peak_cuda_allocated_mb": 8828.01,
+      "prompt": "How many more people felt inspired frequently than depressed frequently?",
+      "sample_id": "chart_table_cell_train_000009",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 9,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "1 GPI",
+      "error": null,
+      "expected_answers": [
+        "1"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/10/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 793.94,
+      "peak_cuda_allocated_mb": 8736.27,
+      "prompt": "What is the value of Slovenia in the graph?",
+      "sample_id": "chart_table_cell_train_000010",
+      "score": 1.0,
+      "score_method": "normalized_contains",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 10,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.08",
+      "error": null,
+      "expected_answers": [
+        "0.08"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/11/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 806.58,
+      "peak_cuda_allocated_mb": 8737.41,
+      "prompt": "What is the difference in value between Green bar and Orange bar?",
+      "sample_id": "chart_table_cell_train_000011",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 11,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "17",
+      "error": null,
+      "expected_answers": [
+        "17"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/12/image",
+      "image_size": {
+        "height": 358,
+        "width": 310
+      },
+      "latency_ms": 661.42,
+      "peak_cuda_allocated_mb": 8573.73,
+      "prompt": "What's the lefmost value of bar in China?",
+      "sample_id": "chart_table_cell_train_000012",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 12,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "21.7",
+      "error": null,
+      "expected_answers": [
+        "21.6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/13/image",
+      "image_size": {
+        "height": 358,
+        "width": 310
+      },
+      "latency_ms": 734.72,
+      "peak_cuda_allocated_mb": 8577.23,
+      "prompt": "What's the average of all the values in the green bars (round to one decimal)?",
+      "sample_id": "chart_table_cell_train_000013",
+      "score": 1.0,
+      "score_method": "numeric_tolerance",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 13,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2",
+      "error": null,
+      "expected_answers": [
+        "2"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/14/image",
+      "image_size": {
+        "height": 310,
+        "width": 460
+      },
+      "latency_ms": 604.04,
+      "peak_cuda_allocated_mb": 8569.0,
+      "prompt": "What's the percentage of U.S adults who refused?",
+      "sample_id": "chart_table_cell_train_000014",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 14,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2014",
+      "error": null,
+      "expected_answers": [
+        "2014"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/16/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 854.59,
+      "peak_cuda_allocated_mb": 8735.51,
+      "prompt": "When does the line reach the peak?",
+      "sample_id": "chart_table_cell_train_000015",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 16,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2013",
+      "error": null,
+      "expected_answers": [
+        "2011"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/17/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 830.21,
+      "peak_cuda_allocated_mb": 8736.27,
+      "prompt": "When does the line have the sharpest increase?",
+      "sample_id": "chart_table_cell_train_000016",
+      "score": 1.0,
+      "score_method": "numeric_tolerance",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 17,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Child Labor (Boys, World, 2000-2012) (ILO)",
+      "error": null,
+      "expected_answers": [
+        "green line"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/20/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 2179.41,
+      "peak_cuda_allocated_mb": 8735.13,
+      "prompt": "Which line represents data about boys?",
+      "sample_id": "chart_table_cell_train_000017",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 20,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2004",
+      "error": null,
+      "expected_answers": [
+        "2008"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/21/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 874.53,
+      "peak_cuda_allocated_mb": 8740.99,
+      "prompt": "When does the gap between data about boys and girls reach become largest?",
+      "sample_id": "chart_table_cell_train_000018",
+      "score": 1.0,
+      "score_method": "numeric_tolerance",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 21,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "29",
+      "error": null,
+      "expected_answers": [
+        "29"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/22/image",
+      "image_size": {
+        "height": 808,
+        "width": 628
+      },
+      "latency_ms": 794.89,
+      "peak_cuda_allocated_mb": 8738.36,
+      "prompt": "Find missing data of the sequence 24, _ ,32, 33, 42?",
+      "sample_id": "chart_table_cell_train_000019",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 22,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.75",
+      "error": null,
+      "expected_answers": [
+        "1.216666667"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/23/image",
+      "image_size": {
+        "height": 808,
+        "width": 628
+      },
+      "latency_ms": 789.48,
+      "peak_cuda_allocated_mb": 8735.33,
+      "prompt": "What's the ratio of the lowest value of green bars and blue bars?",
+      "sample_id": "chart_table_cell_train_000020",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 23,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "80",
+      "error": null,
+      "expected_answers": [
+        "80"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/26/image",
+      "image_size": {
+        "height": 326,
+        "width": 184
+      },
+      "latency_ms": 670.93,
+      "peak_cuda_allocated_mb": 8565.8,
+      "prompt": "What's the percentage of biggest segment?",
+      "sample_id": "chart_table_cell_train_000021",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 26,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "77",
+      "error": null,
+      "expected_answers": [
+        "77"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/27/image",
+      "image_size": {
+        "height": 326,
+        "width": 184
+      },
+      "latency_ms": 627.94,
+      "peak_cuda_allocated_mb": 8568.38,
+      "prompt": "What's the difference in value of biggest and smallest segment?",
+      "sample_id": "chart_table_cell_train_000022",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 27,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "11",
+      "error": null,
+      "expected_answers": [
+        "0.6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/28/image",
+      "image_size": {
+        "height": 445,
+        "width": 422
+      },
+      "latency_ms": 708.17,
+      "peak_cuda_allocated_mb": 8567.72,
+      "prompt": "How many percent are fewer refugees in Jordan??",
+      "sample_id": "chart_table_cell_train_000023",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 28,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "64",
+      "error": null,
+      "expected_answers": [
+        "61"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/29/image",
+      "image_size": {
+        "height": 445,
+        "width": 422
+      },
+      "latency_ms": 724.39,
+      "peak_cuda_allocated_mb": 8568.74,
+      "prompt": "What is the difference between the highest percentage and lowest percentage??",
+      "sample_id": "chart_table_cell_train_000024",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 29,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "13",
+      "error": null,
+      "expected_answers": [
+        "13"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/30/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 648.65,
+      "peak_cuda_allocated_mb": 8675.2,
+      "prompt": "How many years are represented on this graph?",
+      "sample_id": "chart_table_cell_train_000025",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 30,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "7",
+      "error": null,
+      "expected_answers": [
+        "5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/31/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 533.2,
+      "peak_cuda_allocated_mb": 8679.61,
+      "prompt": "How many points/years on the Lithuania are above 10?",
+      "sample_id": "chart_table_cell_train_000026",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 31,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "21",
+      "error": null,
+      "expected_answers": [
+        "24"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/32/image",
+      "image_size": {
+        "height": 564,
+        "width": 418
+      },
+      "latency_ms": 620.95,
+      "peak_cuda_allocated_mb": 8579.56,
+      "prompt": "How many are Somewhat confident that Donald Trump can Mange the executive branch effectively?",
+      "sample_id": "chart_table_cell_train_000027",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 32,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Italy",
+      "error": null,
+      "expected_answers": [
+        "Italy"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/34/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 513.27,
+      "peak_cuda_allocated_mb": 8679.61,
+      "prompt": "Which country has highest secondary graduation rate in 2018?",
+      "sample_id": "chart_table_cell_train_000028",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 34,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Mexico",
+      "error": null,
+      "expected_answers": [
+        "Mexico"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/35/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 593.81,
+      "peak_cuda_allocated_mb": 8678.06,
+      "prompt": "Which line remains all time lower than the other two?",
+      "sample_id": "chart_table_cell_train_000029",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 35,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "33",
+      "error": null,
+      "expected_answers": [
+        "33"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/36/image",
+      "image_size": {
+        "height": 669,
+        "width": 420
+      },
+      "latency_ms": 662.78,
+      "peak_cuda_allocated_mb": 8597.09,
+      "prompt": "How many waited in Total for 10mins?",
+      "sample_id": "chart_table_cell_train_000030",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 36,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Over 30 mins",
+      "error": null,
+      "expected_answers": [
+        "Over 30 mins"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/37/image",
+      "image_size": {
+        "height": 669,
+        "width": 420
+      },
+      "latency_ms": 900.53,
+      "peak_cuda_allocated_mb": 8598.69,
+      "prompt": "Maximum for how long people waited when they went to vote is shown in a chart?",
+      "sample_id": "chart_table_cell_train_000031",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 37,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "4",
+      "error": null,
+      "expected_answers": [
+        "4"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/38/image",
+      "image_size": {
+        "height": 372,
+        "width": 200
+      },
+      "latency_ms": 609.31,
+      "peak_cuda_allocated_mb": 8571.15,
+      "prompt": "How many categories are there in the chart??",
+      "sample_id": "chart_table_cell_train_000032",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 38,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "22",
+      "error": null,
+      "expected_answers": [
+        "22"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/39/image",
+      "image_size": {
+        "height": 372,
+        "width": 200
+      },
+      "latency_ms": 611.61,
+      "peak_cuda_allocated_mb": 8571.82,
+      "prompt": "What is the difference between Asians and Whites degree distribution??",
+      "sample_id": "chart_table_cell_train_000033",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 39,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "92",
+      "error": null,
+      "expected_answers": [
+        "92"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/40/image",
+      "image_size": {
+        "height": 598,
+        "width": 620
+      },
+      "latency_ms": 669.83,
+      "peak_cuda_allocated_mb": 8636.83,
+      "prompt": "What is the value of Favor on the blue bar?",
+      "sample_id": "chart_table_cell_train_000034",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 40,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "920",
+      "error": null,
+      "expected_answers": [
+        "96"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/41/image",
+      "image_size": {
+        "height": 598,
+        "width": 620
+      },
+      "latency_ms": 716.62,
+      "peak_cuda_allocated_mb": 8641.36,
+      "prompt": "What is the product of the smallest value on the blue bar and the smallest value on the upper bar?",
+      "sample_id": "chart_table_cell_train_000035",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 41,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "21",
+      "error": null,
+      "expected_answers": [
+        "21"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/42/image",
+      "image_size": {
+        "height": 288,
+        "width": 309
+      },
+      "latency_ms": 575.26,
+      "peak_cuda_allocated_mb": 8570.13,
+      "prompt": "What's the percentage of people choosing approve in Sep 2015?",
+      "sample_id": "chart_table_cell_train_000036",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 42,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "12",
+      "error": null,
+      "expected_answers": [
+        "12"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/43/image",
+      "image_size": {
+        "height": 288,
+        "width": 309
+      },
+      "latency_ms": 599.86,
+      "peak_cuda_allocated_mb": 8572.91,
+      "prompt": "How much does the value of Approve decrease from Jul 2015 to Sep 2015?",
+      "sample_id": "chart_table_cell_train_000037",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 43,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2009",
+      "error": null,
+      "expected_answers": [
+        "2009"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/44/image",
+      "image_size": {
+        "height": 330,
+        "width": 420
+      },
+      "latency_ms": 867.12,
+      "peak_cuda_allocated_mb": 8568.35,
+      "prompt": "In which year the value of Satisfied is 20?",
+      "sample_id": "chart_table_cell_train_000038",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 44,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "29.3",
+      "error": null,
+      "expected_answers": [
+        "28.6"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/45/image",
+      "image_size": {
+        "height": 330,
+        "width": 420
+      },
+      "latency_ms": 833.26,
+      "peak_cuda_allocated_mb": 8569.73,
+      "prompt": "What's the average of last three values in green graph (round to one decimal)?",
+      "sample_id": "chart_table_cell_train_000039",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 45,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "68",
+      "error": null,
+      "expected_answers": [
+        "68"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/46/image",
+      "image_size": {
+        "height": 515,
+        "width": 200
+      },
+      "latency_ms": 526.63,
+      "peak_cuda_allocated_mb": 8573.05,
+      "prompt": "What's the percentage of respondents who say economic ties between the U.S. and China are Bad in 2020?",
+      "sample_id": "chart_table_cell_train_000040",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 46,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2019",
+      "error": null,
+      "expected_answers": [
+        "2019"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/47/image",
+      "image_size": {
+        "height": 515,
+        "width": 200
+      },
+      "latency_ms": 772.84,
+      "peak_cuda_allocated_mb": 8567.99,
+      "prompt": "In which year the difference between Bad and Good graph is minimum?",
+      "sample_id": "chart_table_cell_train_000041",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 47,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "83",
+      "error": null,
+      "expected_answers": [
+        "83"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/48/image",
+      "image_size": {
+        "height": 427,
+        "width": 308
+      },
+      "latency_ms": 617.41,
+      "peak_cuda_allocated_mb": 8565.45,
+      "prompt": "What % of the people approve of the way Vladimir Putin is handling relations with Ukraine?",
+      "sample_id": "chart_table_cell_train_000042",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 48,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "2.0",
+      "error": null,
+      "expected_answers": [
+        "2.13"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/49/image",
+      "image_size": {
+        "height": 427,
+        "width": 308
+      },
+      "latency_ms": 693.16,
+      "peak_cuda_allocated_mb": 8566.47,
+      "prompt": "What is the ratio of the people who approve and those who dont about Putin's handling of Corruption?",
+      "sample_id": "chart_table_cell_train_000043",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 49,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "32",
+      "error": null,
+      "expected_answers": [
+        "Simulation"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/50/image",
+      "image_size": {
+        "height": 521,
+        "width": 310
+      },
+      "latency_ms": 669.27,
+      "peak_cuda_allocated_mb": 8567.69,
+      "prompt": "What's the least popular game in the chart?",
+      "sample_id": "chart_table_cell_train_000044",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 50,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.12132838235294118",
+      "error": null,
+      "expected_answers": [
+        "0.33333333"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/55/image",
+      "image_size": {
+        "height": 386,
+        "width": 210
+      },
+      "latency_ms": 1906.77,
+      "peak_cuda_allocated_mb": 8568.38,
+      "prompt": "What's the ratio of smallest segment and second largest segment?",
+      "sample_id": "chart_table_cell_train_000045",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 55,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Republican",
+      "error": null,
+      "expected_answers": [
+        "Democrat (scores 60 to 100)"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/56/image",
+      "image_size": {
+        "height": 395,
+        "width": 309
+      },
+      "latency_ms": 496.08,
+      "peak_cuda_allocated_mb": 8568.35,
+      "prompt": "What political party has the highest rate of 'confirmed respondents'?",
+      "sample_id": "chart_table_cell_train_000046",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 56,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "66",
+      "error": null,
+      "expected_answers": [
+        "0.01"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/57/image",
+      "image_size": {
+        "height": 395,
+        "width": 309
+      },
+      "latency_ms": 508.22,
+      "peak_cuda_allocated_mb": 8567.67,
+      "prompt": "What percentage of pollers did NOT have phone number?",
+      "sample_id": "chart_table_cell_train_000047",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 57,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "Libya",
+      "error": null,
+      "expected_answers": [
+        "Libya"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/58/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 817.89,
+      "peak_cuda_allocated_mb": 8735.89,
+      "prompt": "Which country is represented by brown color bar?",
+      "sample_id": "chart_table_cell_train_000048",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 58,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.23",
+      "error": null,
+      "expected_answers": [
+        "0.23"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/59/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 844.6,
+      "peak_cuda_allocated_mb": 8741.76,
+      "prompt": "What is the difference between maximum and minimum Human Development index across all the countries?",
+      "sample_id": "chart_table_cell_train_000049",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 59,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "28",
+      "error": null,
+      "expected_answers": [
+        "28"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/60/image",
+      "image_size": {
+        "height": 436,
+        "width": 309
+      },
+      "latency_ms": 593.47,
+      "peak_cuda_allocated_mb": 8562.87,
+      "prompt": "What's the least value of blue graph?",
+      "sample_id": "chart_table_cell_train_000050",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 60,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "87",
+      "error": null,
+      "expected_answers": [
+        "87.5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/61/image",
+      "image_size": {
+        "height": 436,
+        "width": 309
+      },
+      "latency_ms": 699.1,
+      "peak_cuda_allocated_mb": 8563.46,
+      "prompt": "What's the sum of median value of blue and green graph?",
+      "sample_id": "chart_table_cell_train_000051",
+      "score": 1.0,
+      "score_method": "numeric_tolerance",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 61,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "UK",
+      "error": null,
+      "expected_answers": [
+        "UK"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/62/image",
+      "image_size": {
+        "height": 375,
+        "width": 310
+      },
+      "latency_ms": 540.84,
+      "peak_cuda_allocated_mb": 8565.8,
+      "prompt": "Which country data shown in the bottom bar?",
+      "sample_id": "chart_table_cell_train_000052",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 62,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "48.75",
+      "error": null,
+      "expected_answers": [
+        "50.25"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/63/image",
+      "image_size": {
+        "height": 375,
+        "width": 310
+      },
+      "latency_ms": 867.66,
+      "peak_cuda_allocated_mb": 8565.96,
+      "prompt": "What is the average of last four countries data?",
+      "sample_id": "chart_table_cell_train_000053",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 63,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "72",
+      "error": null,
+      "expected_answers": [
+        "72"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/64/image",
+      "image_size": {
+        "height": 354,
+        "width": 420
+      },
+      "latency_ms": 648.16,
+      "peak_cuda_allocated_mb": 8565.96,
+      "prompt": "What's the value of the largest yellow bar?",
+      "sample_id": "chart_table_cell_train_000054",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 64,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "0.06349206349206349",
+      "error": null,
+      "expected_answers": [
+        "0.633333333"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/65/image",
+      "image_size": {
+        "height": 354,
+        "width": 420
+      },
+      "latency_ms": 1808.96,
+      "peak_cuda_allocated_mb": 8568.35,
+      "prompt": "What's the ratio of the smallest brown and largest yellow bar?",
+      "sample_id": "chart_table_cell_train_000055",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 65,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "4.1",
+      "error": null,
+      "expected_answers": [
+        "4.1"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/66/image",
+      "image_size": {
+        "height": 462,
+        "width": 415
+      },
+      "latency_ms": 772.26,
+      "peak_cuda_allocated_mb": 8578.98,
+      "prompt": "Find missing value- 2.9, 2.9, 3.5, 4.5, 5.6, 6.6, 6.8?",
+      "sample_id": "chart_table_cell_train_000056",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 66,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "17.3",
+      "error": null,
+      "expected_answers": [
+        "14.5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/67/image",
+      "image_size": {
+        "height": 462,
+        "width": 415
+      },
+      "latency_ms": 715.14,
+      "peak_cuda_allocated_mb": 8567.72,
+      "prompt": "What's the median value of red graph?",
+      "sample_id": "chart_table_cell_train_000057",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 67,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "175",
+      "error": null,
+      "expected_answers": [
+        "175"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/68/image",
+      "image_size": {
+        "height": 507,
+        "width": 858
+      },
+      "latency_ms": 771.83,
+      "peak_cuda_allocated_mb": 8684.01,
+      "prompt": "What is the number of deaths per 100000 in 2002 in Colombia?",
+      "sample_id": "chart_table_cell_train_000058",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 68,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "93.45",
+      "error": null,
+      "expected_answers": [
+        "93.45"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/70/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 828.3,
+      "peak_cuda_allocated_mb": 8735.51,
+      "prompt": "What's the value of largest bar??",
+      "sample_id": "chart_table_cell_train_000059",
+      "score": 1.0,
+      "score_method": "normalized_exact",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 70,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "51.045",
+      "error": null,
+      "expected_answers": [
+        "51.04"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/71/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 889.49,
+      "peak_cuda_allocated_mb": 8736.65,
+      "prompt": "Find out the average of the bottom two countries ??",
+      "sample_id": "chart_table_cell_train_000060",
+      "score": 1.0,
+      "score_method": "normalized_contains",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 71,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "20.5",
+      "error": null,
+      "expected_answers": [
+        "21.5"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/73/image",
+      "image_size": {
+        "height": 958,
+        "width": 840
+      },
+      "latency_ms": 1061.94,
+      "peak_cuda_allocated_mb": 8922.66,
+      "prompt": "What is the average of the smallest gray bar and largest light blue bar?",
+      "sample_id": "chart_table_cell_train_000061",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 73,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "302.38",
+      "error": null,
+      "expected_answers": [
+        "3.0238"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/74/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 985.5,
+      "peak_cuda_allocated_mb": 8735.51,
+      "prompt": "what is the value of largest bar?",
+      "sample_id": "chart_table_cell_train_000062",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 74,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    },
+    {
+      "answer_text": "15.62%",
+      "error": null,
+      "expected_answers": [
+        "0.1922"
+      ],
+      "full_image_path": "hf://datasets/lmms-lab/ChartQA/default/test/75/image",
+      "image_size": {
+        "height": 600,
+        "width": 850
+      },
+      "latency_ms": 944.8,
+      "peak_cuda_allocated_mb": 8736.27,
+      "prompt": "What is the sum of the smallest three bars?",
+      "sample_id": "chart_table_cell_train_000063",
+      "score": 0.0,
+      "score_method": "no_match",
+      "source": {
+        "config": "default",
+        "dataset": "lmms-lab/ChartQA",
+        "image_field": "image",
+        "row_idx": 75,
+        "split": "test"
+      },
+      "split": "train",
+      "taxonomy_id": "chart_table_cell"
+    }
+  ],
+  "run": {
+    "adapter": null,
+    "finished_at_utc": "2026-05-28T09:01:36.603220+00:00",
+    "manifest": "data/mvp/train.jsonl",
+    "max_new_tokens": 64,
+    "max_pixels": 1003520,
+    "milestone": "M3",
+    "min_pixels": 200704,
+    "model_id": "qwen3_vl_4b_base",
+    "model_path": "models/qwen/Qwen3-VL-4B-Instruct",
+    "resumed_from_existing_output": false,
+    "roi_source": null,
+    "scoring_policy": "normalized_exact_or_contains_numeric_only_when_expected_has_no_letters",
+    "started_at_utc": "2026-05-28T08:59:29.504843+00:00",
+    "updated_at_utc": "2026-05-28T09:01:36.603220+00:00",
+    "visual_policy": "qwen3_vl_fixed_pixel_budget"
+  },
+  "summary": {
+    "count": 128,
+    "error_count": 0,
+    "per_taxonomy": {
+      "chart_table_cell": {
+        "count": 64,
+        "failure_types": {
+          "no_match": 22,
+          "normalized_contains": 2,
+          "normalized_exact": 36,
+          "numeric_tolerance": 4
+        },
+        "score": 0.65625
+      },
+      "document_field_bind": {
+        "count": 64,
+        "failure_types": {
+          "no_match": 2,
+          "normalized_contains": 1,
+          "normalized_exact": 61
+        },
+        "score": 0.96875
+      }
+    },
+    "score": 0.8125
+  }
+}

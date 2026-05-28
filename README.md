@@ -107,9 +107,13 @@ Qwen3-VL-8B base
 현재 Qwen3-VL-4B holdout actual base audit 결과는 다음과 같다.
 
 ```text
-overall: 108/128 = 0.84375
-document_field_bind: 61/64 = 0.953125
-chart_table_cell: 47/64 = 0.734375
+train overall: 104/128 = 0.8125
+train document_field_bind: 62/64 = 0.96875
+train chart_table_cell: 42/64 = 0.65625
+
+holdout overall: 108/128 = 0.84375
+holdout document_field_bind: 61/64 = 0.953125
+holdout chart_table_cell: 47/64 = 0.734375
 ```
 
 따라서 `chart_table_cell`은 M5/M6 후보로 유지하고, `document_field_bind`는 현재 split이
