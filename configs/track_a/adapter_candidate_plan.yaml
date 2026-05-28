@@ -1,0 +1,111 @@
+plan_name: "m4_adapter_candidate_plan"
+milestone: "M4"
+generated_at_utc: "2026-05-28T09:26:37.303380+00:00"
+source_curriculum_manifest: "data/curricula/curriculum_manifest.jsonl"
+source_teacher_annotations: "data/curricula/teacher_annotations.jsonl"
+base_backbone: "qwen3_vl_4b_reference"
+teacher_handling:
+  mode: "rule"
+  teacher_label_is_candidate_required: true
+  rule_annotations_are_candidate_supervision_only: true
+candidates:
+  -
+    adapter_id: "chart_table_cell_r4_v1"
+    taxonomy_id: "chart_table_cell"
+    priority: 1
+    m4_status: "training_ready"
+    claim_status: "eligible_for_m5_first_pass"
+    base_backbone: "qwen3_vl_4b_reference"
+    backbone_type: "vlm_llm"
+    adapter_slot: "language_decoder"
+    teacher_mode: "rule"
+    teacher_label_is_candidate_required: true
+    taxonomy:
+      domain: "chart"
+      evidence_type: "table_cell"
+      failure_mode: "label_value_mismatch"
+      operation: "locate"
+    curriculum:
+      train_manifest: "data/curricula/chart_table_cell_train.jsonl"
+      holdout_manifest: "data/curricula/chart_table_cell_holdout.jsonl"
+      train_rows: 64
+      holdout_rows: 64
+      train_holdout_split_preserved: true
+    base_actual:
+      train:
+        count: 64
+        score: 0.65625
+        failure_types:
+          no_match: 22
+          normalized_contains: 2
+          normalized_exact: 36
+          numeric_tolerance: 4
+      holdout:
+        count: 64
+        score: 0.734375
+        failure_types:
+          no_match: 17
+          normalized_contains: 2
+          normalized_exact: 44
+          numeric_tolerance: 1
+      difficulty_status: "usable"
+    training_defaults:
+      rank: 4
+      alpha: 8
+      target_modules:
+        - "q_proj"
+        - "v_proj"
+      label_mask_mode: "answer_only"
+      weights_path: "models/loras/chart_table_cell_r4_v1"
+    notes:
+      - "M3 base score leaves room for adapter-sensitive learning."
+      - "Use this taxonomy as the first M5 candidate."
+  -
+    adapter_id: "document_field_bind_r4_v1"
+    taxonomy_id: "document_field_bind"
+    priority: 2
+    m4_status: "compiled_but_deferred_for_strong_claim"
+    claim_status: "needs_harder_split_before_strong_claim"
+    base_backbone: "qwen3_vl_4b_reference"
+    backbone_type: "vlm_llm"
+    adapter_slot: "language_decoder"
+    teacher_mode: "rule"
+    teacher_label_is_candidate_required: true
+    taxonomy:
+      domain: "document"
+      evidence_type: "field_value"
+      failure_mode: "distractor_confusion"
+      operation: "bind_label_to_value"
+    curriculum:
+      train_manifest: "data/curricula/document_field_bind_train.jsonl"
+      holdout_manifest: "data/curricula/document_field_bind_holdout.jsonl"
+      train_rows: 64
+      holdout_rows: 64
+      train_holdout_split_preserved: true
+    base_actual:
+      train:
+        count: 64
+        score: 0.96875
+        failure_types:
+          no_match: 2
+          normalized_contains: 1
+          normalized_exact: 61
+      holdout:
+        count: 64
+        score: 0.953125
+        failure_types:
+          no_match: 3
+          normalized_contains: 1
+          normalized_exact: 60
+      difficulty_status: "too_easy"
+    training_defaults:
+      rank: 4
+      alpha: 8
+      target_modules:
+        - "q_proj"
+        - "v_proj"
+      label_mask_mode: "answer_only"
+      weights_path: "models/loras/document_field_bind_r4_v1"
+    notes:
+      - "M3 base score is too high for a strong LoRA gain claim."
+      - "Keep rows compiled for reproducibility, but prefer harder document data before certification claims."

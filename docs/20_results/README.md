@@ -56,5 +56,6 @@ Smoke test 결과는 validation evidence로 쓰지 않는다. 기본 결과 브�
 001_m2_dataset_brief_ko.md
 002_m3_qwen3_model_prefetch_ko.md
 003_m3_actual_base_audit_ko.md
+004_m4_offline_curriculum_compiler_ko.md
 mvp_review_after_m3_ko.md
 ```
